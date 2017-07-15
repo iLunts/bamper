@@ -1,0 +1,473 @@
+<section class="wrapper room">
+    <div class="wrapper__container">
+        <div class="wrapper__panel">
+            <div class="wrapper__header" hl-sticky>
+                <div class="grid">
+                    <div class="col--2-5"></div>
+                    <div class="col--3-5 wrapper__header-action">
+                        <a href="" class="wrapper__favorites">
+                            <i class="icon icon-star"></i>
+                        </a>
+                        <a href="" class="wrapper__bookmark">
+                            <i class="icon icon-bookmark-line"></i>
+                        </a>
+                        <a href="" class="wrapper__edit">
+                            <i class="icon icon-mode_edit"></i>
+                        </a>
+                        <a href="" class="wrapper__close" data-ng-click="closeDetails()">
+                            <i class="icon icon-close"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__content">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                            Минская
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                            Минский
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                            Минск
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                            Октябрьский район
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                            Независимости пр.
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="grid">
+                    <div class="col--3-4">
+                        <h1 class="room__title">
+                            проспект Независимости д.168 к. 1 кв. -
+                        </h1>
+                        <p class="metro m--reset">
+                            <span class="metro__badge metro__badge--sm metro__badge--red"></span>
+                            <a href="" class="metro__title link link--dashed">Площадь Якуба Коласа</a>
+                        </p>
+                    </div>
+                    <div class="col--1-4 room__price">
+                        <p class="room__price-val">187 000 у.е.</p>
+                        <p class="room__price-meter">2 084,73 у.е. за м²</p>
+                    </div>
+                </div>
+                <div class="grid grid--sm">
+                    <div class="col--2-10">
+                        <a href="" class="btn btn--md btn--gray">
+                            <i class="icon icon--md icon-smartphone-check"></i>
+                        </a>
+                        <a href="" class="btn btn--md btn--gray">
+                            <i class="icon icon--md icon-smartphone-search"></i>
+                            <small class="m--l-mini t--sm">Проверить</small>
+                        </a>
+                    </div>
+                    <div class="col--8-10">
+                        <div class="grid grid--sm">
+                            <div class="col--3-5">
+                                <a href="" class="btn btn--md btn--yellow t--semi-bold">
+                                    +375-(44) 551-46-26
+                                </a>
+                                <span class="room__phone-owner">
+                                    маргарита сергеевна
+                                </span>
+                            </div>
+                            <div class="col--2-5">
+                                <a href="" class="btn btn--md btn--red t--semi-bold">
+                                    +375-(44) 500 11 11
+                                </a>
+                                <span class="room__phone-owner">
+                                    Агент
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid--collapse room__grid-border">
+                    <div class="col--3-4">
+                        <!--<div class="room__slider">-->
+                            <!--<div class="room__slider-item">-->
+
+                                <slick class="room__slider" 
+                                        dots="true" 
+                                        infinite="true" 
+                                        speed="300" 
+                                        slides-to-show="1" 
+                                        touch-move="false" 
+                                        slides-to-scroll="1"
+                                        autoplay="true"
+                                        arrows="false"
+                                        >
+                                    <div class="room__slider-item slick-item" data-ng-repeat="item in apartments">
+                                        <!--<img class="room__slider-img" src="{{ item.url }}" />-->
+                                        <div class="room__slider-img" style="background-image: url({{ item.url }})" />
+                                    </div>
+                                </slick>
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="col--1-4">
+                        <div class="panorama">
+                            <a href="" class="panorama__preview">
+                                <span class="panorama__btn">
+                                    <i class="panorama__icon icon icon-panorama"></i>
+                                </span>
+                                <br>
+                                <span class="panorama__text">панорама</span>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="/content/img/map-sm.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec m--t-md">
+                    <div class="grid spec__group">
+                        <div class="col--1-5">
+                            <span class="t--semi-bold t--h5">Жилье</span>
+                        </div>
+                        <div class="col--4-5">
+                            <div class="grid grid--sm">
+                                <div class="col--1-3">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Комнат / Раздельных</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">4 / 2</span>
+                                        </div>                        
+                                    </div>            
+                                    <!--<div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Раздельных комнат</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">2</span>
+                                        </div>                        
+                                    </div>            -->
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Комната</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">
+                                                <i class="spec__text-icon icon icon-close"></i>
+                                                <!--<i class="spec__text-icon spec__text-icon--check icon icon-check"></i>-->
+                                            </span>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                                <div class="col--1-3">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Этаж</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">7</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Этажность</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">12</span>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                                <div class="col--1-3">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Общая площадь</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">168 <small class="t--sm">м<sup>2</sup></small></span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Жилая площадь</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">80 <small class="t--sm">м<sup>2</sup></small></span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Кухня площадь</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">18 <small class="t--sm">м<sup>2</sup></small></span>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col--4-5 push--1-5">
+                            <hr class="m--v">
+                        </div>
+                    </div>
+                    <div class="grid spec__group">
+                        <div class="col--1-5">
+                            <span class="t--semi-bold t--h5">Характеристики</span>
+                        </div>
+                        <div class="col--4-5">
+                            <div class="grid grid--sm">
+                                <div class="col--3-5">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Тип стен</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Cиликатно-блочный</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Тип пола</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Линолеум</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Тип дома</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Улучшенный проект</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Тип лоджи</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Лоджия из кухни застеклена + вагонка</span>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                                <div class="col--2-5">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Сан. узел</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Совмещенный</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Год постройки</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">2012</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Год капитального ремонта</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">2016</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text"></span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text"></span>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col--4-5 push--1-5">
+                            <hr class="m--v">
+                        </div>
+                    </div>
+                    <div class="grid spec__group">
+                        <div class="col--1-5">
+                            <span class="t--semi-bold t--h5">Удобства</span>
+                        </div>
+                        <div class="col--4-5">
+                            <div class="grid grid--sm">
+                                <div class="col--1-2">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Ремонт</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">Удовлетворительный ремонт</span>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Паркинг</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <span class="spec__text">
+                                                200 <small class="t--sm">м.</small>
+                                            </span>
+                                            <!--<i class="spec__text-icon icon icon-close"></i>-->
+                                            <i class="spec__text-icon spec__text-icon--check icon icon-check"></i>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Рядом супермаркет</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <i class="spec__text-icon icon icon-close"></i>
+                                            <!--<i class="spec__text-icon spec__text-icon--check icon icon-check"></i>-->
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Лифт</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <!--<i class="spec__text-icon icon icon-close"></i>-->
+                                            <i class="spec__text-icon spec__text-icon--check icon icon-check"></i>
+                                        </div>                        
+                                    </div>            
+                                </div>
+                                <div class="col--1-2">
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Мебель</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <!--<i class="spec__text-icon icon icon-close"></i>-->
+                                            <i class="spec__text-icon spec__text-icon--check icon icon-check"></i>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Интернет</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <!--<i class="spec__text-icon icon icon-close"></i>-->
+                                            <i class="spec__text-icon spec__text-icon--check icon icon-check"></i>
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Телефон</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <i class="spec__text-icon icon icon-close"></i>
+                                            <!--<i class="spec__text-icon spec__text-icon--check icon icon-check"></i>-->
+                                        </div>                        
+                                    </div>            
+                                    <div class="spec__row">
+                                        <div class="spec__item spec__item--left">
+                                            <span class="spec__text">Подвал</span>
+                                        </div>
+                                        <div class="spec__item spec__item--right">
+                                            <i class="spec__text-icon icon icon-close"></i>
+                                            <!--<i class="spec__text-icon spec__text-icon--check icon icon-check"></i>-->
+                                        </div>                        
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col--1-1">
+                            <hr class="m--v">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="col--5-10 spec">
+                        <p class="room__desc-title">Доп. параметры</p>
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Ответственный</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <a href="" class="spec__text">Иван Сергеевич Лукьич</a>
+                            </div>                        
+                        </div>  
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Источник</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <span class="spec__text">Недвижимость Белоруссии</span>
+                            </div>                        
+                        </div>  
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Последнее обновление</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <span class="spec__text">21.10.2017</span>
+                            </div>                        
+                        </div>  
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Условия</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <span class="spec__text">Продажа</span>
+                            </div>                        
+                        </div>  
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Название агенства</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <span class="spec__text">***</span>
+                            </div>                        
+                        </div>  
+                        <div class="spec__row">
+                            <div class="spec__item spec__item--left">
+                                <span class="spec__text">Активность</span>
+                            </div>
+                            <div class="spec__item spec__item--right">
+                                <span class="spec__text">Активно / Закрыто</span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col--5-10">
+                        <p class="room__desc-title">Описание и местоположение</p>
+                        <p class="room__desc m--reset">
+                            Вторичка с ремонтом Монолитный дом 2005 года. С балконом (лоджией). Без выделенного парковочного места. Потолки 2,7 метра.
+                            Окажем содействие в получении кредита в бел. руб. под 13,9% годовых. Дизайн-проект (перепланировка
+                            утверждена) в современном доме, возле ст. метро «Уручье» + возможность приобрести машиноместо
+                            в подземном паркинге этого дома Адрес :пр-т Независимости, д. 168-1 Современный дом с повышенной
+                            степенью охраны: круглосуточная охрана, своя огороженная территория под видеонаблюдением, лифт,
+                            подземный паркинг, в доме есть аптека, банк, несколько магазинов, в 10 минутах пешком расположен
+                            тренажерный зал и бассейн. Квартира: площадь 89,7 кв. метров, просторный сан.узел (ванна и душевая
+                            кабина), застекленный балкон, возможность приобрести машино-место; Квартира полностью укомплектована
+                            всей мебелью и бытовой техникой – делали для себя! Это индивидуальный дизайн-проект. Хорошая
+                            транспортная развязка: Всего 15 минут езды до центра без пробок, удобный выезд на МКАД и аэропорт,
+                            до ст. метро «Уручье» 2 минуты пешком!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

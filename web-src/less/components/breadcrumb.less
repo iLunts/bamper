@@ -1,0 +1,49 @@
+// out: ../../../content/css/components/breadcrumb.css, compress: true
+@import 'variables.less';
+// Name:            breadcrumb
+// Description:     Defines styles to create layouts with breadcrumb
+//
+//
+// Component:       `.breadcrumb__*`
+// ----------------------------------------------------
+// Block '.breadcrumb'
+// ----------------------------------------------------
+.breadcrumb {
+    position: relative;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.breadcrumb .breadcrumb__item'
+    & &__item{
+        display: inline-block;
+
+        & + .breadcrumb__item{
+            &:before{
+                content: '\203a';
+                color: #999;
+                margin: 0 4px;
+            }
+        }
+    }
+
+    // Element '.breadcrumb .breadcrumb__link'
+    & &__link{
+        line-height: 18px;
+        color: #999;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #ddd;
+        transition: color 250ms;
+
+        &:hover{
+            color: #333;
+        }
+    }
+
+}

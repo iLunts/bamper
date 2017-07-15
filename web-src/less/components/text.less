@@ -1,0 +1,105 @@
+// out: ../../../content/css/components/text.css, compress: true
+@import 'variables.less';
+// **************** Variables ****************
+@text-color-muted:          #999;
+
+// **** Color variables
+@text-color-green:          #49ae65;
+@text-color-red:            #EE3442;
+@text-color-blue:            #0091ca;
+
+// ******************* Base ******************
+.t {
+
+    // Modificator '.t--muted'
+    &--muted {
+        color: @text-color-muted !important;
+    }
+
+    // Modificator '.t--r'
+    &--r {
+        text-align: right !important;
+    }
+
+    // Modificator '.t--l'
+    &--l {
+        text-align: left !important;
+    }
+
+    // Modificator '.t--c'
+    &--c {
+        text-align: center !important;
+    }
+
+    // Modificator '.t--light'
+    &--light{
+        font-weight: 200 !important;
+    }
+
+    // Modificator '.t--sm'
+    &--sm {
+        font-size: 75% !important;
+    }
+
+    // Modificator '.t--md'
+    &--md {
+        font-size: 85% !important;
+    }
+
+    // Modificator '.t--bold'
+    &--bold {
+        font-weight: 700 !important;
+    }
+    // Modificator '.t--semi-bold'
+    &--semi-bold {
+        font-weight: 600 !important;
+    }
+    // Modificator '.t--red'
+    &--red {
+        color: @color-red !important;
+    }
+    // Modificator '.t--green'
+    &--green {
+        color: @color-green !important;
+    }
+    // Modificator '.t--truncate'
+    &--truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    // Modificator '.t--title'
+    &--title{
+        font-weight: 500;
+        color: @color-blue;
+    }
+
+    // -----------------------------------------------------
+    // Modifiers:       `text--h*`
+    // -----------------------------------------------------
+    &--h1 {
+        font-size: 3rem !important;
+        line-height: 4rem !important;
+    }
+    &--h2 {
+        font-size: 2.2rem !important;
+        line-height: 3rem !important;
+    }
+    &--h3 {
+        font-size: 1.6rem !important;
+        line-height: 2rem !important;
+    }
+    &--h4 {
+        font-size: 1.2rem !important;
+        line-height: 2rem !important;
+    }
+    &--h5 {
+        font-size: 1rem !important;
+        line-height: 1.8rem !important;
+    }
+    &--h6 {
+        font-size: 0.9rem !important;
+        line-height: 1.2rem !important;
+    }
+}

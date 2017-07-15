@@ -1,0 +1,65 @@
+// out: ../../../content/css/components/logo.css, compress: true
+@import 'variables.less';
+// Name:            logo
+// Description:     Defines styles to create layouts with logo
+//
+//
+// Component:       `.logo__*`
+// ----------------------------------------------------
+// Block '.logo'
+// ----------------------------------------------------
+.logo {
+    position: relative;
+    padding: 4px 0;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.logo .logo__img'
+    & &__img{
+        float: left;
+        // display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-shadow: 0 2px 2px @color-blue-dark; 
+        background-color: @color-blue;
+        color: #fff;
+        margin: 1px 8px 0 0;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85c3f2+0,2196f3+100 */
+        // background: rgb(133,195,242); /* Old browsers */
+        // background: -moz-linear-gradient(top, rgba(133,195,242,1) 0%, rgba(33,150,243,1) 100%); /* FF3.6-15 */
+        // background: -webkit-linear-gradient(top, rgba(133,195,242,1) 0%,rgba(33,150,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to bottom, rgba(133,195,242,1) 0%,rgba(33,150,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c3f2', endColorstr='#2196f3',GradientType=0 ); /* IE6-9 */
+    }
+
+    & &__text{
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: 3px;
+    }
+
+    & &__desc{
+        margin: 0;
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: #bbb;
+        margin-top: 2px;
+    }
+
+}

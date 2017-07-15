@@ -1,0 +1,56 @@
+// out: ../../../content/css/components/avatar.css, compress: true
+@import 'variables.less';
+// Name:            avatar
+// Description:     Defines styles to create layouts with avatar
+//
+// ----------------------------------------------------
+// Block '.avatar'
+// ----------------------------------------------------
+.avatar {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: @avatar-height;
+    width: @avatar-height;
+    border-radius: @avatar-height;
+    border: none;
+    outline: none;
+    border-radius: @avatar-height;
+    vertical-align: middle;
+
+    // -----------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------
+
+    // Modifivator '.avatar.avatar--md'
+    &&--md{
+        width: @avatar-height-medium;
+        height: @avatar-height-medium;
+        border-radius: @avatar-height-medium;
+    }
+
+    // Modifivator '.avatar.avatar--small'
+    &&--sm{
+        width: @avatar-height-small;
+        height: @avatar-height-small;
+        line-height: @avatar-height-small;
+        border-radius: @avatar-height-small;
+
+        // Modifivator '.avatar.avatar--sm.avatar--empty'
+        &.avatar--empty{
+            font-size: @avatar-empty-font-size-sm;
+        }
+    }
+
+    // Modifivator '.avatar.avatar--empty'
+    &&--empty{
+        background: @avatar-empty-background;
+        font-family: @font-icon;
+        font-size: @avatar-font-size;
+
+        &:after{
+            content: "\e7ff";
+            color: @avatar-empty-color;
+        }
+    } 
+}

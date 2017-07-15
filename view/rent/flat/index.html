@@ -1,0 +1,137 @@
+<section data-ng-include="'view/ui/filter/filter-rent-flat.html'"></section>
+
+<div class="container--fluid m--v">
+
+    <div class="header">
+        <div class="grid">
+            <div class="col--3-10">
+                <h2 class="header__title">
+                    <a href="/" class="link link--dashed header__title-text">Главная</a>
+                    <a href="/" class="link link--dashed header__title-text">Аренда</a>
+                    <span class="header__title-text active">Аренда квартир</span>
+                </h2>
+            </div>
+            <div class="col--7-10">
+                <div class="header__btn">                    
+                    <button class="btn" data-ng-model="showFilter" uib-btn-checkbox>
+                        <span class="btn__text">Фильтр</span>
+                        <i class="btn__icon icon-filter_list"></i>
+                    </button>
+                    
+                    <div class="btn-group">
+                        <button class="btn">
+                            <span class="btn__text">Печать</span>
+                            <i class="btn__icon icon-print"></i>
+                        </button>
+                        <div uib-dropdown auto-close="outsideClick">
+                            <button class="btn btn--arrow" uib-dropdown-toggle>
+                                <i class="btn__icon icon-keyboard_arrow_down"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu--right" uib-dropdown-menu role="menu">
+                                <div class="dropdown-menu__list">
+                                    <a href="" class="dropdown-menu__list-item">Печать выбранных</a>
+                                    <a href="" class="dropdown-menu__list-item">Печатать всё</a>
+                                    <a href="" class="dropdown-menu__list-item">Сохранить PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn">
+                        <span class="btn__text">Письмо</span>
+                        <i class="btn__icon icon-mail_outline"></i>
+                    </button>
+
+                    <div class="btn-group">
+                        <button class="btn btn--del">
+                            <span class="btn__text">Удалить</span>
+                            <i class="btn__icon icon-delete"></i>
+                        </button>
+                        <div uib-dropdown auto-close="outsideClick">
+                            <button class="btn btn--arrow" uib-dropdown-toggle>
+                                <i class="btn__icon icon-keyboard_arrow_down"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu--right" uib-dropdown-menu role="menu">
+                                <div class="dropdown-menu__list">
+                                    <a href="" class="dropdown-menu__list-item">Удалить выбранные</a>
+                                    <a href="" class="dropdown-menu__list-item">Удалить записи агентов всё</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn--blue">
+                        <i class="btn__icon icon-home"></i>
+                        <span class="btn__text">Добавить объект</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="table">
+        <div class="tr tr--thead">
+            <div class="th t--c" uib-dropdown dropdown-append-to-body auto-close="outsideClick">
+                <a href="" class="btn btn--sm t--bold" uib-dropdown-toggle>+</a>
+                <div class="dropdown-menu dropdown-menu--md" uib-dropdown-menu role="menu">
+                    <div class="grid">
+                        <div class="col--1-2" role="menuitem" data-ng-repeat="item in params">
+                            <div class="checkbox checkbox--sm m--b-sm">
+                                <input class="checkbox__input" type="checkbox" id="{{$index}}" name="{{$index}}" data-ng-checked="item.check" data-ng-model="$index">
+                                <label for="{{$index}}" class="checkbox__label">{{item.name}}</label>
+                            </div>
+                        </div>
+                        <div class="col--1-1">
+                            <hr class="m--b-sm">
+                        </div>
+                        <p class="col--1-1 t--c">
+                            <!--<a href="" class="btn btn--sm btn--blue col--1-1">Сбросить все...</a>-->
+                            <a href="" class="link link--dashed t--md t--muted">Сбросить всё...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="th" data-ng-repeat="item in params" data-ng-class="{'active': item.sort}">
+                <span class="cursor--pointer" uib-tooltip="{{item.name}}" tooltip-placement="top">
+                    {{item.socr}}
+                </span>
+            </div>
+        </div>
+        <div class="tr cursor--pointer" data-ng-repeat="item in rooms" data-ng-dblclick="openDetails()">
+            <div class="td t--c">
+                <div class="checkbox checkbox--empty checkbox--sm" role="menuitem">
+                    <input class="checkbox__input" type="checkbox" id="{{item.id}}" name="{{item.id}}">
+                    <label for="{{item.id}}" class="checkbox__label"></label>
+                </div>
+            </div>
+            <div class="td">{{item.price}}</div>
+            <div class="td">{{item.street}}</div>
+            <div class="td">№{{item.house_number}}</div>
+            <div class="td">{{item.room_number}}</div>
+            <div class="td">{{item.home_block}}</div>
+            <div class="td">{{item.floor}} из {{item.floor_max}}</div>
+            <div class="td">{{item.furniture}}</div>
+            <div class="td">{{item.refrigerator}}</div>
+            <div class="td">{{item.s_m}}</div>
+            <div class="td">{{item.cell}}</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+        </div>
+    </div>
+</div>
+
+<section data-ng-include="'view/rent/flat/details.html'" data-ng-class="{'open' : showDetails}"></section>

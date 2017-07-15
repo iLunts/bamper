@@ -1,0 +1,92 @@
+// out: ../../../content/css/components/dropdown.css, compress: true
+@import 'variables.less';
+// Name:            dropdown
+// Description:     Defines styles to create layouts with dropdown
+//
+//
+// Component:       `.dropdown__*`
+// ----------------------------------------------------
+// Block '.dropdown'
+// ----------------------------------------------------
+.dropdown {
+    position: relative;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    &-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 160px;
+        padding: 8px;
+        margin: 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #d4d4d4;
+        border-radius: 0;
+        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+        // Modificator '.dropdown-menu.dropdown-menu--md'
+        &.dropdown-menu--md{
+            min-width: 320px;
+            max-width: 340px;
+        }
+
+        // Modificator '.dropdown-menu.dropdown-menu--lg'
+        &.dropdown-menu--lg{
+            min-width: 480px;
+        }
+
+        // Modificator '.dropdown-menu.dropdown-menu--right'
+        &.dropdown-menu--right{
+            left: auto;
+            right: 0;
+            
+            &:before{
+                left: auto;
+                right: 10px;
+            }
+
+            &:after{
+                left: auto;
+                right: 10px;
+            }
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 10px;
+            border: 6px solid transparent;
+            border-bottom-color: #d4d4d4;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: 10px;
+            border: 6px solid transparent;
+            border-bottom-color: #fff;
+        }
+
+        .open > &{
+            display: block;
+        }
+    }
+
+}

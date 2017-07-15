@@ -1,0 +1,137 @@
+// out: ../../../content/css/components/checkbox.css, compress: true
+@import 'variables.less';
+// Name:            checkbox
+// Description:     Defines styles to create layouts with checkbox
+//
+//
+// Component:       `.checkbox__*`
+// ----------------------------------------------------
+// Block '.checkbox'
+// ----------------------------------------------------
+.checkbox {
+    margin: 0;
+
+    & + &{
+        margin-top: 20px;
+    }
+
+    // --------------------------------------------------
+    // All modificators
+    // --------------------------------------------------
+
+    // Modificator '.checkbox.checkbox--sm'
+    &&--sm{
+
+        & + .checkbox--sm{
+            margin-top: 10px;
+        }
+    }
+
+    // Modificator '.checkbox.checkbox--empty'
+    &&--empty{
+        
+        & .checkbox__label{
+            padding-left: @checkbox-height + 4;
+            height: @checkbox-height + 4;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+        
+    // --------------------------------------------------
+    // All elements
+    // --------------------------------------------------
+
+    // ELement '.checkbox .checkbox__input'
+    & &__input{
+        display: none;
+        opacity: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        // State '.checkbox .checkbox__input:checked'
+        &:checked {
+
+            & + .checkbox__label {
+
+                &:before {
+                    content: "\e5ca";
+                    border: 2px solid @color-blue;            
+                    background: @color-blue;
+                    font-family: @font-icon;
+                    color: #fff;
+                    font-size: @checkbox-icon-font-size;
+                    line-height: @checkbox-line-height - 4;
+                    text-align: center;
+                }
+            }
+        }
+
+        &[type='radio']{
+
+            &:checked{
+                
+                & + .checkbox__label{
+                    &:before{
+                        content: '';           
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 7px;
+                        left: 7px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 30px;
+                        background: #fff;
+                    }
+                }
+            }
+
+            & + .checkbox__label{
+                &:before{
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    // Element '.checkbox + .checkbox__label'
+    & &__label{
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: @checkbox-font-size;
+        overflow: visible;
+        padding-left: 26px;
+        line-height: @checkbox-line-height;
+        transform: none;
+        top: 0;
+        text-transform: none;
+        color: #777;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            // top: -(@checkbox-height / 2);
+            top: 0;
+            width: @checkbox-height;
+            height: @checkbox-height;
+            border: 2px solid #cfd8dc;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+
+        // &:not(:empty){
+        //     display: inline;
+        //     padding-left: (@checkbox-height * 1.5);
+
+        //     &:before{
+        //         top: 0;
+        //     }
+        // }
+    }
+
+}

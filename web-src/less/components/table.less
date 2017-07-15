@@ -1,0 +1,100 @@
+// out: ../../../content/css/components/table.css, compress: true
+@import 'variables.less';
+// Name:            table
+// Description:     Defines styles to create layouts with table
+//
+//
+// Component:       `.table__*`
+// ----------------------------------------------------
+// Block '.table'
+// ----------------------------------------------------
+.table {
+    width: 100%;
+    min-width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: table;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.table .th'
+    & .th{
+        display: table-cell;
+        padding: 10px 8px 8px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: #78909c;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-bottom: 2px solid #e0e7ef;
+
+        &.active{
+            border-bottom: 2px solid #8893a0;
+        }
+    }
+
+    // Element '.table .td'
+    & .td{
+        display: table-cell;
+        padding: 10px 8px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 0.75rem;
+        text-transform: capitalize;
+        // color: #78909c;
+        color: #636363;
+        vertical-align: middle;
+    }
+
+    & .tr{
+        position: relative;
+        display: table-row;
+        width: 100%;
+        vertical-align: middle;
+        background: #fff;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        z-index: 1;
+
+        // &:hover{
+        //     background: rgba(85, 199, 255, 0.1);
+        //     z-index: 2;
+        // }
+
+        &--thead{
+            background: #e0e7ef;
+            box-shadow: none;
+        }
+    }
+
+    // Element '.table tbody'
+    & .tbody{
+
+        .tr{
+
+            // State '.table .tbody .tr.active'
+            // &.active{
+            //     background: @color-blue;
+            // }
+
+            & + .tr{
+                margin-top: 4px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,43 @@
+// out: ../../../content/css/components/overlay.css, compress: true
+@import 'variables.less';
+// Name:            overlay
+// Description:     Defines styles to create layouts with overlay
+//
+//
+// Component:       `.overlay__*`
+// ----------------------------------------------------
+// Block '.overlay'
+// ----------------------------------------------------
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    // transition: visibility 300ms ~"ease-in-out";
+    transition: opacity 200ms ~"ease-in-out" 200ms;
+    overflow: hidden;
+
+    .open &{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Nodificator '.overlay.overlay--black
+    &&--black{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+
+}

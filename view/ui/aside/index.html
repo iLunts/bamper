@@ -1,0 +1,59 @@
+<div>
+    <nav class="aside">
+        <!--<div class="aside__header">
+            <a href="" class="aside__header-link link link--reset">
+                <i class="icon icon-sort"></i>
+            </a>
+        </div>-->
+        <div class="aside__add t--c">
+            <a href="" class="btn btn--sm btn--blue" data-ng-click="showNew = !showNew">
+                +
+            </a>
+        </div>
+
+        <div class="aside__menu">
+            <div class="aside__menu-item aside__menu-item--parent active">
+                <a href="javascript:void(0);" class="aside__menu-link">
+                    <i class="aside__menu-icon icon-ads-2"></i>
+                    <span class="aside__menu-text">Объявления</span>
+                </a>
+            </div>
+            <div class="aside__menu-item" data-ng-class="{'hover' : showPart}">
+                <a href="" class="aside__menu-link" data-ng-click="showPart = !showPart">
+                    <i class="aside__menu-icon icon-air-filter"></i>
+                    <span class="aside__menu-text">Запчасти</span>
+                </a>
+            </div>
+            <div class="aside__menu-item">
+                <a href="" class="aside__menu-link">
+                    <i class="aside__menu-icon icon-wheel"></i>
+                    <span class="aside__menu-text">Шины</span>
+                </a>
+            </div>
+            <div class="aside__menu-item">
+                <a href="" class="aside__menu-link">
+                    <i class="aside__menu-icon icon-request"></i>
+                    <span class="aside__menu-text">Заявки</span>
+                </a>
+            </div>
+            <div class="aside__menu-item">
+                <a href="" class="aside__menu-link">
+                    <i class="aside__menu-icon icon-hours"></i>
+                    <span class="aside__menu-text">Импорт</span>
+                </a>
+            </div>
+            <div class="aside__menu-item">
+                <a href="" class="aside__menu-link">
+                    <i class="aside__menu-icon icon-settings"></i>
+                    <span class="aside__menu-text">Настройки</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div data-ng-class="{'open' : showNew}" data-ng-include="'view/ui/aside/new.html'"></div>
+    <div data-ng-class="{'open' : showSettings}" data-ng-include="'view/ui/aside/settings.html'"></div>
+    <div data-ng-class="{'open' : showRent}" data-ng-include="'view/ui/aside/rent.html'"></div>
+    <div data-ng-class="{'open' : showSale}" data-ng-include="'view/ui/aside/sale.html'"></div>
+    <div data-ng-class="{'open' : showClient}" data-ng-include="'view/ui/aside/client.html'"></div>
+</div>

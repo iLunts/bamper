@@ -1,0 +1,107 @@
+// out: ../../../content/css/components/room.css, compress: true
+@import 'variables.less';
+// Name:            room
+// Description:     Defines styles to create layouts with room
+//
+//
+// Component:       `.room__*`
+// ----------------------------------------------------
+// Block '.room'
+// ----------------------------------------------------
+.room {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.room .room__title'
+    & &__title{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: 15px 0;
+    }
+
+    // Element '.room .room__price'
+    & &__price{
+
+        // Element '.room .room__price-val'
+        &-val{
+            font-size: 23px;
+            font-weight: 700;
+            height: 26px;
+            margin: 12px 0 10px;
+        }
+
+        // Element '.room .room__price-meter'
+        &-meter{
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 15px;
+            color: #999;
+        }
+    }
+
+    // Element '.room .room__grid-border'
+    & &__grid-border{
+        .room__slider{
+            border-right: 2px solid #fff;
+        }
+        .panorama{
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    // Element '.room .room__slider'
+    & &__slider{
+        position: relative;
+        background: #eee;
+
+        &-item{
+            position: relative;
+            height: 308px;
+            overflow: hidden;
+        }
+
+        &-img{
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 308px;
+        }
+    }
+
+    // Element '.room .room__phone'
+    & &__phone{
+
+        &-owner{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+        }
+    }
+
+    // Element '.room .room__desc'
+    & &__desc{
+        font-size: 0.8rem;
+
+        &-title{
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    }
+
+}

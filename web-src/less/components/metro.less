@@ -1,0 +1,53 @@
+// out: ../../../content/css/components/metro.css, compress: true
+@import 'variables.less';
+// Name:            metro
+// Description:     Defines styles to create layouts with metro
+//
+//
+// Component:       `.metro__*`
+// ----------------------------------------------------
+// Block '.metro'
+// ----------------------------------------------------
+.metro {
+    position: relative;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.metro .metro__badge'
+    & &__badge{
+        display: inline-block;
+        vertical-align: middle;
+        background: #ddd;
+        border-radius: 60px;
+
+        // Modificator '.metro .metro__badge.metro__badge--sm'
+        &.metro__badge--sm{
+            width: 10px;
+            height: 10px;
+        }
+
+        // Modificator '.metro .metro__badge.metro__badge--red'
+        &.metro__badge--red{
+            background: @color-red;
+        }
+
+        // Modificator '.metro .metro__badge.metro__badge--blue'
+        &.metro__badge--blue{
+            background: @color-blue;
+        }
+    }
+
+    // Element '.metro .metro__title'
+    & &__title{
+        color: #999;
+        margin-left: 6px;
+    }
+
+}

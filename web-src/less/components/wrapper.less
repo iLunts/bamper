@@ -1,0 +1,123 @@
+// out: ../../../content/css/components/wrapper.css, compress: true
+@import 'variables.less';
+// Name:            wrapper
+// Description:     Defines styles to create layouts with wrapper
+//
+//
+// Component:       `.wrapper__*`
+// ----------------------------------------------------
+// Block '.wrapper'
+// ----------------------------------------------------
+.wrapper {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // display: none;
+    background: rgba(0,0,0,.8);
+    // backface-visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+
+    .open &{
+        // display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.wrapper .grid + .grid'
+    .grid + .grid{
+        margin-top: 20px;
+    }
+
+    // Element '.wrapper .wrapper__close'
+    & &__close{
+        // position: absolute;
+        // right: 12px;
+        // top: 6px;
+        font-size: 2rem !important;
+        line-height: 1;
+
+        .icon{
+            border-left: 1px solid #ddd;
+            padding-left: 10px;
+        }
+    }
+
+    // Element '.wrapper .wrapper__container'
+    & &__container{
+        position: fixed;
+        // top: 40px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    // Element '.wrapper .wrapper__header'
+    & &__header{
+        min-height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+        position: relative;
+        transition: all 300ms ~"ease-in-out";
+
+        // position: absolute;
+        // right: 0;
+        // left: 0;
+        // top: 0;
+        // min-width: 960px;
+        // max-width: 1145px;
+        // margin-bottom: -50px;
+
+        &.is-sticky{
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+            background-color: #fff;
+        }
+
+        &-action{
+            text-align: right;
+
+            & > *{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 20px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    // Element '.wrapper .wrapper__content'
+    & &__content{
+        padding: 20px 40px 20px 40px;
+        margin-top: -52px;
+
+    }
+
+    // Element '.wrapper .wrapper__panel'
+    & &__panel{
+        font-size: 15px;
+        line-height: 20px;
+        position: relative;
+        margin: 0 auto 30px;
+        min-width: 960px;
+        max-width: 1145px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+}

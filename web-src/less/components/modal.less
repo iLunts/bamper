@@ -1,0 +1,294 @@
+// out: ../../../content/css/components/modal.css, compress: true
+@import 'variables.less';
+// Name:            modal
+// Description:     Defines styles to create layouts with modal
+//
+//
+// Component:       `.modal__*`
+// ----------------------------------------------------
+// Block '.modal'
+// ----------------------------------------------------
+.modal {
+
+    // State '.modal.open'
+    // &.open{
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.modal .modal__overlay'
+    // & &__overlay{
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: rgba(0, 0, 0, 0.5);
+    // }
+
+    // Element '.modal .modal__dialog'
+    // & &__dialog{
+    //     position: absolute;
+    //     left: 25%;
+    //     top: 10%;
+    //     background: @modal-background;
+    //     width: @modal-width;
+    //     margin-right: -(@modal-width / 2);
+    //     box-shadow: 0 0 60px 0 rgba(0,0,0,.3);
+    //     z-index: 10;
+
+        // Modificator '.modal .modal__dialog.modal__dialog--gray'
+        // &.modal__dialog--gray{
+        //     background: @modal-background-gray;
+        // }
+
+        // Modificator '.modal .modal__dialog.modal__dialog--lg'
+        // &.modal__dialog--lg{
+        //     left: (100% - @modal-width-lg) / 2;
+        //     width: @modal-width-lg;
+        // }
+
+        // Modificator '.modal .modal__dialog.modal__dialog--md'
+        // &.modal__dialog--md{
+        //     left: (100% - @modal-width-md) / 2;
+        //     width: @modal-width-md;
+        // }
+    // }  
+
+    // Element '.modal .modal__content'
+    // & &__content{
+        
+    // }
+
+    // Element '.modal .modal__header'
+    & &__header{
+        border-bottom: 1px solid #ddd;
+    }    
+
+    // Element '.modal .modal__tab'
+    & &__tab{
+
+        // Modificator '.modal .modal__tab.modal__tab--v'
+        &.modal__tab--v{
+
+            // Element '.modal .modal__tab.modal__tab--v .nav'
+            & .nav{
+                display: inline-block;
+                width: @modal-tab-width;
+                background: @modal-tab-background;
+                box-shadow: inset -10px 0 20px 0 rgba(0,0,0,.1);
+                padding: (@modal-padding / 2) 0;
+                margin-right: -4px;
+                vertical-align: top;
+
+                // Element '.modal .modal__tab.modal__tab--v .nav-item'
+                &-item{
+                    color: #949494;
+
+                    // State '.modal .modal__tab.modal__tab--v .nav-item.active'
+                    &.active{
+                        background-color: #fff;
+                        font-weight: 700;
+                        color: #171717;
+                        box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+                    }                
+                }            
+            }
+
+            // Element '.modal .modal__tab.modal__tab--v .tab-content'
+            & .tab-content{
+                display: inline-block;
+                width: ~'calc(100% - @{modal-tab-width})';
+                padding: @modal-padding;
+                vertical-align: top;
+                // background-color: #fff;
+                z-index: 1;
+            }            
+        }
+    }    
+}
+
+// -------------------------------------------
+// Block '.modal' ~ for Bootsrtap
+// -------------------------------------------
+.modal{
+    display: none;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    transition: all 250ms;
+
+    // Element '.modal-open'
+    &-open{
+        overflow: hidden;
+        transition: all 250ms;
+        
+        // Element '.modal-open .main'
+        // Element '.modal-open .aside'
+        & .main,
+        & .aside{
+            filter: blur(3px);
+        }
+    }
+
+    // Element '.modal-backgrop'
+    &-backdrop{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+        opacity: 0;
+
+        &.fade.in{
+            opacity: .5;
+        }
+    }
+
+    // Element '.modal-dialog'
+    &-dialog{
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        background: @modal-background;
+        width: @modal-width;
+        margin-right: -(@modal-width / 2);
+        box-shadow: 0 0 60px 0 rgba(0,0,0,.3);
+        z-index: 10;
+        overflow: hidden;
+
+        // Modificator '.modal-dialog.modal-lg'
+        &.modal-lg{
+            left: (100% - @modal-width-lg) / 2;
+            width: @modal-width-lg;
+        }
+
+        // Modificator '.modal-dialog.modal-md'
+        &.modal-md{
+            left: (100% - @modal-width-md) / 2;
+            width: @modal-width-md;
+        }
+
+        // Modificator '.modal-dialog.modal-sm'
+        &.modal-sm{
+            left: (100% - @modal-width-sm) / 2;
+            width: @modal-width-sm;
+        }
+    }
+}
+
+// -------------------------------------------
+// Block '.fade'
+// -------------------------------------------
+.fade{
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+
+    &.in{
+        opacity: 1;
+    }
+}
+
+
+
+// -------------------------------------------------
+// Size '.xLarge'
+// -------------------------------------------------
+@media (min-width: @breakpoint-xlarge) {
+
+    // ------------------------------------------------
+    // Block '.modal'
+    // ------------------------------------------------
+    .modal{
+
+        // Element '.modal-dialog'
+        &-dialog{
+            width: @modal-width;
+
+            // Modificator '.modal-dialog.modal-lg'
+            &.modal-lg{
+                left: (100% - (@modal-width-lg / 1.5)) / 2;
+                width: (@modal-width-lg / 1.5);
+            }
+
+            // Modificator '.modal-dialog.modal-md'
+            &.modal-md{
+                left: (100% - @modal-width-md) / 2;
+                width: (@modal-width-md / 1.5);
+            }
+
+            // Modificator '.modal-dialog.modal-sm'
+            &.modal-sm{
+                left: (100% - @modal-width-sm) / 2;
+                width: (@modal-width-sm / 1.5);
+            }
+        }
+    }
+}
+
+// -------------------------------------------------
+// Size '.Large'
+// -------------------------------------------------
+@media (min-width: @breakpoint-large) {
+
+    // ------------------------------------------------
+    // Block '.modal'
+    // ------------------------------------------------
+    .modal{
+
+        // Element '.modal-dialog'
+        &-dialog{
+            width: @modal-width;
+
+            // Modificator '.modal-dialog.modal-lg'
+            &.modal-lg{
+                left: (100% - (@modal-width-lg / 1.2)) / 2;
+                width: (@modal-width-lg / 1.2);
+            }
+
+            // Modificator '.modal-dialog.modal-md'
+            &.modal-md{
+                left: (100% - (@modal-width-md / 1.2)) / 2;
+                width: (@modal-width-md / 1.2);
+            }
+
+            // Modificator '.modal-dialog.modal-sm'
+            &.modal-sm{
+                left: (100% - (@modal-width-sm / 1.2)) / 2;
+                width: (@modal-width-sm / 1.2);
+            }
+        }
+    }
+
+}
+
+// -------------------------------------------------
+// Size '.Medium'
+// -------------------------------------------------
+@media (min-width: @breakpoint-medium) {
+
+}
+
+// -------------------------------------------------
+// Size '.Small'
+// -------------------------------------------------
+@media (min-width: @breakpoint-small) {
+
+}

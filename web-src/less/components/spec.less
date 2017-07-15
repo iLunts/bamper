@@ -1,0 +1,92 @@
+// out: ../../../content/css/components/spec.css, compress: true
+@import 'variables.less';
+// Name:            spec
+// Description:     Defines styles to create layouts with spec
+//
+//
+// Component:       `.spec__*`
+// ----------------------------------------------------
+// Block '.spec'
+// ----------------------------------------------------
+.spec {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.spec .spec__group'
+    & &__group{
+        // border-bottom: 1px solid #ddd;
+    }
+
+    // Element '.spec .spec__item'
+    & &__row{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 8px;
+
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        &:before{
+            content: '........................................................................................................';
+            position: absolute;
+            bottom: 0;
+            font-size: 10px;
+            padding-left: 4px;
+            letter-spacing: 3px;
+            color: #bbb;
+            line-height: 16px;
+        }
+    }
+
+    // Element '.spec .spec__text'
+    & &__text{
+        vertical-align: middle;
+        
+        &-icon{
+            font-size: 0.9rem;
+            color: #bbb;
+            padding: 5px;
+            border-radius: 60px;
+            background: rgba(187, 187, 187, 0.1);
+
+            &.spec__text-icon--check{
+                color: @color-green;
+                background: rgba(0, 166, 81, 0.1);
+            }
+        }
+    }
+
+    // Element '.spec .spec__item'
+    & &__item{
+        position: relative;
+        background: #fff;
+        padding: 0 10px;
+        z-index: 1;
+
+        &.spec__item--left{
+            float: left;
+            padding-left: 0;
+        }
+
+        &.spec__item--right{
+            float: right;
+            min-width: 50px;
+            text-align: center;
+
+            .spec__text{
+                font-weight: 700;
+            }
+        }
+    }
+
+}

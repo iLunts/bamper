@@ -1,0 +1,1 @@
+.breadcrumb{position:relative}.breadcrumb .breadcrumb__item{display:inline-block}.breadcrumb .breadcrumb__item+.breadcrumb__item:before{content:'\203a';color:#999;margin:0 4px}.breadcrumb .breadcrumb__link{line-height:18px;color:#999;font-size:.9rem;border-bottom:1px solid #ddd;transition:color 250ms}.breadcrumb .breadcrumb__link:hover{color:#333}
