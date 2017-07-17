@@ -26,19 +26,9 @@
     // All modificators
     // -------------------------------------------------
 
-    // Modificator '.aside.aside--rent'
-    &&--rent{
-        padding-top: 14px;
-    }
-
-    // Modificator '.aside.aside--sale'
-    &&--sale{
-        padding-top: 95px;
-    }
-
-    // Modificator '.aside.aside--client'
-    &&--client{
-        padding-top: 105px;
+    // Modificator '.aside.aside--parts'
+    &.aside--parts{
+        padding-top: 75px;
     }
 
     // Modificator '.aside.aside--new'
@@ -171,23 +161,23 @@
     }
 
     // Element '.aside .aside__back'
-    & &__back{
-        border-bottom: 1px dashed #3e444a;
+    // & &__back{
+    //     border-bottom: 1px dashed #3e444a;
 
-        &-link{
-            color: #95a8b2;
-            font-size: 1rem;
-            text-align: left;
-            display: block;
-            padding: 15px 20px;
-        }
+    //     &-link{
+    //         color: #95a8b2;
+    //         font-size: 1rem;
+    //         text-align: left;
+    //         display: block;
+    //         padding: 15px 20px;
+    //     }
 
-        &-text{
-            vertical-align: middle;
-            margin-left: 10px;
-            font-size: 0.9rem;
-        }
-    }
+    //     &-text{
+    //         vertical-align: middle;
+    //         margin-left: 10px;
+    //         font-size: 0.9rem;
+    //     }
+    // }
     // // Element '.aside .aside__header'
     // & &__header{
 
@@ -234,9 +224,9 @@
                 border-color: @color-blue;
                 color: #647a88;
 
-                .aside__menu-icon{
+                // .aside__menu-icon{
                     // color: @color-blue;
-                }
+                // }
             }
 
             &.aside__menu-item--parent{

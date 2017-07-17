@@ -6,8 +6,8 @@
             </a>
         </div>-->
         <div class="aside__add t--c">
-            <a href="" class="btn btn--sm btn--blue" data-ng-click="showNew = !showNew">
-                +
+            <a href="" class="btn btn--blue" data-ng-click="showNew = !showNew">
+                Добавить
             </a>
         </div>
 
@@ -18,8 +18,8 @@
                     <span class="aside__menu-text">Объявления</span>
                 </a>
             </div>
-            <div class="aside__menu-item" data-ng-class="{'hover' : showPart}">
-                <a href="" class="aside__menu-link" data-ng-click="showPart = !showPart">
+            <div class="aside__menu-item" data-ng-class="{'hover' : showParts}">
+                <a href="" class="aside__menu-link" data-ng-click="showParts = !showParts">
                     <i class="aside__menu-icon icon-air-filter"></i>
                     <span class="aside__menu-text">Запчасти</span>
                 </a>
@@ -52,8 +52,5 @@
     </nav>
 
     <div data-ng-class="{'open' : showNew}" data-ng-include="'view/ui/aside/new.html'"></div>
-    <div data-ng-class="{'open' : showSettings}" data-ng-include="'view/ui/aside/settings.html'"></div>
-    <div data-ng-class="{'open' : showRent}" data-ng-include="'view/ui/aside/rent.html'"></div>
-    <div data-ng-class="{'open' : showSale}" data-ng-include="'view/ui/aside/sale.html'"></div>
-    <div data-ng-class="{'open' : showClient}" data-ng-include="'view/ui/aside/client.html'"></div>
+    <div data-ng-class="{'open' : showParts}" data-ng-include="'view/ui/aside/parts.html'"></div>
 </div>

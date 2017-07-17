@@ -1,7 +1,7 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/rent/", {
-            templateUrl: "view/rent/index.html",
-            controller: "rentCtrl"
+        $routeProvider.when("/parts/", {
+            templateUrl: "view/parts/index.html",
+            controller: "partsCtrl"
         });
     }
 ]);

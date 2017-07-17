@@ -1,75 +1,3 @@
-'use strict';
-
-var app = angular.module('site', [
-    'ngRoute', 
-    'isteven-multi-select',
-    'ui.bootstrap',
-    'hl.sticky',
-    'slick',
-    // 'hljs', 
-    // 'ngclipboard',
-    // 'duScroll',
-    // 'hl.sticky'
-]);
-
-app.config(['$locationProvider', '$routeProvider', function($locationProvider, routeProvider) {
-    // $locationProvider.html5Mode({
-    //     enabled: true,
-    //     requireBase: false,
-    //     rewriteLinks: true
-    // });
-}]);
-
-app.config(["$routeProvider", function($routeProvider) {
-    $routeProvider.otherwise({
-        redirectTo: "/"
-    });
-}]);
-
-
-
-app.controller('asideCtrl', function($scope){
-
-    $scope.showNew = false;
-    $scope.showSettings = false;
-    $scope.showRent = false;
-    $scope.showSale = false;
-    $scope.showClient = false;
-
-    // $scope.changeState = function(state){
-    //     state = !state;
-    // }
-});
-app.controller('mainCtrl', function($scope){
-
-    // $scope.showSettings = false;
-
-    // $scope.changeState = function(state){
-    //     state = !state;
-    // }
-});
-app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/", {
-            templateUrl: "view/home/index.html",
-            controller: "homeCtrl"
-        });
-    }
-]);
-
-app.controller('homeCtrl', function($scope){
-
-});
-app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/parts/", {
-            templateUrl: "view/parts/index.html",
-            controller: "partsCtrl"
-        });
-    }
-]);
-
-app.controller('rentCtrl', function($scope){
-
-});
 app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider.when("/parts/new", {
         templateUrl: "view/parts/new/index.html",
@@ -248,16 +176,5 @@ app.controller('partsNewCtrl', function ($scope) {
             action: '',
         }
     ];
-
-});
-app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/parts/used", {
-            templateUrl: "view/parts/used/index.html",
-            controller: "partsUsedCtrl"
-        });
-    }
-]);
-
-app.controller('partsUsedCtrl', function($scope){
 
 });

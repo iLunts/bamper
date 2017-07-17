@@ -1,4 +1,4 @@
-<section data-ng-include="'view/ui/filter/filter-rent-flat.html'"></section>
+<!-- <section data-ng-include="'view/ui/filter/filter-rent-flat.html'"></section> -->
 
 <div class="container--fluid m--v">
 
@@ -7,8 +7,8 @@
             <div class="col--3-10">
                 <h2 class="header__title">
                     <a href="/" class="link link--dashed header__title-text">Главная</a>
-                    <a href="/" class="link link--dashed header__title-text">Аренда</a>
-                    <span class="header__title-text active">Аренда квартир</span>
+                    <a href="/" class="link link--dashed header__title-text">Запчасти</a>
+                    <span class="header__title-text active">Новые</span>
                 </h2>
             </div>
             <div class="col--7-10">
@@ -18,7 +18,7 @@
                         <i class="btn__icon icon-filter_list"></i>
                     </button>
                     
-                    <div class="btn-group">
+                    <!-- <div class="btn-group">
                         <button class="btn">
                             <span class="btn__text">Печать</span>
                             <i class="btn__icon icon-print"></i>
@@ -35,14 +35,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <button class="btn">
+                    <!-- <button class="btn">
                         <span class="btn__text">Письмо</span>
                         <i class="btn__icon icon-mail_outline"></i>
-                    </button>
+                    </button> -->
 
-                    <div class="btn-group">
+                    <!-- <div class="btn-group">
                         <button class="btn btn--del">
                             <span class="btn__text">Удалить</span>
                             <i class="btn__icon icon-delete"></i>
@@ -58,11 +58,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                     <button class="btn btn--blue">
                         <i class="btn__icon icon-home"></i>
-                        <span class="btn__text">Добавить объект</span>
+                        <span class="btn__text">Добавить запчасть</span>
                     </button>
                 </div>
             </div>
@@ -71,7 +71,13 @@
     
     <div class="table">
         <div class="tr tr--thead">
-            <div class="th t--c" uib-dropdown dropdown-append-to-body auto-close="outsideClick">
+            <div class="th t--c" style="width: 40px;">
+                <div class="checkbox checkbox--empty checkbox--sm" role="menuitem">
+                    <input class="checkbox__input" type="checkbox" id="item_all" name="item_all">
+                    <label for="item_all" class="checkbox__label"></label>
+                </div>
+            </div>
+            <!-- <div class="th t--c" uib-dropdown dropdown-append-to-body auto-close="outsideClick">
                 <a href="" class="btn btn--sm t--bold" uib-dropdown-toggle>+</a>
                 <div class="dropdown-menu dropdown-menu--md" uib-dropdown-menu role="menu">
                     <div class="grid">
@@ -85,53 +91,39 @@
                             <hr class="m--b-sm">
                         </div>
                         <p class="col--1-1 t--c">
-                            <!--<a href="" class="btn btn--sm btn--blue col--1-1">Сбросить все...</a>-->
                             <a href="" class="link link--dashed t--md t--muted">Сбросить всё...</a>
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="th" data-ng-repeat="item in params" data-ng-class="{'active': item.sort}">
                 <span class="cursor--pointer" uib-tooltip="{{item.name}}" tooltip-placement="top">
                     {{item.socr}}
                 </span>
             </div>
         </div>
-        <div class="tr cursor--pointer" data-ng-repeat="item in rooms" data-ng-dblclick="openDetails()">
+        <!-- <div class="tr cursor--pointer" data-ng-repeat="item in rooms" data-ng-dblclick="openDetails()"> -->
+        <div class="tr cursor--pointer" data-ng-repeat="item in parts">
             <div class="td t--c">
                 <div class="checkbox checkbox--empty checkbox--sm" role="menuitem">
                     <input class="checkbox__input" type="checkbox" id="{{item.id}}" name="{{item.id}}">
                     <label for="{{item.id}}" class="checkbox__label"></label>
                 </div>
             </div>
+            <div class="td">{{item.status}}</div>
+             <div class="td">{{item.brand}}</div>
+            <div class="td">{{item.model}}</div>
+            <div class="td">{{item.date_build}}</div>
+            <div class="td">{{item.description}}</div>
+            <div class="td">{{item.article}}</div>
+            <div class="td">{{item.serial_number}}</div>
+            <div class="td">{{item.garage_info}}</div>
             <div class="td">{{item.price}}</div>
-            <div class="td">{{item.street}}</div>
-            <div class="td">№{{item.house_number}}</div>
-            <div class="td">{{item.room_number}}</div>
-            <div class="td">{{item.home_block}}</div>
-            <div class="td">{{item.floor}} из {{item.floor_max}}</div>
-            <div class="td">{{item.furniture}}</div>
-            <div class="td">{{item.refrigerator}}</div>
-            <div class="td">{{item.s_m}}</div>
-            <div class="td">{{item.cell}}</div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
-            <div class="td"></div>
+            <div class="td">{{item.date}}</div>
+            <div class="td">{{item.view}}</div>
+            <div class="td">{{item.action}}</div>
         </div>
     </div>
 </div>
 
-<section data-ng-include="'view/rent/flat/details.html'" data-ng-class="{'open' : showDetails}"></section>
+<section data-ng-include="'view/parts/new/details.html'" data-ng-class="{'open' : showDetails}"></section>
