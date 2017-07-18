@@ -11,22 +11,30 @@
 //                  `input--*`
 //
 // -----------------------------------------------------------------
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+// -----------------------------------------------------------------
 .input {
     position: relative;
     width: 100%;
     padding: (@input-padding / 1.5) @input-padding;
     color: @input-text-color;
     background: @input-background;
-    border: none;
-    border: 1px solid @input-border-color;
-    border-bottom: 2px solid @input-border-color;
+    // border: none;
+    border: 2px solid @input-border-color;
+    // border-bottom: 2px solid @input-border-color;
+    border-radius: 4px;
     margin-bottom: @input-margin;
     outline: none;
     -webkit-appearance: none;
     transition: all 200ms;
 
     &:focus{
-        border-bottom-color: @color-blue;
+        // border-color: @color-blue;
+        border-color: #03a9f4;
     }
 
     // -----------------------------------------------------------
@@ -57,18 +65,25 @@
 // Block '.label'
 // -----------------------------------------------------------------
 .label{
+    position: relative;
     display: block;
     width: 100%;
     height: 17px;
     // margin: @label-margin 0 0 0;
-    margin: 0;
+    margin: 0 0 6px 0;
     font-size: @label-font-size;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     letter-spacing: 0.5px;
-    font-weight: 600;
-    color: #9b9b9b;
+    font-weight: 400;
+    // color: #9b9b9b;
+    color: #78909c;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-transform: capitalize;
+
+    &:after{
+        content: ':';
+    }
 
     // -----------------------------------------------------------
     // All modificators
@@ -96,27 +111,38 @@
     &&--right{
 
         .input-group__input{
-            padding-right: 20px;
-        }
-    }
-
-    // Modificator '.input-group.input-group--prefix'
-    &&--prefix{
-
-        .input-group__input{
-            padding-left: 20px;
+            padding-right: 35px;
         }
 
         .input-group__prefix{
             position: absolute;
             top: 50%;
-            left: 3px;
+            left: auto;
+            right: 10px;
             font-size: 0.7rem;
-            // color: #9b9b9b;
             color: #c3c3c3;
             margin-top: -(-4 + @input-margin);
         }
     }
+
+    // Modificator '.input-group.input-group--prefix'
+    // &&--prefix{
+
+
+        // .input-group__input{
+        //     padding-left: 20px;
+        // }
+
+        // .input-group__prefix{
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 3px;
+        //     font-size: 0.7rem;
+        //     // color: #9b9b9b;
+        //     color: #c3c3c3;
+        //     margin-top: -(-4 + @input-margin);
+        // }
+    // }
 
     // -----------------------------------------------------------
     // All elements

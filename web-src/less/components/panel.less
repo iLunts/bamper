@@ -1,0 +1,28 @@
+// out: ../../../content/css/components/panel.css, compress: true
+@import 'variables.less';
+// Name:            panel
+// Description:     Defines styles to create layouts with panel
+//
+//
+// Component:       `.panel__*`
+// ----------------------------------------------------
+// Block '.panel'
+// ----------------------------------------------------
+.panel {
+    position: relative;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.panel .panel__content'
+    & &__content{
+        padding: @panel-padding;
+        background: #fff;
+    }
+
+}

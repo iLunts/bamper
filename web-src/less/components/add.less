@@ -1,0 +1,66 @@
+// out: ../../../content/css/components/add.css, compress: true
+@import 'variables.less';
+// Name:            add
+// Description:     Defines styles to create layouts with add
+//
+//
+// Component:       `.add__*`
+// ----------------------------------------------------
+// Block '.add'
+// ----------------------------------------------------
+.add {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.add .add__group'
+    & &__group{
+        border: 2px dashed #dbe5ea;
+        background-color: #fff;
+        padding: 20px;
+
+        & + .add__group{
+            border-top: none;
+        }
+
+        // State '.add .add__group.success'
+        &.isSuccess{
+            background: rgba(139, 195, 74, 0.05);
+            border-color: rgb(139, 195, 74);
+
+            // Element '.add .add__group.success .input'
+            .input{
+                border-color: rgb(139, 195, 74);
+            }
+
+            // Element '.add .add__group.success .add__header-title'
+            .add__header-title{
+                color: rgb(139, 195, 74);
+            }
+
+            // Element '.add .add__group.success .label'
+            .label{
+                color: #689f38;
+            }
+        }
+    }
+
+    // Element '.add .add__header'
+    & &__header{
+
+        &-title{
+            color: #03a9f4;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+    }
+
+}
