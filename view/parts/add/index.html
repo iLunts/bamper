@@ -102,7 +102,8 @@
                 </div> 
                 <div class="col--1-3">
                     <label class="label" for="">Артикул</label>
-                    <input class="input" type="text">
+                    <input class="input m--reset" type="text">
+                    <small class="t--muted t--sm">можно латинские буквы, цифры и -_ (a-z0-9-_)</small>
                 </div>
                 <div class="col--1-3">
                     <label class="label" for="">Оригинальный номер</label>
@@ -115,20 +116,40 @@
                 <div class="col--3-10">
                     <div class="add__header">
                         <p class="add__header-title">
-                            6. Цена
+                            5. Цена
                         </p>
                     </div>
                     <div class="grid">
                         <div class="col--1-1">
                             <label class="label" for="">Стоимость</label>
                             <div class="input-group input-group--right">
-                                <input class="input-group__input input" type="number">
+                                <input class="input-group__input input" type="number" data-ng-model="price">
                                 <span class="input-group__prefix">руб.</span>
                             </div>
                         </div>
-                        <div class="col--1-1">
+
+                        <div class="col--2-10">
                             <div class="checkbox">
-                                <input type="checkbox" name="cur-1" id="cur-1">
+                                <input class="checkbox__input" type="radio" name="cur-1" id="cur-1">
+                                <label class="checkbox__label" for="cur-1">BYN</label>
+                            </div>
+                        </div>
+                        <div class="col--2-10">
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="radio" name="cur-1" id="cur-2" checked>
+                                <label class="checkbox__label" for="cur-2">USD</label>
+                            </div>
+                        </div>
+                        <div class="col--2-10">
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="radio" name="cur-1" id="cur-3">
+                                <label class="checkbox__label" for="cur-3">EUR</label>
+                            </div>
+                        </div>
+                        <div class="col--2-10">
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="radio" name="cur-1" id="cur-4">
+                                <label class="checkbox__label" for="cur-4">RUB</label>
                             </div>
                         </div>
                     </div>
@@ -140,27 +161,99 @@
                         </p>
                     </div>
                     <div class="grid">
-                        <div class="col--1-2">
-                            <label class="label" for="">Запчасти</label>
-                            <input class="input" type="text">
+                        <div class="col--1-1">
+                            <label class="label" for="">Скидка</label>
+                            <div class="input-group input-group--right">
+                                <input class="input-group__input input" type="number" data-ng-model="sale">
+                                <span class="input-group__prefix">%</span>
+                            </div>
+                            <small class="t--muted t--sm" data-ng-class="sale < 5 ? 't--red' : 't--green'">скидки менее 5% - запрещены</small>
                         </div>
                     </div>
                 </div>
-                <div class="col--4-10">
+                <div class="col--4-10 price t--r">
+                    <div class="m--t-sm">
+                        <p class="t--muted t--sm m--b-mini">Итоговая цена для клиента</p>
+                        <div class="price__content">
+                            {{price}} 
+                            <span class="price__currency">
+                                USD
+                            </span>
+                        </div>
+                        <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add__group">
+            <div class="grid">
+                
+                <div class="col--1-2">
                     <div class="add__header">
                         <p class="add__header-title">
-                            5. Описание
+                            7. Описание
                         </p>
                     </div>
 
                     <div class="grid">
                         <div class="col--1-1">
                             <label class="label" for="">Текст</label>
-                            <textarea class="input input--textarea" name="" id="" rows="5"></textarea>
+                            <textarea class="input input--textarea" name="" id="" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col--1-2">
+                    <div class="add__header">
+                        <p class="add__header-title">
+                            8. Складская информация
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="col--1-1">
+                            <label class="label" for="">Текст</label>
+                            <textarea class="input input--textarea" name="" id="" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add__group">
+            <div class="grid">
+                
+                <div class="col--1-2">
+                    <div class="add__header">
+                        <p class="add__header-title">
+                            9. Контакты
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="col--1-1">
+                            <label class="label" for="">Текст</label>
+                            <textarea class="input input--textarea" name="" id="" rows="4"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="t--c m--t-lg">
+        <div class="checkbox d--ib">
+            <input class="checkbox__input" type="checkbox" name="activate" id="activate" checked>
+            <label class="checkbox__label" for="activate">активировать объявление</label>
+        </div>
+        <div class="checkbox d--ib m--l">
+            <input class="checkbox__input" type="checkbox" name="save-data" id="save-data">
+            <label class="checkbox__label" for="save-data">сохранить значения полей</label>
+        </div>
+    </div>
+    
+    <p class="t--c m--t-lg">
+        <a href="" class="btn btn--md btn--blue">Сохранить и добавить ещё</a>
+        <a href="" class="btn btn--md btn--white">Сохранить</a>
+        <a href="" class="btn btn--md btn--white">Выйти без сохранения</a>
+    </p>
 </div>

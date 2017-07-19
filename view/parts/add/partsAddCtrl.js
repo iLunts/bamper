@@ -8,4 +8,7 @@ app.config(["$routeProvider", function ($routeProvider) {
 
 app.controller('partsAddCtrl', function($scope){
 
+    $scope.sale = 0;
+    $scope.price = 0;
+
 });

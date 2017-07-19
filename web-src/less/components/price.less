@@ -1,0 +1,52 @@
+// out: ../../../content/css/components/price.css, compress: true
+@import 'variables.less';
+// Name:            price
+// Description:     Defines styles to create layouts with price
+//
+//
+// Component:       `.price__*`
+// ----------------------------------------------------
+// Block '.price'
+// ----------------------------------------------------
+.price {
+    position: relative;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.price .price__content'
+    & &__content{
+        position: relative;
+        display: inline-block;
+        padding: 15px 20px;
+        color: #542;
+        background: #ffd119;
+        border-radius: 0 5px 5px 0;
+        font-size: 1.2rem;
+        min-width: 160px;
+        text-align: center;
+        font-weight: 700;
+        text-shadow: 0 1px 0 #fff1b8;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: -48px;
+            top: 0;
+            border: 24px solid transparent;
+            border-right-color: #ffd119;
+        }
+    }
+
+    // Element '.price .price__currency'
+    & &__currency{
+        font-size: 0.7rem;
+        color: #94722f;
+    }
+}
