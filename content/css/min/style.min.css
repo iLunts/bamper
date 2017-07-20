@@ -1776,21 +1776,22 @@ fieldset {
 .header .header__icon {
   float: left;
   background: #3486db;
-  width: 40px;
-  height: 40px;
-  line-height: 34px;
+  width: 50px;
+  height: 50px;
+  line-height: 44px;
   border-radius: 4px;
   color: #fff;
   margin-right: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   box-shadow: 0 3px 15px 1px rgba(52,134,219,0.6);
 }
 
 .header .header__title {
   float: left;
-  margin: 0;
+  margin: 3px 0 0 0;
   font-weight: 600;
+  min-width: 50%;
 }
 
 .header .header__breadcrumb {
@@ -1798,6 +1799,7 @@ fieldset {
   margin: 0;
   font-size: .8rem;
   color: #bbb;
+  min-width: 50%;
 }
 
 .header .header__breadcrumb .link+.link {
@@ -1806,6 +1808,7 @@ fieldset {
 
 .header .header__btn {
   float: right;
+  margin-top: 10px;
 }
 
 .header .header__btn>* {
@@ -1852,8 +1855,8 @@ fieldset {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?kqj0bb");
-  src: url("../fonts/icomoon.eot?kqj0bb#iefix") format('embedded-opentype'),url("../fonts/icomoon.ttf?kqj0bb") format('truetype'),url("../fonts/icomoon.woff?kqj0bb") format('woff'),url("../fonts/icomoon.svg?kqj0bb#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?3oi1u0");
+  src: url("../fonts/icomoon.eot?3oi1u0#iefix") format('embedded-opentype'),url("../fonts/icomoon.ttf?3oi1u0") format('truetype'),url("../fonts/icomoon.woff?3oi1u0") format('woff'),url("../fonts/icomoon.svg?3oi1u0#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1869,6 +1872,119 @@ fieldset {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dashboard:before {
+  content: "\e91c";
+}
+
+.icon-wallet:before {
+  content: "\e91b";
+}
+
+.icon-settings:before {
+  content: "\e918";
+}
+
+.icon-air-filter:before {
+  content: "\e917";
+}
+
+.icon-ads .path1:before {
+  content: "\e900";
+  color: #000;
+}
+
+.icon-ads .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: #333;
+}
+
+.icon-ads .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: #333;
+}
+
+.icon-ads .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: #333;
+}
+
+.icon-ads .path5:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: #333;
+}
+
+.icon-browser:before {
+  content: "\e905";
+}
+
+.icon-car-painting:before {
+  content: "\e906";
+}
+
+.icon-damage:before {
+  content: "\e907";
+}
+
+.icon-evacuator:before {
+  content: "\e908";
+}
+
+.icon-exhaust-pipe:before {
+  content: "\e909";
+}
+
+.icon-hammer-and-wrench:before {
+  content: "\e90a";
+}
+
+.icon-jerrycan:before {
+  content: "\e90b";
+}
+
+.icon-oil:before {
+  content: "\e90c";
+}
+
+.icon-pie-chart:before {
+  content: "\e90d";
+}
+
+.icon-piston:before {
+  content: "\e90e";
+}
+
+.icon-request:before {
+  content: "\e90f";
+}
+
+.icon-timing-belt:before {
+  content: "\e910";
+}
+
+.icon-wheel:before {
+  content: "\e911";
+}
+
+.icon-hours:before {
+  content: "\e912";
+}
+
+.icon-ads-2:before {
+  content: "\e913";
+}
+
+.icon-balancing:before {
+  content: "\e914";
+}
+
+.icon-brake-disk:before {
+  content: "\e916";
 }
 
 .icon-my_location:before {
@@ -2005,115 +2121,6 @@ fieldset {
 
 .icon-sort:before {
   content: "\e164";
-}
-
-.icon-wallet:before {
-  content: "\e91b";
-}
-
-.icon-settings:before {
-  content: "\e918";
-}
-
-.icon-air-filter:before {
-  content: "\e917";
-}
-
-.icon-ads .path1:before {
-  content: "\e900";
-  color: #000;
-}
-
-.icon-ads .path2:before {
-  content: "\e901";
-  margin-left: -1em;
-  color: #333;
-}
-
-.icon-ads .path3:before {
-  content: "\e902";
-  margin-left: -1em;
-  color: #333;
-}
-
-.icon-ads .path4:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: #333;
-}
-
-.icon-ads .path5:before {
-  content: "\e904";
-  margin-left: -1em;
-  color: #333;
-}
-
-.icon-browser:before {
-  content: "\e905";
-}
-
-.icon-car-painting:before {
-  content: "\e906";
-}
-
-.icon-damage:before {
-  content: "\e907";
-}
-
-.icon-evacuator:before {
-  content: "\e908";
-}
-
-.icon-exhaust-pipe:before {
-  content: "\e909";
-}
-
-.icon-hammer-and-wrench:before {
-  content: "\e90a";
-}
-
-.icon-jerrycan:before {
-  content: "\e90b";
-}
-
-.icon-oil:before {
-  content: "\e90c";
-}
-
-.icon-pie-chart:before {
-  content: "\e90d";
-}
-
-.icon-piston:before {
-  content: "\e90e";
-}
-
-.icon-request:before {
-  content: "\e90f";
-}
-
-.icon-timing-belt:before {
-  content: "\e910";
-}
-
-.icon-wheel:before {
-  content: "\e911";
-}
-
-.icon-hours:before {
-  content: "\e912";
-}
-
-.icon-ads-2:before {
-  content: "\e913";
-}
-
-.icon-balancing:before {
-  content: "\e914";
-}
-
-.icon-brake-disk:before {
-  content: "\e916";
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
