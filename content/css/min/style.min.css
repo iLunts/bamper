@@ -2268,6 +2268,11 @@ p {
   line-height: 1.4;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .main {
   margin-left: 180px;
   height: 100%;
