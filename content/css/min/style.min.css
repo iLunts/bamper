@@ -218,6 +218,23 @@
   content: "\e7ff";
   color: #cdced0;
 }
+.badge {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.badge.badge--phone {
+  float: left;
+  background: #eee;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  color: #bbb;
+  font-size: 1.2rem;
+}
 .block {
   position: relative;
   box-sizing: border-box;
@@ -575,6 +592,7 @@
 }
 
 .link {
+  display: inline-block;
   outline: none;
   text-decoration: underline;
   color: inherit;
@@ -3486,6 +3504,10 @@ img {
 
 .m--v-sm {
   margin: 10px 0 !important;
+}
+
+.m--v-mini {
+  margin: 5px 0 !important;
 }
 
 .m--v-5 {
