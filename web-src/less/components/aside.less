@@ -155,6 +155,76 @@
     // All elements
     // -------------------------------------------------
 
+    // Element '.aside .aside__balance'
+    & &__balance{
+        position: relative;
+
+        &-content{
+            position: relative;
+            overflow: hidden;
+            padding: 10px 0;
+            color: #263238;
+            background-color: #e7f3ff;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.8rem;
+
+            &:before{
+                // content: '\e850';
+                content: '\e91b';
+                font-family: @font-icon;
+                position: absolute;
+                // color: rgba(52, 134, 219, 0.15);
+                color: #cde3fa;
+                font-size: 7rem;
+                bottom: -20px;
+                z-index: 1;
+            }
+        }
+
+        &-tarif{
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        &-price{
+            position: relative;
+            z-index: 2;
+            font-size: 1rem;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+
+        &-more{
+            position: relative;
+            z-index: 2;
+            font-size: 0.7rem;
+            margin: 5px 0 0 0;
+
+        }
+
+        &-payment{
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 18px;
+            background: @color-blue;
+            border-radius: 40px;
+            color: #fff;
+            margin-top: -15px;
+            border: 4px solid;
+            font-size: 1rem;
+            text-align: center;
+            box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.1);
+            z-index: 5;
+        }
+    }
+
     // Element '.aside .aside__add'
     & &__add{
         padding: 20px 0 10px;
