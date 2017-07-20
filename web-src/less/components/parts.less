@@ -1,0 +1,128 @@
+// out: ../../../content/css/components/parts.css, compress: true
+@import 'variables.less';
+// Name:            parts
+// Description:     Defines styles to create layouts with parts
+//
+//
+// Component:       `.parts__*`
+// ----------------------------------------------------
+// Block '.parts'
+// ----------------------------------------------------
+.parts {
+    position: relative;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.parts .parts__top'
+    & &__top{
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        font-size: 0.75rem;
+        color: #bbb;
+
+        .text{
+            margin: 0;
+
+            & > *{
+                vertical-align: middle;
+            }
+
+            & + .text{
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 1px solid #ddd;
+            }
+        }
+    }
+
+    // Element '.parts .parts__check'
+    & &__check{
+        float: left;
+        width: 3%;
+        // text-align: left;
+        margin-top: 25px;
+    }
+
+    // Element '.parts .parts__activity'
+    & &__activity{
+        float: left;
+        width: 3%;
+        margin-top: 22px;
+
+        .icon{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 40px;
+            text-align: center;
+        }
+
+        &-active{
+            color: @color-green;
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        &-inactive{
+            color: @color-red;
+            background-color: rgba(244, 67, 54, 0.2);
+        }
+    }
+
+    // Element '.parts .parts__name'
+    & &__name{
+        float: left;
+        width: 36%;
+        margin-top: 15px;
+
+        .splite{
+            margin-left: 10px;
+            padding-left: 10px;
+            border-left: 1px dotted #ddd;
+        }
+
+        &-title{
+            float: left;
+            margin: 0;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        &-subtitle{
+            float: left;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin: 5px 0 0 0;
+        }
+    }
+
+    // Element '.parts .parts__desc'
+    & &__desc{
+        float: left;
+        width: 40%;
+    }
+
+    // Element '.parts .parts__price'
+    & &__price{
+        float: left;
+        width: 18%;
+        text-align: right;
+
+        &-text{
+            display: inline-block;
+            background: #eee;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+    }
+}

@@ -69,7 +69,7 @@
         </div>
     </div>
     
-    <div class="table">
+    <!-- <div class="table">
         <div class="tr tr--thead">
             <div class="th t--c" style="width: 40px;">
                 <div class="checkbox checkbox--empty checkbox--sm" role="menuitem">
@@ -77,32 +77,12 @@
                     <label for="item_all" class="checkbox__label"></label>
                 </div>
             </div>
-            <!-- <div class="th t--c" uib-dropdown dropdown-append-to-body auto-close="outsideClick">
-                <a href="" class="btn btn--sm t--bold" uib-dropdown-toggle>+</a>
-                <div class="dropdown-menu dropdown-menu--md" uib-dropdown-menu role="menu">
-                    <div class="grid">
-                        <div class="col--1-2" role="menuitem" data-ng-repeat="item in params">
-                            <div class="checkbox checkbox--sm m--b-sm">
-                                <input class="checkbox__input" type="checkbox" id="{{$index}}" name="{{$index}}" data-ng-checked="item.check" data-ng-model="$index">
-                                <label for="{{$index}}" class="checkbox__label">{{item.name}}</label>
-                            </div>
-                        </div>
-                        <div class="col--1-1">
-                            <hr class="m--b-sm">
-                        </div>
-                        <p class="col--1-1 t--c">
-                            <a href="" class="link link--dashed t--md t--muted">Сбросить всё...</a>
-                        </p>
-                    </div>
-                </div>
-            </div> -->
             <div class="th" data-ng-repeat="item in params" data-ng-class="{'active': item.sort}">
                 <span class="cursor--pointer" uib-tooltip="{{item.name}}" tooltip-placement="top">
                     {{item.socr}}
                 </span>
             </div>
         </div>
-        <!-- <div class="tr cursor--pointer" data-ng-repeat="item in rooms" data-ng-dblclick="openDetails()"> -->
         <div class="tr cursor--pointer" data-ng-repeat="item in parts">
             <div class="td t--c">
                 <div class="checkbox checkbox--empty checkbox--sm" role="menuitem">
@@ -123,7 +103,50 @@
             <div class="td">{{item.view}}</div>
             <div class="td">{{item.action}}</div>
         </div>
+    </div> -->
+
+    <div class="parts">
+        <div class="panel panel--shadow panel--sm" data-ng-repeat="item in parts">
+            <div class="panel__content clearfix">
+                <div class="parts__top">
+                    <p class="text">
+                        <i class="icon icon-schedule"></i>
+                        <span>22.02.2017</span>
+                    </p>
+                </div>
+                <div class="parts__check">
+                    <div class="checkbox checkbox--empty checkbox--sm">
+                        <input class="checkbox__input" type="checkbox" id="{{$index}}" name="{{$index}}">
+                        <label for="{{$index}}" class="checkbox__label"></label>
+                    </div>
+                </div>
+                <div class="parts__activity">
+                     <i class="parts__activity-active icon icon-check"></i> 
+                     <!-- <i class="parts__activity-inactive icon icon-close"></i>  -->
+                </div>
+                <div class="parts__name">
+                    <p class="parts__name-title">
+                        <span>Mercedes-Benz</span>
+                        <span class="splite">A170 (W168)</span>
+                        <span class="splite">2003</span>
+                    </p>
+                    <p class="parts__name-subtitle">
+                        Механизм стеклоочистителя (трапеция дворников)
+                    </p>
+                </div>
+                <div class="parts__desc">
+                    <p class="m--reset t--sm t--muted">Оригинальный номер: <b>A2128101821 A212 810 18</b></p>
+                    <p class="m--reset t--sm t--muted">Артикул: <b>4847381</b></p>
+                    <p class="m--reset t--md">описание</p>
+                    <p class="m--reset t--md">складская информация</p>
+                </div>
+                <div class="parts__price">
+                     <p class="parts__price-text"> 
+                        123 <small class="t--sm">руб.</small>
+                     </p> 
+                    <p class="t--muted t--sm m--reset">Скидка 20%</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<section data-ng-include="'view/parts/new/details.html'" data-ng-class="{'open' : showDetails}"></section>

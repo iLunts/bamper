@@ -10,10 +10,28 @@
 // ----------------------------------------------------
 .panel {
     position: relative;
+    border-radius: 4px;
+
+    & + &{
+        margin-top: 10px;
+    }
     
     // -----------------------------------------
     // All modificators
     // -----------------------------------------
+
+    // Modificator '.panel.panel--sm'
+    &&--sm{
+
+        .panel__content{
+            padding: (@panel-padding / 2);
+        }
+    }
+
+    // Modificator '.panel.panel--shadow'
+    &&--shadow{
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    }
 
     // -----------------------------------------
     // All elements
@@ -23,6 +41,7 @@
     & &__content{
         padding: @panel-padding;
         background: #fff;
+        border-radius: 4px;
     }
 
 }
