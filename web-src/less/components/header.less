@@ -20,33 +20,64 @@
     // All elements
     // -----------------------------------------
 
+    // Element '.header .header__icon'
+    & &__icon{
+        float: left;
+        background: @color-blue;
+        width: 40px;
+        height: 40px;
+        line-height: 34px;
+        border-radius: 4px;
+        color: #fff;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        box-shadow: 0 3px 15px 1px rgba(52, 134, 219, 0.6);
+    }
+
     // Element '.header .header__title'
     & &__title{
+        float: left;
         margin: 0;
-        line-height: 26px;
+        font-weight: 600;
 
-        &-text{
-            position: relative;
-            color: #bbb;
-            font-size: 1rem;
-            font-weight: 400;
+        // &-text{
+        //     position: relative;
+        //     color: #bbb;
+        //     font-size: 1rem;
+        //     font-weight: 400;
 
-            & + .header__title-text{
-                margin-left: 16px;
+        //     & + .header__title-text{
+        //         margin-left: 16px;
 
-                &:before{
-                    content: '/';
-                    position: absolute;
-                    left: -14px;
-                    top: -4px;
-                    color: #ddd;
-                    font-weight: 300;
-                }
-            }
+        //         &:before{
+        //             content: '/';
+        //             position: absolute;
+        //             left: -14px;
+        //             top: -4px;
+        //             color: #ddd;
+        //             font-weight: 300;
+        //         }
+        //     }
 
-            &.active{
-                color: @color-blue;
-                font-weight: 600;
+        //     &.active{
+        //         color: @color-blue;
+        //         font-weight: 600;
+        //     }
+        // }
+    }
+
+    // Element '.header .header__breadcrumb'
+    & &__breadcrumb{
+        float: left;
+        margin: 0;
+        font-size: 0.8rem;
+        color: #bbb;
+
+        .link{
+
+            & + .link{
+                margin-left: 8px;
             }
         }
     }
