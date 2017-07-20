@@ -238,7 +238,52 @@
                 </div>
                 <div class="col--4-6 t--c">
                     <p class="m--b-sm t--sm">Если для объявления нужно указать другой телефон, можно</p>
-                    <a href="javascript:void(0)" class="btn btn--yellow">Ввести отдельные контакты</a>
+                    <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="showAdvacePhone = !showAdvacePhone">Ввести отдельные контакты</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="add__group" daga-ng-show="showAdvacePhone">
+            
+            <div class="add__header">
+                <p class="add__header-title">
+                    10. Новый контакты
+                </p>
+            </div>
+
+            <div class="grid">
+                <div class="col--2-6 push--2-6">
+                    <div>
+                        <label class="label">Мобильный телефон</label>
+                        <div class="input-group input-group--left input-group--icon">
+                            <input class="input-group__input input" type="text">
+                            <i class="input-group__icon icon icon-phone"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">Email</label>
+                        <div class="input-group input-group--left input-group--icon">
+                            <input class="input-group__input input" type="email">
+                            <i class="input-group__icon icon icon-mail_outline"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">Адрес</label>
+                        <div class="input-group input-group--left input-group--icon">
+                            <input class="input-group__input input" type="text">
+                            <i class="input-group__icon icon icon-my_location"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">Имя продавца</label>
+                        <div class="input-group input-group--left input-group--icon">
+                            <input class="input-group__input input" type="text">
+                            <i class="input-group__icon icon icon-person"></i>
+                        </div>
+                    </div>
+                    <p class="t--c">
+                        <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="showAdvacePhone = !showAdvacePhone">Сохранить</a>
+                    </p>
                 </div>
             </div>
             
@@ -257,7 +302,7 @@
         </div>
     </div>
     
-    <p class="t--c m--t-lg">
+    <p class="t--c m--v-lg">
         <a href="" class="btn btn--md btn--blue">Сохранить и добавить ещё</a>
         <a href="" class="btn btn--md btn--white">Сохранить</a>
         <a href="" class="btn btn--md btn--white">Выйти без сохранения</a>
