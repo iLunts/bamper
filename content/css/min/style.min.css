@@ -3036,28 +3036,37 @@ img {
   margin-top: 25px;
 }
 
-.parts .parts__activity {
+.parts .parts__img {
+  position: relative;
   float: left;
-  width: 3%;
-  margin-top: 22px;
+  width: 7%;
+  margin-top: 15px;
+  padding-right: 10px;
 }
 
-.parts .parts__activity .icon {
-  width: 25px;
-  height: 25px;
+.parts .parts__img-activity {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.parts .parts__img-activity .icon {
+  width: 35px;
+  height: 35px;
   line-height: 25px;
   border-radius: 40px;
   text-align: center;
+  border: 5px solid #fff;
 }
 
-.parts .parts__activity-active {
+.parts .parts__img-activity-active {
   color: #4CAF50;
-  background-color: rgba(76, 175, 80, 0.2);
+  background-color: #dbefdc;
 }
 
-.parts .parts__activity-inactive {
+.parts .parts__img-activity-inactive {
   color: #f44336;
-  background-color: rgba(244, 67, 54, 0.2);
+  background-color: #fdd9d7;
 }
 
 .parts .parts__name {
@@ -3088,7 +3097,7 @@ img {
 
 .parts .parts__desc {
   float: left;
-  width: 40%;
+  width: 36%;
 }
 
 .parts .parts__price {

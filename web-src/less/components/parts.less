@@ -3,7 +3,6 @@
 // Name:            parts
 // Description:     Defines styles to create layouts with parts
 //
-//
 // Component:       `.parts__*`
 // ----------------------------------------------------
 // Block '.parts'
@@ -51,30 +50,65 @@
         margin-top: 25px;
     }
 
-    // Element '.parts .parts__activity'
-    & &__activity{
+    // Element '.parts .parts__img'
+    & &__img{
+        position: relative;
         float: left;
-        width: 3%;
-        margin-top: 22px;
+        width: 7%;
+        margin-top: 15px;
+        padding-right: 10px;
+    
+        // Element '.parts .parts__img-activity'
+        &-activity{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+            .icon{
+                width: 35px;
+                height: 35px;
+                line-height: 25px;
+                border-radius: 40px;
+                text-align: center;
+                border: 5px solid #fff;
+            }
 
-        .icon{
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            border-radius: 40px;
-            text-align: center;
-        }
+            &-active{
+                color: @color-green;
+                background-color: #dbefdc;
+            }
 
-        &-active{
-            color: @color-green;
-            background-color: rgba(76, 175, 80, 0.2);
-        }
-
-        &-inactive{
-            color: @color-red;
-            background-color: rgba(244, 67, 54, 0.2);
+            &-inactive{
+                color: @color-red;
+                background-color: #fdd9d7;
+            }
         }
     }
+
+    // Element '.parts .parts__activity'
+    // & &__activity{
+    //     float: left;
+    //     width: 3%;
+    //     margin-top: 22px;
+
+    //     .icon{
+    //         width: 25px;
+    //         height: 25px;
+    //         line-height: 25px;
+    //         border-radius: 40px;
+    //         text-align: center;
+    //     }
+
+    //     &-active{
+    //         color: @color-green;
+    //         background-color: rgba(76, 175, 80, 0.2);
+    //     }
+
+    //     &-inactive{
+    //         color: @color-red;
+    //         background-color: rgba(244, 67, 54, 0.2);
+    //     }
+    // }
 
     // Element '.parts .parts__name'
     & &__name{
@@ -106,7 +140,7 @@
     // Element '.parts .parts__desc'
     & &__desc{
         float: left;
-        width: 40%;
+        width: 36%;
     }
 
     // Element '.parts .parts__price'
