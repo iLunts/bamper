@@ -1,1 +1,86 @@
-.parts{position:relative}.parts .parts__top{position:absolute;top:6px;left:7px;font-size:.75rem;color:#bbb}.parts .parts__top .text{margin:0}.parts .parts__top .text>*{vertical-align:middle}.parts .parts__top .text+.text{margin-left:10px;padding-left:10px;border-left:1px solid #ddd}.parts .parts__check{float:left;width:3%;margin-top:25px}.parts .parts__activity{float:left;width:3%;margin-top:22px}.parts .parts__activity .icon{width:25px;height:25px;line-height:25px;border-radius:40px;text-align:center}.parts .parts__activity-active{color:#4CAF50;background-color:rgba(76,175,80,0.2)}.parts .parts__activity-inactive{color:#f44336;background-color:rgba(244,67,54,0.2)}.parts .parts__name{float:left;width:36%;margin-top:15px}.parts .parts__name .splite{margin-left:10px;padding-left:10px;border-left:1px dotted #ddd}.parts .parts__name-title{float:left;margin:0;font-weight:500;font-size:.8rem}.parts .parts__name-subtitle{float:left;font-weight:600;font-size:.8rem;margin:5px 0 0 0}.parts .parts__desc{float:left;width:40%}.parts .parts__price{float:left;width:18%;text-align:right}.parts .parts__price-text{display:inline-block;background:#eee;padding:5px 10px;border-radius:4px;font-size:1.1rem;font-weight:600;margin:0 0 5px 0}
+.parts {
+  position: relative;
+}
+.parts .parts__top {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-size: 0.75rem;
+  color: #bbb;
+}
+.parts .parts__top .text {
+  margin: 0;
+}
+.parts .parts__top .text > * {
+  vertical-align: middle;
+}
+.parts .parts__top .text + .text {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #ddd;
+}
+.parts .parts__check {
+  float: left;
+  width: 3%;
+  margin-top: 25px;
+}
+.parts .parts__activity {
+  float: left;
+  width: 3%;
+  margin-top: 22px;
+}
+.parts .parts__activity .icon {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 40px;
+  text-align: center;
+}
+.parts .parts__activity-active {
+  color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.2);
+}
+.parts .parts__activity-inactive {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.2);
+}
+.parts .parts__name {
+  float: left;
+  width: 36%;
+  margin-top: 15px;
+}
+.parts .parts__name .splite {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px dotted #ddd;
+}
+.parts .parts__name-title {
+  float: left;
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.parts .parts__name-subtitle {
+  float: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 5px 0 0 0;
+}
+.parts .parts__desc {
+  float: left;
+  width: 40%;
+}
+.parts .parts__price {
+  float: left;
+  width: 18%;
+  text-align: right;
+}
+.parts .parts__price-text {
+  display: inline-block;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}

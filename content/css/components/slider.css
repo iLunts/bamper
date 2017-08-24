@@ -1,1 +1,31 @@
-.slick-dots{bottom:-16px;display:flex;align-items:center;justify-content:space-between}.slick-dots li{width:100%;height:auto;background:#fff;margin:0;padding:5px}.slick-dots li:first-child{padding-left:0}.slick-dots li:last-child{padding-right:0}.slick-dots li.slick-active button{background-color:#f04e23}.slick-dots li button{height:6px;width:100%;padding:0;background-color:#e6e6e6}.slick-dots li button:before{content:none}
+.slick-dots {
+  bottom: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slick-dots li {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin: 0;
+  padding: 5px;
+}
+.slick-dots li:first-child {
+  padding-left: 0;
+}
+.slick-dots li:last-child {
+  padding-right: 0;
+}
+.slick-dots li.slick-active button {
+  background-color: #f04e23;
+}
+.slick-dots li button {
+  height: 6px;
+  width: 100%;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+.slick-dots li button:before {
+  content: none;
+}

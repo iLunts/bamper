@@ -1,1 +1,59 @@
-.room .room__title{font-size:1.6rem;line-height:1.6rem;margin:15px 0}.room .room__price-val{font-size:23px;font-weight:700;height:26px;margin:12px 0 10px}.room .room__price-meter{font-size:13px;line-height:18px;margin-bottom:15px;color:#999}.room .room__grid-border .room__slider{border-right:2px solid #fff}.room .room__grid-border .panorama{border-bottom:2px solid #fff}.room .room__slider{position:relative;background:#eee}.room .room__slider-item{position:relative;height:308px;overflow:hidden}.room .room__slider-img{background-position:center center;background-size:contain;background-repeat:no-repeat;position:absolute;left:0;top:0;right:0;bottom:0;height:308px}.room .room__phone-owner{display:inline-block;vertical-align:middle;margin-left:10px;font-weight:600;font-size:1.1rem;text-transform:capitalize}.room .room__desc{font-size:.8rem}.room .room__desc-title{margin:0 0 8px 0;font-weight:700;font-size:1.1rem}
+.room .room__title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin: 15px 0;
+}
+.room .room__price-val {
+  font-size: 23px;
+  font-weight: 700;
+  height: 26px;
+  margin: 12px 0 10px;
+}
+.room .room__price-meter {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  color: #999;
+}
+.room .room__grid-border .room__slider {
+  border-right: 2px solid #fff;
+}
+.room .room__grid-border .panorama {
+  border-bottom: 2px solid #fff;
+}
+.room .room__slider {
+  position: relative;
+  background: #eee;
+}
+.room .room__slider-item {
+  position: relative;
+  height: 308px;
+  overflow: hidden;
+}
+.room .room__slider-img {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 308px;
+}
+.room .room__phone-owner {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+.room .room__desc {
+  font-size: 0.8rem;
+}
+.room .room__desc-title {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}

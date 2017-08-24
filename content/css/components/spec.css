@@ -1,1 +1,52 @@
-.spec .spec__row{position:relative;overflow:hidden;margin-bottom:8px}.spec .spec__row:after{content:'';display:block;clear:both}.spec .spec__row:before{content:'........................................................................................................';position:absolute;bottom:0;font-size:10px;padding-left:4px;letter-spacing:3px;color:#bbb;line-height:16px}.spec .spec__text{vertical-align:middle}.spec .spec__text-icon{font-size:.9rem;color:#bbb;padding:5px;border-radius:60px;background:rgba(187,187,187,0.1)}.spec .spec__text-icon.spec__text-icon--check{color:#00a651;background:rgba(0,166,81,0.1)}.spec .spec__item{position:relative;background:#fff;padding:0 10px;z-index:1}.spec .spec__item.spec__item--left{float:left;padding-left:0}.spec .spec__item.spec__item--right{float:right;min-width:50px;text-align:center}.spec .spec__item.spec__item--right .spec__text{font-weight:700}
+.spec .spec__row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.spec .spec__row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.spec .spec__row:before {
+  content: '........................................................................................................';
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  padding-left: 4px;
+  letter-spacing: 3px;
+  color: #bbb;
+  line-height: 16px;
+}
+.spec .spec__text {
+  vertical-align: middle;
+}
+.spec .spec__text-icon {
+  font-size: 0.9rem;
+  color: #bbb;
+  padding: 5px;
+  border-radius: 60px;
+  background: rgba(187, 187, 187, 0.1);
+}
+.spec .spec__text-icon.spec__text-icon--check {
+  color: #4CAF50;
+  background: rgba(0, 166, 81, 0.1);
+}
+.spec .spec__item {
+  position: relative;
+  background: #fff;
+  padding: 0 10px;
+  z-index: 1;
+}
+.spec .spec__item.spec__item--left {
+  float: left;
+  padding-left: 0;
+}
+.spec .spec__item.spec__item--right {
+  float: right;
+  min-width: 50px;
+  text-align: center;
+}
+.spec .spec__item.spec__item--right .spec__text {
+  font-weight: 700;
+}

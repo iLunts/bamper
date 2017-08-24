@@ -1,1 +1,18 @@
-.panel{position:relative;border-radius:4px}.panel+.panel{margin-top:10px}.panel.panel--sm .panel__content{padding:10px}.panel.panel--shadow{box-shadow:0 3px 10px 0 rgba(0,0,0,0.1)}.panel .panel__content{padding:20px;background:#fff;border-radius:4px}
+.panel {
+  position: relative;
+  border-radius: 4px;
+}
+.panel + .panel {
+  margin-top: 10px;
+}
+.panel.panel--sm .panel__content {
+  padding: 10px;
+}
+.panel.panel--shadow {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.panel .panel__content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}

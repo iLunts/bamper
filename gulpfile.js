@@ -11,7 +11,7 @@ var browserSync = require('browser-sync').create();
 // var install = require("gulp-install");
 
 // gulp.task('default', ['scripts', 'less', 'minify-css'], function() {});
-gulp.task('default', ['scripts', 'minify-css'], function() {});
+gulp.task('default', ['less', 'scripts', 'minify-css'], function() {});
 
 gulp.task('scripts', function() {
   return gulp.src(['web-src/js/*.js', 'view/**/*.js'])
