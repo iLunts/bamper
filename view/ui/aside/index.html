@@ -11,12 +11,12 @@
                 <p class="aside__balance-tarif">« Освободи гараж »</p>
                 <p class="aside__balance-price">200 руб.</p>
                 <p class="aside__balance-more">
-                    <a href="javascript:void(0)" class="link link--dashed">подробнее</a>
+                    <a href="javascript:void(0)" class="link link--reset">пополнить баланс</a>
                 </p>
             </div>
-            <a href="" class="aside__balance-payment">
+            <!-- <a href="" class="aside__balance-payment">
                 <i class="icon icon-add"></i>
-            </a>
+            </a> -->
         </div>
 
         <div class="aside__add t--c">
@@ -32,10 +32,17 @@
                     <span class="aside__menu-text">Объявления</span>
                 </a>
             </div>
-            <div class="aside__menu-item" data-ng-class="{'hover' : showParts}">
-                <a href="" class="aside__menu-link" data-ng-click="showParts = !showParts">
+            <div class="aside__menu-item aside__menu-item--submenu" data-ng-class="{'hover' : showParts}">
+                <!-- <a href="" class="aside__menu-link" data-ng-click="showParts = !showParts"> -->
+                <a href="" class="aside__menu-link">
                     <i class="aside__menu-icon icon-air-filter"></i>
                     <span class="aside__menu-text">Запчасти</span>
+                </a>
+                <a href="" class="aside__menu-link aside__menu-link--sublink">
+                    <span class="aside__menu-text">Новые</span>
+                </a>
+                <a href="" class="aside__menu-link aside__menu-link--sublink">
+                    <span class="aside__menu-text">Б/У</span>
                 </a>
             </div>
             <div class="aside__menu-item">
