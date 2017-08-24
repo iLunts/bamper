@@ -1,6 +1,9 @@
 .t--muted {
   color: #999 !important;
 }
+.t--black {
+  color: #000 !important;
+}
 .t--r {
   text-align: right !important;
 }

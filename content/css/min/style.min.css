@@ -3046,7 +3046,7 @@ img {
 
 .parts .parts__img-activity {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -3500,6 +3500,10 @@ img {
 }
 .t--muted {
   color: #999 !important;
+}
+
+.t--black {
+  color: #000 !important;
 }
 
 .t--r {
