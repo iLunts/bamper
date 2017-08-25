@@ -1,48 +1,30 @@
 .parts {
   position: relative;
 }
-.parts .parts__top {
-  position: absolute;
-  top: 6px;
-  left: 7px;
-  font-size: 0.75rem;
-  color: #bbb;
-}
-.parts .parts__top .text {
-  margin: 0;
-}
-.parts .parts__top .text > * {
-  vertical-align: middle;
-}
-.parts .parts__top .text + .text {
-  margin-left: 10px;
-  padding-left: 10px;
-  border-left: 1px solid #ddd;
-}
 .parts .parts__check {
   float: left;
   width: 3%;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .parts .parts__img {
   position: relative;
   float: left;
-  width: 7%;
-  margin-top: 15px;
+  width: 5%;
   padding-right: 10px;
 }
 .parts .parts__img-activity {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: 0;
 }
 .parts .parts__img-activity .icon {
-  width: 35px;
-  height: 35px;
-  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
   border-radius: 40px;
   text-align: center;
   border: 5px solid #fff;
+  font-size: 0.8rem;
 }
 .parts .parts__img-activity-active {
   color: #4CAF50;
@@ -55,7 +37,6 @@
 .parts .parts__name {
   float: left;
   width: 36%;
-  margin-top: 15px;
 }
 .parts .parts__name .splite {
   margin-left: 10px;
