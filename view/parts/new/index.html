@@ -6,7 +6,7 @@
         <div class="grid">
             <div class="col--3-10">
                 <span class="header__icon">
-                    <i class="icon icon-air-filter"></i>
+                    <i class="icon icon-hammer-and-wrench"></i>
                 </span>
                 <p class="header__title">
                     Новые запчасти
@@ -35,12 +35,12 @@
     <div class="parts">
         <div class="panel panel--shadow panel--sm" data-ng-repeat="item in parts">
             <div class="panel__content clearfix">
-                <!-- <div class="parts__top">
+                <div class="parts__top">
                     <p class="text">
                         <i class="icon icon-schedule"></i>
                         <span>22.02.2017</span>
                     </p>
-                </div> -->
+                </div>
                 <div class="parts__check">
                     <div class="checkbox checkbox--empty checkbox--sm">
                         <input class="checkbox__input" type="checkbox" id="{{$index}}" name="{{$index}}">
@@ -74,10 +74,35 @@
                     <p class="m--reset t--md">описание</p>
                     <!-- <p class="m--reset t--md">складская информация</p> -->
                 </div>
+                <div class="parts__stat">
+                    <span class="badge badge--view">
+                        <i class="badge__icon icon icon-cursor"></i>
+                        12
+                    </span>
+                    <span class="badge badge--view">
+                        <i class="badge__icon icon icon-eye"></i>
+                        124
+                    </span>
+                </div>
                 <div class="parts__price">
-                     <p class="parts__price-text"> 
+                    <div class="parts__action">
+                        <a href="" class="btn">
+                            <i class="icon icon-edit"></i>
+                        </a>
+                        <a href="" class="btn">
+                            <i class="icon icon-picture"></i>
+                        </a>
+                        <a href="" class="btn">
+                            <i class="icon icon-eye"></i>
+                        </a>
+                        <a href="" class="btn">
+                            <i class="icon icon-garbage"></i>
+                        </a>
+                    </div>
+
+                    <p class="parts__price-text"> 
                         123 <small class="t--sm">руб.</small>
-                     </p> 
+                    </p> 
                     <p class="t--muted t--sm m--reset">Скидка 20%</p>
                 </div>
             </div>

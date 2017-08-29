@@ -301,6 +301,12 @@
   color: #bbb;
   font-size: 1.2rem;
 }
+
+.badge.badge--view {
+  border-radius: 100px;
+  border: 2px solid #eee;
+  padding: 2px 10px;
+}
 .block {
   position: relative;
   box-sizing: border-box;
@@ -1818,7 +1824,7 @@ fieldset {
   margin-right: 10px;
   text-align: center;
   font-size: 1.8rem;
-  box-shadow: 0 3px 15px 1px rgba(52, 134, 219, 0.6);
+  box-shadow: 0 3px 15px 1px rgba(52,134,219,0.6);
 }
 
 .header .header__title {
@@ -1834,7 +1840,7 @@ fieldset {
   margin-top: 10px;
 }
 
-.header .header__btn > * {
+.header .header__btn>* {
   display: inline-block;
   vertical-align: middle;
   line-height: 26px;
@@ -1878,8 +1884,8 @@ fieldset {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?3oi1u0");
-  src: url("../fonts/icomoon.eot?3oi1u0#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?3oi1u0") format('truetype'), url("../fonts/icomoon.woff?3oi1u0") format('woff'), url("../fonts/icomoon.svg?3oi1u0#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?b551m2");
+  src: url("../fonts/icomoon.eot?b551m2#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?b551m2") format('truetype'), url("../fonts/icomoon.woff?b551m2") format('woff'), url("../fonts/icomoon.svg?b551m2#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1897,6 +1903,38 @@ fieldset {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clicker:before {
+  content: "\e923";
+}
+
+.icon-cursor:before {
+  content: "\e924";
+}
+
+.icon-gallery:before {
+  content: "\e91d";
+}
+
+.icon-edit:before {
+  content: "\e91e";
+}
+
+.icon-eye:before {
+  content: "\e91f";
+}
+
+.icon-garbage:before {
+  content: "\e920";
+}
+
+.icon-picture:before {
+  content: "\e921";
+}
+
+.icon-picture-sq:before {
+  content: "\e922";
 }
 
 .icon-dashboard:before {
@@ -2980,7 +3018,7 @@ img {
   position: relative;
   display: block;
   padding: 22px 0;
-  background: url("/content/img/maps-panorama.png");
+  background: url("../../content/img/maps-panorama.png");
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -3008,6 +3046,28 @@ img {
   position: relative;
 }
 
+.parts .parts__top {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-size: .75rem;
+  color: #bbb;
+}
+
+.parts .parts__top .text {
+  margin: 0;
+}
+
+.parts .parts__top .text>* {
+  vertical-align: middle;
+}
+
+.parts .parts__top .text+.text {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #ddd;
+}
+
 .parts .parts__check {
   float: left;
   width: 3%;
@@ -3018,12 +3078,13 @@ img {
   position: relative;
   float: left;
   width: 5%;
+  margin-top: 15px;
   padding-right: 10px;
 }
 
 .parts .parts__img-activity {
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   right: 0;
 }
 
@@ -3034,7 +3095,7 @@ img {
   border-radius: 40px;
   text-align: center;
   border: 5px solid #fff;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .parts .parts__img-activity-active {
@@ -3062,35 +3123,71 @@ img {
   float: left;
   margin: 0;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .parts .parts__name-subtitle {
   float: left;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: .8rem;
   margin: 5px 0 0 0;
 }
 
 .parts .parts__desc {
   float: left;
-  width: 36%;
+  width: 34%;
 }
 
 .parts .parts__price {
   float: left;
-  width: 18%;
-  text-align: right;
+  width: 14%;
+  text-align: center;
 }
 
 .parts .parts__price-text {
   display: inline-block;
-  background: #eee;
-  padding: 5px 10px;
   border-radius: 4px;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 5px 0;
+  margin: 0;
+}
+
+.parts .parts__action {
+  margin-bottom: 7px;
+}
+
+.parts .parts__action .btn {
+  width: 18px;
+  height: 18px;
+  background: #eee;
+  color: #888;
+  padding: 0;
+  line-height: 18px;
+  font-size: .6rem;
+}
+
+.parts .parts__stat {
+  float: left;
+  width: 8%;
+}
+
+.parts .parts__stat .badge {
+  padding: 0 10px 0 0;
+  font-weight: 600;
+  color: #777;
+  font-size: .7rem;
+}
+
+.parts .parts__stat .badge+.badge {
+  margin-top: 8px;
+}
+
+.parts .parts__stat .badge__icon {
+  background: #eee;
+  border-radius: 100px;
+  padding: 5px;
+  color: #333;
+  font-size: .85rem;
 }
 .price {
   position: relative;

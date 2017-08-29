@@ -20,27 +20,27 @@
     // -----------------------------------------
 
     // Element '.parts .parts__top'
-    // & &__top{
-    //     position: absolute;
-    //     top: 6px;
-    //     left: 7px;
-    //     font-size: 0.75rem;
-    //     color: #bbb;
+    & &__top{
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        font-size: 0.75rem;
+        color: #bbb;
 
-    //     .text{
-    //         margin: 0;
+        .text{
+            margin: 0;
 
-    //         & > *{
-    //             vertical-align: middle;
-    //         }
+            & > *{
+                vertical-align: middle;
+            }
 
-    //         & + .text{
-    //             margin-left: 10px;
-    //             padding-left: 10px;
-    //             border-left: 1px solid #ddd;
-    //         }
-    //     }
-    // }
+            & + .text{
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 1px solid #ddd;
+            }
+        }
+    }
 
     // Element '.parts .parts__check'
     & &__check{
@@ -55,7 +55,7 @@
         position: relative;
         float: left;
         width: 5%;
-        // margin-top: 15px;
+        margin-top: 15px;
         padding-right: 10px;
     
         // Element '.parts .parts__img-activity'
@@ -115,7 +115,6 @@
     & &__name{
         float: left;
         width: 36%;
-        // margin-top: 15px;
 
         .splite{
             margin-left: 10px;
@@ -141,23 +140,64 @@
     // Element '.parts .parts__desc'
     & &__desc{
         float: left;
-        width: 36%;
+        width: 34%;
     }
 
     // Element '.parts .parts__price'
     & &__price{
         float: left;
-        width: 18%;
-        text-align: right;
-
+        width: 14%;
+        text-align: center;
+        
         &-text{
             display: inline-block;
-            background: #eee;
-            padding: 5px 10px;
             border-radius: 4px;
             font-size: 1.1rem;
             font-weight: 600;
-            margin: 0 0 5px 0;
+            margin: 0;
+            // background: #eee;
+            // padding: 5px 10px;
+            // margin: 0 0 5px 0;
+        }
+    }
+
+    // Element '.parts .parts__action'
+    & &__action{
+        margin-bottom: 7px;
+        
+        .btn{
+            width: 18px;
+            height: 18px;
+            background: #eee;
+            color: #888;
+            padding: 0;
+            line-height: 18px;
+            font-size: 0.6rem;
+        }
+    }
+
+    // Element '.parts .parts__stat'
+    & &__stat{
+        float: left;
+        width: 8%;
+
+        .badge{
+            padding: 0 10px 0 0;
+            font-weight: 600;
+            color: #777;
+            font-size: 0.7rem;
+            
+            & + .badge{
+                margin-top: 8px;
+            }
+            
+            &__icon{
+                background: #eee;
+                border-radius: 100px;
+                padding: 5px;
+                color: #333;
+                font-size: 0.85rem;
+            }
         }
     }
 }
