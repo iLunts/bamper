@@ -3,7 +3,7 @@
 
     <div class="header m--v">
         <div class="grid">
-            <div class="col--3-10">
+            <div class="col--5-10">
                 <span class="header__icon">
                     <i class="icon icon-air-filter"></i>
                 </span>
@@ -11,7 +11,7 @@
                     Создание новый запчасти
                 </p>
             </div>
-            <div class="col--7-10">
+            <div class="col--5-10">
                 <div class="header__btn">                    
                     <button class="btn" data-ng-model="showFilter" uib-btn-checkbox>
                         <span class="btn__text">Фильтр</span>
@@ -183,16 +183,14 @@
                     </div>
                 </div>
                 <div class="col--4-10 price t--r">
-                    <div class="m--t-sm">
-                        <p class="t--muted t--sm m--b-mini">Итоговая цена для клиента</p>
-                        <div class="price__content">
-                            {{price}} 
-                            <span class="price__currency">
-                                USD
-                            </span>
-                        </div>
-                        <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
+                    <p class="t--muted t--sm m--b-mini">Итоговая цена для клиента</p>
+                    <div class="price__content">
+                        {{price}} 
+                        <span class="price__currency">
+                            USD
+                        </span>
                     </div>
+                    <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
                 </div>
             </div>
         </div>
@@ -210,13 +208,12 @@
                 </div>
                 <div class="col--4-6 t--c">
                     <p class="m--b-sm t--sm">Если для объявления нужно указать другой телефон, можно</p>
-                    <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="showAdvacePhone = !showAdvacePhone">Ввести отдельные контакты</a>
+                    <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="isShowContatc = !isShowContatc">Ввести отдельные контакты</a>
                 </div>
-            </div>
-            
+            </div>    
         </div>
-        <div class="add__group" daga-ng-show="showAdvacePhone">
-            
+
+        <div class="add__group collapse" data-uib-collapse="isShowContatc">
             <div class="add__header">
                 <p class="add__header-title">
                     4. Контакты
