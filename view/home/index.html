@@ -53,34 +53,27 @@
                 </p>
             </div>
 
-            <div class="panel panel--shadow">
-                <div class="panel__content">
-                    123
+            <div class="news">
+                <div class="panel panel--shadow" data-ng-repeat="item in news">
+                    <div class="news__teaser panel__teaser">
+                        <div class="news__teaser-overlay"></div>
+                        <div class="news__teaser-img" style="background-image: url({{item.img}});"></div>
+                        <p class="news__teaser-type">{{item.type}}</p>
+                        <p class="news__teaser-title">{{item.title}}</p>
+                    </div>
+                    <div class="panel__content">
+                        <p class="news__date">
+                            {{item.date}}
+                        </p>
+                        <p class="news__text">
+                            {{item.text}}
+                        </p>
+                        <p class="t--r m--t-sm">
+                            <a href="#" class="btn btn--gray btn--sm">Подробнее...</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-<!-- <div class="container">
-    <div class="grid">
-        <div class="col--6-10">
-            <div class="panel">
-                <img src="content/img/dash/stats.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="col--3-10">
-            <div class="panel">
-                <img src="content/img/dash/stats-1.jpg" alt="">
-            </div>
-        </div>
-        <div class="col--3-10">
-            <div class="panel">
-                <img src="content/img/dash/stats-1.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</div> -->

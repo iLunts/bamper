@@ -1,0 +1,88 @@
+// out: ../../../content/css/components/news.css, compress: true
+@import 'variables.less';
+// Name:            news
+// Description:     Defines styles to create layouts with news
+//
+//
+// Component:       `.news__*`
+// ----------------------------------------------------
+// Block '.news'
+// ----------------------------------------------------
+.news {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+    
+    // Element '.news .news__teaser'
+    & &__teaser{
+        position: relative;
+        background-color: #fff;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: @panel-padding;
+        padding-top: (@panel-padding * 3);
+        
+        // Element '.news .news__teaser-overlay'
+        &-overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        // Element '.news .news__teaser-img'
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        // Element '.news .news__teaser-title'
+        &-title{
+            position: relative;
+            margin: 0;
+            z-index: 2;
+            font-weight: 600;
+        }
+        
+        // Element '.news .news__teaser-type'
+        &-type{
+            position: relative;
+            color: @color-blue;
+            font-size: 0.7rem;
+            padding: 4px 12px;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: inline-block;
+            border-radius: 20px;
+            z-index: 1;
+        }
+    }
+
+    // Element '.news .news__date'
+    & &__date{
+        color: @color-blue;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    // Element '.news .news__date'
+    & &__text{
+        color: #333;
+        font-size: 0.85rem;
+    }
+    
+}
