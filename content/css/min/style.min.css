@@ -8,6 +8,10 @@
   border-top: none;
 }
 
+.add .add__group .grid + .grid {
+  margin-top: 15px;
+}
+
 .add .add__group.isSuccess {
   background: rgba(139, 195, 74, 0.05);
   border-color: #8bc34a;
