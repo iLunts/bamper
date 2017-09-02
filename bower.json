@@ -22,5 +22,8 @@
     "angular-bootstrap": "^2.5.0",
     "angular-sticky": "angular-sticky-plugin#^0.4.1",
     "angular-slick": "^0.2.1"
+  },
+  "dependencies": {
+    "angular-chart.js": "^1.1.1"
   }
 }

@@ -4,16 +4,16 @@
   padding: 20px;
 }
 
-.add .add__group+.add__group {
+.add .add__group + .add__group {
   border-top: none;
 }
 
-.add .add__group .grid+.grid {
+.add .add__group .grid + .grid {
   margin-top: 10px;
 }
 
 .add .add__group.isSuccess {
-  background: rgba(139,195,74,0.05);
+  background: rgba(139, 195, 74, 0.05);
   border-color: #8bc34a;
 }
 
@@ -32,7 +32,45 @@
 .add .add__header-title {
   color: #03a9f4;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.add .add__group {
+  border: 2px dashed #dbe5ea;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.add .add__group + .add__group {
+  border-top: none;
+}
+
+.add .add__group .grid + .grid {
+  margin-top: 10px;
+}
+
+.add .add__group.isSuccess {
+  background: rgba(139, 195, 74, 0.05);
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .input {
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .add__header-title {
+  color: #8bc34a;
+}
+
+.add .add__group.isSuccess .label {
+  color: #689f38;
+}
+
+.add .add__header-title {
+  color: #03a9f4;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   font-weight: 700;
   margin: 0 0 10px 0;
 }
@@ -1829,6 +1867,12 @@ fieldset {
   margin: 10px 0 15px 0;
 }
 
+.header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .header .header__icon {
   float: left;
   background: #3486db;
@@ -3548,6 +3592,60 @@ img {
 
 .spec .spec__item.spec__item--right .spec__text {
   font-weight: 700;
+}
+.stat .stat__aside {
+  float: left;
+  width: 30%;
+  margin-left: -20px;
+}
+
+.stat .stat__aside-link {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 20px;
+}
+
+.stat .stat__aside-link.active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 3px;
+  background: #3486db;
+}
+
+.stat .stat__aside-link.active .stat__aside-text {
+  color: #3486db;
+}
+
+.stat .stat__aside-text {
+  font-size: .85rem;
+  color: #bbb;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.stat .stat__aside-count {
+  float: right;
+  font-size: 1rem;
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.stat .stat__aside-percent {
+  float: right;
+  vertical-align: middle;
+  font-size: .7rem;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.stat .stat__graph {
+  float: left;
+  width: 70%;
+  margin-left: 20px;
 }
 .table {
   width: 100%;
