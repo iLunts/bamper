@@ -1,0 +1,89 @@
+// out: ../../../content/css/components/stat.css, compress: true
+@import 'variables.less';
+// Name:            stat
+// Description:     Defines styles to create layouts with stat
+//
+//
+// Component:       `.stat__*`
+// ----------------------------------------------------
+// Block '.add'
+// ----------------------------------------------------
+.stat {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+    
+    // Element '.stat .stat__aside'
+    & &__aside{
+        float: left;
+        width: 30%;
+        margin-left: -@panel-padding;
+        
+        // Element '.stat .stat__aside-link'
+        &-link{
+            position: relative;
+            display: block;
+            padding: 8px 0 8px @panel-padding;
+
+            &.active{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    width: 3px;
+                    background: @color-blue;
+                }
+
+                & .stat__aside-text{
+                    color: @color-blue;
+                }
+            }
+            
+            // & + .stat__aside-link{
+            //     padding: 7px 0 0 0;
+            //     margin: 7px 0 0 0;
+            // }
+        }
+        
+        // Element '.stat .stat__aside-text'
+        &-text{
+            font-size: 0.85rem;
+            color: #bbb;
+            vertical-align: middle;
+            line-height: 20px;
+        }
+        
+        // Element '.stat .stat__aside-count'
+        &-count{
+            float: right;
+            font-size: 1rem;
+            font-weight: 600;
+            vertical-align: middle;
+            line-height: 20px;
+        }
+        
+        // Element '.stat .stat__aside-percent'
+        &-percent{
+            float: right;
+            vertical-align: middle;
+            font-size: 0.7rem;
+            font-weight: 100;
+            line-height: 20px;
+        }
+    }
+
+    & &__graph{
+        float: left;
+        width: 70%;
+        margin-left: @panel-padding;      
+    }
+    
+}
