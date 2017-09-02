@@ -177,3 +177,9 @@ blockquote {
   clear: both;
   height: 0;
 }
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}

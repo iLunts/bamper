@@ -4,16 +4,16 @@
   padding: 20px;
 }
 
-.add .add__group + .add__group {
+.add .add__group+.add__group {
   border-top: none;
 }
 
-.add .add__group .grid + .grid {
-  margin-top: 15px;
+.add .add__group .grid+.grid {
+  margin-top: 10px;
 }
 
 .add .add__group.isSuccess {
-  background: rgba(139, 195, 74, 0.05);
+  background: rgba(139,195,74,0.05);
   border-color: #8bc34a;
 }
 
@@ -32,7 +32,7 @@
 .add .add__header-title {
   color: #03a9f4;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: 700;
   margin: 0 0 10px 0;
 }
@@ -4044,4 +4044,12 @@ blockquote {
   content: " ";
   clear: both;
   height: 0;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.in {
+  display: block;
 }
