@@ -22,10 +22,17 @@
 
     // Modificator '.panel.panel--sm'
     &&--sm{
-
+        
+        // Element '.panel.panel--sm .panel__content'
         .panel__content{
             padding: (@panel-padding / 2);
         }
+
+        // Element '.panel.panel--sm + .panel--sm'
+        & + .panel--sm{
+            margin-top: 10px;
+        }
+        
     }
 
     // Modificator '.panel.panel--shadow'

@@ -12,40 +12,19 @@ app.controller('partsAddCtrl', function($scope){
     $scope.price = 0;
     $scope.showAdvacePhone = false;
 
-});
 
-// $(window).load(function () {
-//     $(".form-group .input").val("");
-
-//     $(".form-group .input").focusout(function () {
-//         if ($(this).val() != "") {
-//             $(this).addClass("isFull");
-//         } else {
-//             $(this).removeClass("isFull");
-//         }
-//     })
-// });
-
-
-(function () {
-    var materialForm;
-
-    materialForm = function () {
-        return $('.input').focus(function () {
-            return $(this).closest('.form-group').addClass('focused has-value');
-        }).focusout(function () {
-            return $(this).closest('.form-group').removeClass('focused');
-        }).blur(function () {
-            if (!this.value) {
-                $(this).closest('.form-group').removeClass('has-value');
-            }
-            return $(this).closest('.form-group').removeClass('focused');
-        });
-    };
-
-    $(function () {
-        return materialForm();
+    $('.input').on('blur', function () {
+        if ($(this).val().length === 0){
+            $(this).parent('.form-group').removeClass('focused has-value').addClass('empty');
+        }
+        else{
+            $(this).parent('.form-group').removeClass('focused empty').addClass('has-value');
+        }
+    }).on('focus', function () {
+        $(this).parent('.form-group').removeClass('has-value empty').addClass('focused');
     });
 
-}).call(this);
+
+});
+
 
