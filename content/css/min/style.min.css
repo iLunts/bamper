@@ -36,7 +36,44 @@
   font-weight: 700;
   margin: 0 0 10px 0;
 }
+.add .add__group {
+  border: 2px dashed #dbe5ea;
+  background-color: #fff;
+  padding: 20px;
+}
 
+.add .add__group + .add__group {
+  border-top: none;
+}
+
+.add .add__group .grid + .grid {
+  margin-top: 10px;
+}
+
+.add .add__group.isSuccess {
+  background: rgba(139, 195, 74, 0.05);
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .input {
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .add__header-title {
+  color: #8bc34a;
+}
+
+.add .add__group.isSuccess .label {
+  color: #689f38;
+}
+
+.add .add__header-title {
+  color: #03a9f4;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
 .aside {
   position: fixed;
   top: 40px;
@@ -2226,7 +2263,7 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   -webkit-appearance: none;
   transition: all 200ms;
-  font-size: 0.85rem;
+  font-size: .85rem;
 }
 
 .input:focus {
@@ -2251,9 +2288,9 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 17px;
   margin: 0 0 6px 0;
-  font-size: 0.85rem;
+  font-size: .85rem;
   line-height: 1.2rem;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   font-weight: 400;
   color: #78909c;
   overflow: hidden;
@@ -2275,7 +2312,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   left: auto;
   right: 10px;
-  font-size: 0.7rem;
+  font-size: .7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2293,7 +2330,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   right: auto;
   left: 10px;
-  font-size: 0.7rem;
+  font-size: .7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2304,10 +2341,10 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20px;
   border-radius: 3px;
   color: #3486db;
-  background-color: rgba(52, 134, 219, 0.2);
+  background-color: rgba(52,134,219,0.2);
   text-align: center;
   line-height: 20px;
-  font-size: 0.85rem;
+  font-size: .85rem;
   margin-top: -10px;
 }
 
@@ -2377,7 +2414,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: auto;
   top: -8px;
   left: 8px;
-  font-size: 0.6rem;
+  font-size: .6rem;
   z-index: 2;
   background: #fff;
   padding: 4px 4px 0 4px;
