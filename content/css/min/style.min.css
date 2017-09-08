@@ -2362,8 +2362,26 @@ input[type=number]::-webkit-outer-spin-button {
 .form-group .label {
   position: absolute;
   left: 12px;
-  top: 50%;
-  margin-top: -16px;
+  top: 7px;
+  margin-bottom: 0;
+  transition: all 250ms;
+}
+
+.form-group.focused .label {
+  color: #03a9f4;
+}
+
+.form-group.focused .label,
+.form-group.has-value .label {
+  display: inline-block;
+  width: auto;
+  top: -8px;
+  left: 8px;
+  font-size: 0.6rem;
+  z-index: 2;
+  background: #fff;
+  padding: 4px 4px 0 4px;
+  line-height: 1;
 }
 .list {
   position: relative;
