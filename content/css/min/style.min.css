@@ -345,6 +345,18 @@
   border-radius: 4px;
 }
 
+.badge + * {
+  vertical-align: middle;
+}
+
+.badge.badge--circle.badge--sm {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #eee;
+  vertical-align: middle;
+}
+
 .badge.badge--phone {
   float: left;
   background: #eee;
@@ -2263,7 +2275,7 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   -webkit-appearance: none;
   transition: all 200ms;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .input:focus {
@@ -2288,9 +2300,9 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 17px;
   margin: 0 0 6px 0;
-  font-size: .85rem;
+  font-size: 0.85rem;
   line-height: 1.2rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   color: #78909c;
   overflow: hidden;
@@ -2312,7 +2324,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   left: auto;
   right: 10px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2330,7 +2342,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   right: auto;
   left: 10px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2341,10 +2353,10 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20px;
   border-radius: 3px;
   color: #3486db;
-  background-color: rgba(52,134,219,0.2);
+  background-color: rgba(52, 134, 219, 0.2);
   text-align: center;
   line-height: 20px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   margin-top: -10px;
 }
 
@@ -2414,7 +2426,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: auto;
   top: -8px;
   left: 8px;
-  font-size: .6rem;
+  font-size: 0.6rem;
   z-index: 2;
   background: #fff;
   padding: 4px 4px 0 4px;
@@ -3706,7 +3718,7 @@ img {
 }
 
 .stat .stat__aside-text {
-  font-size: 0.85rem;
+  font-size: .85rem;
   color: #bbb;
   vertical-align: middle;
   line-height: 20px;
@@ -3723,7 +3735,7 @@ img {
 .stat .stat__aside-percent {
   float: right;
   vertical-align: middle;
-  font-size: 0.7rem;
+  font-size: .7rem;
   font-weight: 100;
   line-height: 20px;
 }
@@ -3732,6 +3744,24 @@ img {
   float: left;
   width: 70%;
   margin-left: 20px;
+}
+
+.stat .stat__legend {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.stat .stat__legend-item {
+  display: inline-block;
+  font-size: .8rem;
+}
+
+.stat .stat__legend-item+.stat__legend-item {
+  margin-left: 20px;
+}
+
+.stat .stat__legend-item .badge {
+  margin-right: 4px;
 }
 .table {
   width: 100%;

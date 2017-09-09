@@ -14,9 +14,24 @@
     padding: 4px;
     border-radius: 4px;
 
+    & + *{
+        vertical-align: middle;
+    }
+
     // -----------------------------------------
     // All modificators
     // -----------------------------------------
+
+    &&--circle{
+        
+        &.badge--sm{
+            width: 8px;
+            height: 8px;
+            border-radius: 20px;
+            background: #eee;
+            vertical-align: middle;
+        }
+    }
 
     // Modificator '.badge.badge--phone'
     &&--phone{

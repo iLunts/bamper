@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container--fluid">
     <div class="grid stat">
         <div class="col--2-3">
             <div class="header m--v">
@@ -13,31 +13,30 @@
 
             <div class="panel panel--shadow">
                 <div class="panel__content clearfix">
-                    
                     <div class="stat__aside">
                         <a class="stat__aside-link active" href="">
-                            <span class="stat__aside-text">Запчасти</span>
-                            <!-- <span class="stat__aside-percent t--green">+12</span> -->
-                            <span class="stat__aside-count">6538</span>
-                        </a>
-                        <a class="stat__aside-link" href="">
-                            <span class="stat__aside-text">Заказы</span>
-                            <!-- <span class="stat__aside-percent t--red">-120</span> -->
-                            <span class="stat__aside-count">189</span>
-                        </a>
-                        <a class="stat__aside-link" href="">
-                            <span class="stat__aside-text">Клики</span>
-                            <!-- <span class="stat__aside-percent t--green">+1</span> -->
-                            <span class="stat__aside-count">45</span>
-                        </a>
-                        <a class="stat__aside-link" href="">
-                            <span class="stat__aside-text">Показы</span>
-                            <!-- <span class="stat__aside-percent">+12</span> -->
+                            <span class="stat__aside-text">Показы и клики</span>
                             <span class="stat__aside-count">312</span>
                         </a>
+                        <a class="stat__aside-link" href="">
+                            <span class="stat__aside-text">другой параметр</span>
+                            <span class="stat__aside-count">45</span>
+                        </a>
                     </div>
+
                     <div class="stat__graph">
                         <canvas class="chart chart-bar" height="90" chart-data="data1" chart-labels="labels1" chart-colors="colors" chart-dataset-override="statistic"></canvas>
+
+                        <ul class="stat__legend">
+                            <li class="stat__legend-item">
+                                <i class="badge badge--sm badge--circle" style="background-color: #8bc34a;"></i>
+                                <span>Показы</span>
+                            </li>
+                            <li class="stat__legend-item">
+                                <i class="badge badge--sm badge--circle" style="background-color: #03a9f4;"></i>
+                                <span>Клики</span>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>

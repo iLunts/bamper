@@ -85,5 +85,23 @@
         width: 70%;
         margin-left: @panel-padding;      
     }
+
+    & &__legend{
+        text-align: center;
+        margin-top: 10px;
+
+        &-item{
+            display: inline-block;
+            font-size: 0.8rem;
+
+            & + .stat__legend-item{
+                margin-left: 20px;
+            }
+
+            .badge{
+                margin-right: 4px;
+            }
+        }
+    }
     
 }
