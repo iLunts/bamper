@@ -19,26 +19,61 @@
     // All elements
     // -----------------------------------------
 
-    // Element '.parts .parts__top'
-    & &__top{
+    // Element '.parts .parts__panel'
+    & &__panel{
+        
+        // Element '.parts .parts__panel:hover'
+        &:hover{
+            
+            // Element '.parts .parts__panel:hover .parts__action'
+            .parts__action{
+                display: block;
+            }
+            
+            // Element '.parts .parts__panel:hover .parts__date'
+            .parts__date{
+                display: none;
+            }
+            
+            // Element '.parts .parts__panel:hover .parts__stat'
+            .parts__stat{
+                
+                // Element '.parts .parts__panel:hover .parts__stat .badge'
+                .badge{
+                    color: #777;
+                    border-color: #eee;
+                    padding-left: 0;
+                    transition: width 350ms ease-out, border-color 350ms ease-out;
+                    
+                    // Element '.parts .parts__panel:hover .parts__stat .badge__icon'
+                    &__icon{
+                        padding: 5px;
+                        width: auto;
+                        visibility: visible;
+                        opacity: 1;
+                        transition: opacity 350ms ease-out;
+                    }
+                }
+            }   
+        }
+    }
+
+    // Element '.parts .parts__activity'
+    & &__activity{
         position: absolute;
-        top: 6px;
-        left: 7px;
-        font-size: 0.75rem;
-        color: #bbb;
+        top: 10px;
+        bottom: 10px;
+        left: 0;
+        width: 3px;
+        border-radius: 0 4px 4px 0;
+        background-color: #ddd;
+        z-index: 2;
 
-        .text{
-            margin: 0;
-
-            & > *{
-                vertical-align: middle;
-            }
-
-            & + .text{
-                margin-left: 10px;
-                padding-left: 10px;
-                border-left: 1px solid #ddd;
-            }
+        &.parts__activity--success{
+            background-color: #8bc34a;
+        }
+        &.parts__activity--error{
+            background-color: #ff6c6c;
         }
     }
 
@@ -46,89 +81,59 @@
     & &__check{
         float: left;
         width: 3%;
-        margin-top: 25px;
-        // text-align: left;
+        margin-top: 30px;
+        text-align: center;
     }
-
+    
     // Element '.parts .parts__img'
     & &__img{
         position: relative;
         float: left;
         width: 5%;
-        margin-top: 15px;
-        padding-right: 10px;
-    
-        // Element '.parts .parts__img-activity'
-        &-activity{
+        margin-right: 1%;
+        min-height: 50px;
+        
+        // Element '.parts .parts__img-img'
+        &-img{
             position: absolute;
-            bottom: -10px;
+            top: 0;
+            bottom: 0;
+            left: 0;
             right: 0;
-            
-            .icon{
-                width: 30px;
-                height: 30px;
-                line-height: 20px;
-                border-radius: 40px;
-                text-align: center;
-                border: 5px solid #fff;
-                font-size: 0.8rem;
-            }
-
-            &-active{
-                color: @color-green;
-                background-color: #dbefdc;
-            }
-
-            &-inactive{
-                color: @color-red;
-                background-color: #fdd9d7;
-            }
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        // Element '.parts .parts__img img'
+        img{
+            visibility: hidden;
+            opacity: 0;
         }
     }
 
-    // Element '.parts .parts__activity'
-    // & &__activity{
-    //     float: left;
-    //     width: 3%;
-    //     margin-top: 22px;
-
-    //     .icon{
-    //         width: 25px;
-    //         height: 25px;
-    //         line-height: 25px;
-    //         border-radius: 40px;
-    //         text-align: center;
-    //     }
-
-    //     &-active{
-    //         color: @color-green;
-    //         background-color: rgba(76, 175, 80, 0.2);
-    //     }
-
-    //     &-inactive{
-    //         color: @color-red;
-    //         background-color: rgba(244, 67, 54, 0.2);
-    //     }
-    // }
-
     // Element '.parts .parts__name'
     & &__name{
+        padding: @parts-padding 0;
         float: left;
-        width: 36%;
-
+        width: 35%;
+        
+        // Element '.parts .parts__name .splite'
         .splite{
             margin-left: 10px;
             padding-left: 10px;
             border-left: 1px dotted #ddd;
         }
-
+        
+        // Element '.parts .parts__name-title'
         &-title{
             float: left;
             margin: 0;
             font-weight: 500;
             font-size: 0.8rem;
         }
-
+        
+        // Element '.parts .parts__name-subtitle'
         &-subtitle{
             float: left;
             font-weight: 600;
@@ -140,11 +145,13 @@
     // Element '.parts .parts__sort'
     & &__sort{
         margin-bottom: 10px;
-        // background: #fff;
-        // box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
         text-align: center;
-        border-bottom: 1px solid #ddd;
-
+        // border-bottom: 1px solid #ddd;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+        
+        // Element '.parts .parts__sort .link'
         .link{
             padding: 10px 10px 8px;
             text-decoration: none;
@@ -152,11 +159,11 @@
             font-size: 0.9rem;
             border-bottom: 2px solid transparent;
             
+            // Status '.parts .parts__sort .link.action'
             &.active{
                 border-bottom-color: @color-blue;
                 color: #333;
                 font-weight: 600;
-                // box-shadow: 0px 4px 5px -4px rgba(52, 134, 219, 0.7);
             }
         }
     }
@@ -165,30 +172,50 @@
     & &__desc{
         float: left;
         width: 34%;
+        padding: @parts-padding 0;        
     }
 
     // Element '.parts .parts__price'
     & &__price{
         float: left;
+        padding: @parts-padding 0;
         width: 14%;
         text-align: center;
         
+        // Element '.parts .parts__price-text'
         &-text{
-            display: inline-block;
             border-radius: 4px;
             font-size: 1.1rem;
             font-weight: 600;
-            margin: 0;
-            // background: #eee;
-            // padding: 5px 10px;
-            // margin: 0 0 5px 0;
+            margin: 5px 0 0 0;
         }
+    }
+
+    // Element '.parts .parts__sale'
+    & &__sale{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 1.2rem;
+        color: @color-orange;
+    }
+
+    // Element '.parts .parts__date'
+    & &__date{
+        display: block;
+        margin-top: 10px;
+        font-size: .8rem;
+        color: #999;
+        line-height: 20px;
     }
 
     // Element '.parts .parts__action'
     & &__action{
-        margin-bottom: 7px;
+        display: none;
+        margin: 10px 0 3px 0;
+        transition: all 250ms;
         
+        // Element '.parts .parts__action .btn'
         .btn{
             width: 18px;
             height: 18px;
@@ -203,24 +230,34 @@
     // Element '.parts .parts__stat'
     & &__stat{
         float: left;
+        padding: @parts-padding 0;
         width: 8%;
-
+        
+        // Element '.parts .parts__stat .badge'
         .badge{
-            padding: 0 10px 0 0;
+            padding: 0 10px 0 24px;
             font-weight: 600;
-            color: #777;
             font-size: 0.7rem;
+            height: 26px;
+            line-height: 21px;
+            border-color: transparent;
+            color: #ddd;
             
+            // Element '.parts .parts__stat .badge + .badge'
             & + .badge{
                 margin-top: 8px;
             }
             
+            // Element '.parts .parts__stat .badge__icon'
             &__icon{
+                visibility: hidden;
                 background: #eee;
                 border-radius: 100px;
-                padding: 5px;
+                padding: 0;
+                width: 0;
                 color: #333;
                 font-size: 0.85rem;
+                opacity: 0;
             }
         }
     }

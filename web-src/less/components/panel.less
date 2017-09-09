@@ -19,7 +19,7 @@
     // -----------------------------------------
     // All modificators
     // -----------------------------------------
-
+    
     // Modificator '.panel.panel--sm'
     &&--sm{
         
@@ -27,12 +27,20 @@
         .panel__content{
             padding: (@panel-padding / 2);
         }
-
+        
         // Element '.panel.panel--sm + .panel--sm'
         & + .panel--sm{
             margin-top: 10px;
         }
         
+    }
+
+    // Modificator '.panel.panel--nop'
+    &&--nop{
+
+        .panel__content{
+            padding: 0;
+        }
     }
 
     // Modificator '.panel.panel--shadow'
