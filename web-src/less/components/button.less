@@ -38,7 +38,7 @@
     background: @btn-background;
     vertical-align: middle;
     line-height: @btn-line-height - 4;
-    height: @btn-height;
+    // height: @btn-height;
     font-size: @btn-font-size;
     text-decoration: none;
     text-align: center;
@@ -353,6 +353,40 @@
     // ---------------------------------------------------------
     // All modificator
     // ---------------------------------------------------------
+
+    // Modificator '.btn-group.btn-group--icon'
+    &&--icon{
+        text-align: center;
+
+        > .btn{
+            box-shadow: none;
+            line-height: 1;
+            margin: 5px !important;
+            min-width: 80px;
+            border-radius: @btn-border-radius !important;
+            border: 2px solid #e6ecef;
+
+            &:hover{
+                border-color: @btn-hover-background;
+            }
+
+            &.active,
+            &:active {
+                border-color: @btn-active-background;
+            }
+        }
+        
+        .btn__icon{
+            display: block;
+            font-size: 2rem;
+        }
+
+        .btn__text{
+            font-weight: 100;
+            font-size: .65rem;
+            line-height: 1;
+        }
+    }
 
 
     // ---------------------------------------------------------

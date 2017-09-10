@@ -6,12 +6,13 @@ app.config(["$routeProvider", function ($routeProvider) {
     }
 ]);
 
-app.controller('partsAddCtrl', function($scope){
+app.controller('partsAddCtrl', function($scope, FileUploader){
 
     $scope.sale = 0;
     $scope.price = 0;
     $scope.showAdvacePhone = false;
 
+    $scope.uploader = new FileUploader();
 
     $('.input').on('blur', function () {
         if ($(this).val().length === 0){

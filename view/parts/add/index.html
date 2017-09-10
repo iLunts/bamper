@@ -1,38 +1,361 @@
-
 <div class="container--fluid">
 
     <div class="header m--v">
         <div class="grid">
-            <div class="col--5-10">
+            <div class="col--1-1">
                 <span class="header__icon">
-                    <i class="icon icon-air-filter"></i>
+                <i class="icon icon-air-filter"></i>
                 </span>
                 <p class="header__title">
-                    Создание новый запчасти
+                    Создание нового объявления
                 </p>
-            </div>
-            <div class="col--5-10">
-                <div class="header__btn">                    
-                    <button class="btn" data-ng-model="showFilter" uib-btn-checkbox>
-                        <span class="btn__text">Фильтр</span>
-                        <i class="btn__icon icon-filter_list"></i>
-                    </button>
-                                        
-                    <a href="#!/parts/add" class="btn btn--blue">
-                        <i class="btn__icon icon-home"></i>
-                        <span class="btn__text">Добавить запчасть</span>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
-    
+
     <div class="add">
-        
-        <div class="add__group isSuccess">
+
+        <div class="grid">
+            <div class="col--1-3">
+                
+                
+                <!-- <div class="add__group isSuccess">
+                </div> -->
+
+
+                <div class="add__group">
+                    <div class="add__header">
+                        <p class="add__header-title">
+                            1. Автомобиль
+                        </p>
+                    </div>
+
+                    <div class="grid grid--sm">
+                        <div class="col--1-1">
+                            <div class="form-group has-value">
+                                <label class="label" for="">Марка</label>
+                                <input class="input" type="text" value="Mercedes-Benz">
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="form-group has-value">
+                                <label class="label" for="">Модель</label>
+                                <input class="input" type="text" value="A170 (W168)">
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="form-group">
+                                <label class="label" for="">Модификация</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid--sm">
+                        <div class="col--1-1">
+                            <div class="btn-group btn-group--icon">
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">седан</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">хэтчбек</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type3'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">универсал</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type4'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">купе</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type5'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">кабриолет</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type6'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">минивэн</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type7'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">пикап</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type8'">
+                                    <i class="btn__icon icon icon-car-type"></i>
+                                    <span class="btn__text">фургон</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid--sm">
+                        <div class="col--1-1">
+                            <div class="form-group">
+                                <label class="label" for="">Объем</label>
+                                <div class="input-group input-group--right input-group--btn">
+                                    <div class="input-group__block">
+                                        <input class="input" type="number">
+                                        <span class="input-group__prefix">литра</span>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="" class="btn">Бензин</a>
+                                        <a href="" class="btn">Дизель</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col--1-3">
+                            <div class="form-group">
+                                <label class="label" for="">Топливо</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- <div class="grid grid--sm">
+                        <div class="col--1-1 t--c">
+                            <div class="btn-group btn-group--icon">
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
+                                    <i class="btn__icon icon icon-gas-station"></i>
+                                    <span class="btn__text">бензин</span>
+                                </a>
+                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
+                                    <i class="btn__icon icon icon-gas-station"></i>
+                                    <span class="btn__text">дизель</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="grid grid--sm">        
+                        <div class="col--1-3">
+                            <div class="form-group">
+                                <label class="label" for="">коробка</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="col--1-3">
+                            <div class="form-group">
+                                <label class="label" for="">Тип</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="col--1-3">
+                            <div class="form-group">
+                                <label class="label" for="">год выпуска</label>
+                                <div class="input-group input-group--right">
+                                    <input class="input-group__input input" type="text">
+                                    <i class="input-group__icon icon icon-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col--1-3">
+                <div class="add__group">
+                    <div class="add__header">
+                        <p class="add__header-title">
+                            2. Запчасть
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="col--1-1">
+                            <div class="form-group">
+                                <label class="label" for="">Название</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="col--1-1 m--b">
+                            <div class="form-group">
+                                <label class="label" for="">Артикул</label>
+                                <input class="input m--reset" type="text">
+                            </div>
+                            <small class="t--muted t--sm">можно латинские буквы, цифры и -_ (a-z0-9-_)</small>
+                        </div>
+                        <div class="col--1-1">
+                            <div class="form-group">
+                                <label class="label" for="">Оригинальный номер</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col--1-1 m--b-sm">
+                            <div class="grid">
+                                <div class="col--1-1">
+                                    <div class="form-group">
+                                        <label class="label" for="">Описание</label>
+                                        <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--1-1">
+                            <div class="grid">
+                                <div class="col--1-1">
+                                    <div class="form-group">
+                                        <label class="label" for="">Складская информация</label>
+                                        <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col--1-1 t--c">
+
+                            <input type="file" nv-file-select uploader="uploader" multiple/><br/>
+                            <ul>
+                                <li ng-repeat="item in uploader.queue">
+                                    Name: <span ng-bind="item.file.name"></span><br/>
+                                    <button ng-click="item.upload()">upload</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col--1-3">
+                <div class="add__group">
+                    <div class="add__header">
+                        <p class="add__header-title">
+                            3. Цена
+                        </p>
+                    </div>
+
+                    <div class="grid grid--sm">
+                        <div class="col--1-1">
+                            <div class="grid">
+                                <div class="col--1-1">
+                                    <div class="input-group input-group--right">
+                                        <input class="input-group__input input" type="number" data-ng-model="price">
+                                        <span class="input-group__prefix">руб.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col--2-10">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="cur-1" id="cur-1">
+                                        <label class="checkbox__label" for="cur-1">BYN</label>
+                                    </div>
+                                </div>
+                                <div class="col--2-10">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="cur-1" id="cur-2" checked>
+                                        <label class="checkbox__label" for="cur-2">USD</label>
+                                    </div>
+                                </div>
+                                <div class="col--2-10">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="cur-1" id="cur-3">
+                                        <label class="checkbox__label" for="cur-3">EUR</label>
+                                    </div>
+                                </div>
+                                <div class="col--2-10">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="cur-1" id="cur-4">
+                                        <label class="checkbox__label" for="cur-4">RUB</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col--1-1">
+                            <div class="input-group input-group--right">
+                                <input class="input-group__input input" type="number" data-ng-model="sale">
+                                <span class="input-group__prefix">%</span>
+                            </div>
+                            <small class="t--muted t--sm" data-ng-class="sale < 5 ? 't--red' : 't--green'">скидки менее 5% - запрещены</small>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col--1-1 price t--r">
+                            <p class="t--muted t--sm m--b-mini">Итоговая цена для клиента</p>
+                            <div class="price__content">
+                                {{price}}
+                                <span class="price__currency">
+                            USD
+                        </span>
+                            </div>
+                            <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
+                        </div>
+                    </div>
+
+                    <div class="add__header">
+                        <p class="add__header-title m--v">
+                            4. Контакты
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="col--1-1">
+                            <div class="clearfix m--l">
+                                <span class="badge badge--phone m--r-sm">
+                                    <i class="icon icon-phone"></i>
+                                </span>
+                                <p class="m--t-sm t--sm">Контакты из личного кабинета</p>
+                                <a href="tel:+37529000000" class="link link--dashed t--bold m--t-mini">+375 (29) 100 00 00</a>
+                            </div>
+                        </div>
+                        <div class="col--1-1 t--c m--t-md">
+                            <p class="m--b-sm t--sm t--muted">Если для объявления нужно указать другой телефон, можно</p>
+                            <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="isShowContatc = !isShowContatc">Ввести отдельные контакты</a>
+                        </div>
+                    </div>
+
+                    <div class="m--t collapse" data-uib-collapse="!isShowContatc">
+
+                        <div class="grid">
+                            <div class="col--4-6 push--1-6">
+                                <div>
+                                    <label class="label">Мобильный телефон</label>
+                                    <div class="input-group input-group--left input-group--icon">
+                                        <input class="input-group__input input" type="text">
+                                        <i class="input-group__icon icon icon-phone"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="label">Email</label>
+                                    <div class="input-group input-group--left input-group--icon">
+                                        <input class="input-group__input input" type="email">
+                                        <i class="input-group__icon icon icon-mail_outline"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="label">Адрес</label>
+                                    <div class="input-group input-group--left input-group--icon">
+                                        <input class="input-group__input input" type="text">
+                                        <i class="input-group__icon icon icon-my_location"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="label">Имя продавца</label>
+                                    <div class="input-group input-group--left input-group--icon">
+                                        <input class="input-group__input input" type="text">
+                                        <i class="input-group__icon icon icon-person"></i>
+                                    </div>
+                                </div>
+                                <p class="t--c">
+                                    <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="showAdvacePhone = !showAdvacePhone">Сохранить</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="add__group">
+
+
+        <!-- <div class="add__group">
             <div class="add__header">
                 <p class="add__header-title">
                     1. Автомобиль
@@ -107,8 +430,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="add__group">
+        </div> -->
+
+
+
+        <!-- <div class="add__group">
             <div class="add__header">
                 <p class="add__header-title">
                     2. Запчасть
@@ -159,8 +485,11 @@
                     <h1>ФОТО</h1>
                 </div>
             </div>
-        </div>
-        <div class="add__group">
+        </div> -->
+
+
+
+        <!-- <div class="add__group">
             <div class="add__header">
                 <p class="add__header-title">
                     3. Цена
@@ -225,9 +554,10 @@
                     <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="add__group">
+
+        <!-- <div class="add__group">
             <div class="add__header">
                 <p class="add__header-title">
                     4. Контакты
@@ -248,7 +578,7 @@
                     <p class="m--b-sm t--sm">Если для объявления нужно указать другой телефон, можно</p>
                     <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="isShowContatc = !isShowContatc">Ввести отдельные контакты</a>
                 </div>
-            </div>    
+            </div>
         </div>
 
         <div class="add__group collapse" data-uib-collapse="!isShowContatc">
@@ -288,8 +618,8 @@
                     </p>
                 </div>
             </div>
-            
-        </div>
+
+        </div> -->
     </div>
 
 
@@ -303,7 +633,7 @@
             <label class="checkbox__label" for="save-data">Сохранить значения полей</label>
         </div>
     </div>
-    
+
     <p class="t--c m--v-lg">
         <a href="" class="btn btn--md btn--blue">Сохранить и добавить ещё</a>
         <a href="" class="btn btn--md btn--white">Сохранить</a>

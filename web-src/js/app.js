@@ -6,7 +6,8 @@ var app = angular.module('site', [
     'ui.bootstrap',
     'hl.sticky',
     'slick',
-    'chart.js'
+    'chart.js',
+    'angularFileUpload'
     // 'hljs', 
     // 'ngclipboard',
     // 'duScroll',

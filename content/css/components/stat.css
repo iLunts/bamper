@@ -1,1 +1,61 @@
-.stat .stat__aside{float:left;width:30%;margin-left:-20px}.stat .stat__aside-link{position:relative;display:block;padding:8px 0 8px 20px}.stat .stat__aside-link.active:before{content:'';position:absolute;left:0;bottom:0;top:0;width:3px;background:#3486db}.stat .stat__aside-link.active .stat__aside-text{color:#3486db}.stat .stat__aside-text{font-size:.85rem;color:#bbb;vertical-align:middle;line-height:20px}.stat .stat__aside-count{float:right;font-size:1rem;font-weight:600;vertical-align:middle;line-height:20px}.stat .stat__aside-percent{float:right;vertical-align:middle;font-size:.7rem;font-weight:100;line-height:20px}.stat .stat__graph{float:left;width:70%;margin-left:20px}.stat .stat__legend{text-align:center;margin-top:10px}.stat .stat__legend-item{display:inline-block;font-size:.8rem}.stat .stat__legend-item+.stat__legend-item{margin-left:20px}.stat .stat__legend-item .badge{margin-right:4px}
+.stat .stat__aside {
+  float: left;
+  width: 30%;
+  margin-left: -20px;
+}
+.stat .stat__aside-link {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 20px;
+}
+.stat .stat__aside-link.active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 3px;
+  background: #3486db;
+}
+.stat .stat__aside-link.active .stat__aside-text {
+  color: #3486db;
+}
+.stat .stat__aside-text {
+  font-size: 0.85rem;
+  color: #bbb;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.stat .stat__aside-count {
+  float: right;
+  font-size: 1rem;
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.stat .stat__aside-percent {
+  float: right;
+  vertical-align: middle;
+  font-size: 0.7rem;
+  font-weight: 100;
+  line-height: 20px;
+}
+.stat .stat__graph {
+  float: left;
+  width: 70%;
+  margin-left: 20px;
+}
+.stat .stat__legend {
+  text-align: center;
+  margin-top: 10px;
+}
+.stat .stat__legend-item {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.stat .stat__legend-item + .stat__legend-item {
+  margin-left: 20px;
+}
+.stat .stat__legend-item .badge {
+  margin-right: 4px;
+}
