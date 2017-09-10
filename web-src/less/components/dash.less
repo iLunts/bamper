@@ -1,0 +1,112 @@
+// out: ../../../content/css/components/dash.css, compress: true
+@import 'variables.less';
+// Name:            dash
+// Description:     Defines styles to create layouts with empty
+//
+//
+// Component:       `.dash__*`
+// ----------------------------------------------------
+// Block '.dash'
+// ----------------------------------------------------
+.dash {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+}
+
+
+// ----------------------------------------------------
+// Block '.dash'
+// ----------------------------------------------------
+.dash-stat{
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Element '.dash-stat__icon'
+    & &__icon{
+        // float: left;
+        display: inline-block;
+        width: 77px;
+        height: 77px;
+        padding: 25px;
+        background: #f6f6f6;
+        font-size: 1.5rem;
+        color: #a0a0a0;
+        border-radius: 100px;
+        margin-right: 20px;
+        vertical-align: top;   
+        transition: all 350ms;             
+        
+        // color: #fff;
+        // background: #c294c0;
+        // background: -moz-radial-gradient(center, ellipse cover, #c294c0 0%, #8e589c 100%);
+        // background: -webkit-radial-gradient(center, ellipse cover, #c294c0 0%, #8e589c 100%);
+        // background: radial-gradient(ellipse at center, #c294c0 0%, #8e589c 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c294c0', endColorstr='#8e589c',GradientType=1 );
+    }
+
+    // Element '.dash-stat__container'
+    & &__container{
+        // display: flex;
+        // justify-content: space-around;
+    }
+
+    // Element '.dash-stat__item'
+    & &__item{
+        float: left;
+        width: 33.333333%;
+        padding: 0 30px;
+        margin: 20px 0;
+        text-align: center;
+        
+        & + .dash-stat__item{
+            border-left: 1px solid #eee;
+        }
+    }
+
+    // Element '.dash-stat__content'
+    & &__content{
+        // float: left;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    // Element '.dash-stat__title'
+    & &__title{
+        display: block;
+        margin: 12px 0 4px;
+        color: #777;
+    }
+    
+    // Element '.dash-stat__number'
+    & &__number{
+        display: block;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    // Element '.dash-stat__count'
+    & &__count{
+        margin: 0;
+        color: #999;
+        font-weight: 100;
+        font-size: .75rem;
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+
+}

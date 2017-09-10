@@ -97,11 +97,11 @@
                                 <div class="input-group input-group--right input-group--btn">
                                     <div class="input-group__block">
                                         <input class="input" type="number">
-                                        <span class="input-group__prefix">литра</span>
+                                        <span class="input-group__prefix">л.</span>
                                     </div>
                                     <div class="btn-group">
-                                        <a href="" class="btn">Бензин</a>
-                                        <a href="" class="btn">Дизель</a>
+                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel1'">Бензин</a>
+                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel2'">Дизель</a>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                             <div class="form-group">
                                 <label class="label" for="">год выпуска</label>
                                 <div class="input-group input-group--right">
-                                    <input class="input-group__input input" type="text">
+                                    <input class="input-group__input input" type="number" maxlength="4">
                                     <i class="input-group__icon icon icon-calendar"></i>
                                 </div>
                             </div>
