@@ -350,9 +350,9 @@
 .badge.badge--phone {
   float: left;
   background: #eee;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
   text-align: center;
   color: #bbb;
   font-size: 1.2rem;
@@ -1009,6 +1009,7 @@ a:hover {
 .open > .dropdown-menu {
   display: block;
 }
+
 
 fieldset {
   border: none;
@@ -3862,10 +3863,10 @@ img {
 
 .stat .stat__legend-item {
   display: inline-block;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.stat .stat__legend-item+.stat__legend-item {
+.stat .stat__legend-item + .stat__legend-item {
   margin-left: 20px;
 }
 
@@ -4138,6 +4139,94 @@ img {
   font-weight: 400;
   font-size: 0.6rem;
   color: #bbb;
+}
+.upload.upload--empty .upload__content {
+  position: relative;
+  border: 2px dashed #03a9f4;
+  border-radius: 6px;
+  padding: 40px 30px;
+  transition: all 300ms;
+  background: rgba(3, 169, 244, 0.01);
+}
+
+.upload.upload--empty .upload__content:hover {
+  background: rgba(3, 169, 244, 0.03);
+}
+
+.upload.upload--empty .upload__content:hover .svg-upload-file {
+  display: none;
+  visibility: hidden;
+}
+
+.upload.upload--empty .upload__content:hover .svg-uploading {
+  display: block;
+  visibility: visible;
+}
+
+.upload.upload--empty .upload__content .svg-upload-file {
+  display: block;
+  visibility: visible;
+}
+
+.upload.upload--empty .upload__content .svg-uploading {
+  display: none;
+  visibility: hidden;
+}
+
+.upload .svg-uploading,
+.upload .svg-upload-file {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 60px;
+}
+
+.upload .upload__progress {
+  margin: 20px 0 20px 0;
+  height: 10px;
+  background: #e1ebf3;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.upload .upload__progress.upload__progress--sm {
+  height: 5px;
+}
+
+.upload .upload__progress.upload__progress--sm .upload__progress-line {
+  height: 5px;
+}
+
+.upload .upload__progress-line {
+  height: 10px;
+  background-color: #03a9f4;
+  border-radius: 10px;
+}
+
+.upload .upload__status {
+  text-align: center;
+  color: #6894b7;
+  font-size: 0.85rem;
+  margin: 0 0 6px 0;
+  font-weight: 600;
+}
+
+.upload .upload__substatus {
+  text-align: center;
+  color: #b6d3ea;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.upload .upload__button {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 .f--left {
   float: left;

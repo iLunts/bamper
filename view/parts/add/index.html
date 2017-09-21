@@ -165,59 +165,78 @@
                         </p>
                     </div>
 
-                    <div class="grid">
+                    <div class="grid grid--sm">
                         <div class="col--1-1">
                             <div class="form-group">
                                 <label class="label" for="">Название</label>
                                 <input class="input" type="text">
                             </div>
                         </div>
-                        <div class="col--1-1 m--b">
+                        <div class="col--1-2 m--b-sm">
                             <div class="form-group">
                                 <label class="label" for="">Артикул</label>
                                 <input class="input m--reset" type="text">
                             </div>
-                            <small class="t--muted t--sm">можно латинские буквы, цифры и -_ (a-z0-9-_)</small>
+                            <!-- <small class="t--muted t--sm">можно латинские буквы, цифры и -_ (a-z0-9-_)</small> -->
+                            <p class="t--muted t--sm m--t-mini t--r">цифры и - _ (a-z 0-9)</p>
                         </div>
-                        <div class="col--1-1">
+                        <div class="col--1-2">
                             <div class="form-group">
                                 <label class="label" for="">Оригинальный номер</label>
                                 <input class="input" type="text">
                             </div>
                         </div>
-                    </div>
-                    <div class="grid">
                         <div class="col--1-1 m--b-sm">
-                            <div class="grid">
-                                <div class="col--1-1">
-                                    <div class="form-group">
-                                        <label class="label" for="">Описание</label>
-                                        <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label class="label" for="">Описание</label>
+                                <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="col--1-1">
-                            <div class="grid">
-                                <div class="col--1-1">
-                                    <div class="form-group">
-                                        <label class="label" for="">Складская информация</label>
-                                        <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label class="label" for="">Складская информация</label>
+                                <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="col--1-1 t--c">
 
-                            <input type="file" nv-file-select uploader="uploader" multiple/><br/>
+                            <!-- <input type="file" nv-file-select uploader="uploader" multiple/><br/>
                             <ul>
                                 <li ng-repeat="item in uploader.queue">
                                     Name: <span ng-bind="item.file.name"></span><br/>
                                     <button ng-click="item.upload()">upload</button>
                                 </li>
-                            </ul>
+                            </ul> -->
+
+                            <div class='upload upload--empty'>
+
+                                <div class='upload__content'>
+                                    <input class='upload__button' type='file' name='file' accept="image/x-png, image/gif, image/jpeg" />
+
+                                    <img class='svg-upload-file' src='/content/img/svg/upload/upload-file.svg' alt=''>
+                                    <img class='svg-uploading' src='/content/img/svg/upload/uploading-file.svg' alt=''>
+
+                                    <div class='upload__progress'>
+                                        <div class='upload__progress-line' role='progressbar' style='width: 15%;'></div>
+                                    </div>
+
+                                    <!--Unselect-->
+                                    <p class='upload__status'>Загрузите фотографию запчасти</p>
+                                    <p class='upload__substatus'>Кликните в этой области для выбора фотографии...</p>
+
+                                    <!--Select-->
+                                    <!-- <p class="t--c hidden">
+                                        <button type="button" class="btn btn--success">
+                                            Изменить
+                                        </button>
+                                        <a class="btn" target="blank">
+                                            Просмотреть фото
+                                        </a>
+                                    </p> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,32 +295,45 @@
                             <small class="t--muted t--sm" data-ng-class="sale < 5 ? 't--red' : 't--green'">скидки менее 5% - запрещены</small>
                         </div>
                     </div>
-                    <div class="grid">
-                        <div class="col--1-1 price t--r">
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
+                            <div class="m--t clearfix">
+                                <span class="badge badge--phone m--r-sm">
+                                    <i class="icon icon-phone"></i>
+                                </span>
+                                <p class="m--t-sm t--sm">Контакты из кабинета</p>
+                                <a href="tel:+37529000000" class="link link--dashed t--bold m--t-mini">+375 (29) 100 00 00</a>
+                            </div>
+                        </div>
+                        <div class="col--1-2 price t--r">
                             <p class="t--muted t--sm m--b-mini">Итоговая цена для клиента</p>
                             <div class="price__content">
                                 {{price}}
                                 <span class="price__currency">
-                            USD
-                        </span>
+                                    USD
+                                </span>
                             </div>
                             <p class="t--muted t--sm m--t-mini">Скидка составила: <b>20 USD</b></p>
                         </div>
+                        <div class="col--1-1 t--c m--t-md">
+                            <p class="m--b-sm t--sm t--muted">Если для объявления нужно указать другой телефон, можно</p>
+                            <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="isShowContatc = !isShowContatc">Ввести отдельные контакты</a>
+                        </div>
                     </div>
 
-                    <div class="add__header">
+                    <!-- <div class="add__header">
                         <p class="add__header-title m--v">
                             4. Контакты
                         </p>
-                    </div>
+                    </div> -->
 
-                    <div class="grid">
-                        <div class="col--1-1">
-                            <div class="clearfix m--l">
+                    <!-- <div class="grid">
+                        <div class="col--1-2">
+                            <div class="clearfix">
                                 <span class="badge badge--phone m--r-sm">
                                     <i class="icon icon-phone"></i>
                                 </span>
-                                <p class="m--t-sm t--sm">Контакты из личного кабинета</p>
+                                <p class="m--t-sm t--sm">Контакты из кабинета</p>
                                 <a href="tel:+37529000000" class="link link--dashed t--bold m--t-mini">+375 (29) 100 00 00</a>
                             </div>
                         </div>
@@ -309,7 +341,7 @@
                             <p class="m--b-sm t--sm t--muted">Если для объявления нужно указать другой телефон, можно</p>
                             <a href="javascript:void(0)" class="btn btn--yellow" data-ng-click="isShowContatc = !isShowContatc">Ввести отдельные контакты</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="m--t collapse" data-uib-collapse="!isShowContatc">
 

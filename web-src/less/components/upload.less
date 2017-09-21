@@ -1,0 +1,177 @@
+// out: ../../../content/css/components/upload.css, compress: true
+@import 'variables.less';
+// Name:            upload
+// Description:     Defines styles to create layouts with upload
+//
+// ----------------------------------------------------
+// Block '.upload'
+// ----------------------------------------------------
+.upload{
+    
+    // -------------------------------------------------------
+    // All modificators
+    // -------------------------------------------------------
+    
+    // Modificator '.upload.upload--empty'
+    &&--empty{
+
+        & .upload__content{
+            position: relative;
+            // border: 2px dashed #ddd;
+            border: 2px dashed @color-blue-light;
+            border-radius: 6px;
+            padding: 40px 30px;
+            transition: all 300ms;
+            background: rgba(3, 169, 244, 0.01);
+            
+            &:hover{
+                background: rgba(3, 169, 244, 0.03);
+                // border-color: @color-blue;
+
+                & .svg-upload-file{
+                    display: none;
+                    visibility: hidden;
+                }
+
+                & .svg-uploading{
+                    display: block;
+                    visibility: visible;
+                }
+            }
+
+            & .svg-upload-file{
+                display: block;
+                visibility: visible;
+            }
+            & .svg-uploading{
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+    }
+    
+    // -------------------------------------------------------
+    // All elements
+    // -------------------------------------------------------
+    
+    // Element '.upload .svg-uploading'
+    // Element '.upload .svg-upload-file'
+    & .svg-uploading,
+    & .svg-upload-file{
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 60px;
+    }
+
+    // Element '.upload .upload__progress'
+    & &__progress{
+        margin: 20px 0 20px 0;
+        height: @upload-progress-height;
+        background: #e1ebf3;
+        border-radius: 100px;
+        overflow: hidden;
+
+        &.upload__progress--sm{
+            height: @upload-progress-height-xs;
+
+            & .upload__progress-line{
+                height: @upload-progress-height-xs;
+            }
+        }
+    
+        // Element '.upload .upload__progress-line'
+        &-line{
+            height: @upload-progress-height;
+            background-color: @color-blue-light;
+            border-radius: 10px;
+        }
+    }
+
+    // Element '.upload .upload__status'
+    & &__status{
+        text-align: center;
+        color: #6894b7;
+        font-size: 0.85rem;
+        margin: 0 0 6px 0;
+        font-weight: 600;
+    }
+
+    // Element '.upload .upload__substatus'
+    & &__substatus{
+        text-align: center;
+        color: #b6d3ea;
+        font-size: 0.75rem;
+        margin: 0;
+    }
+
+    // Element '.upload .upload__button'
+    & &__button{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    // Element '.upload .upload__gallery'
+    // & &__gallery{
+    //     margin: 15px 0 0 0;
+    //     padding: 0;
+    //     list-style: none;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     flex-wrap: wrap;
+
+    //     // Element '.upload .upload__gallery-item'
+    //     &-item{
+    //         width: 22%;
+    //         margin-bottom: 10px;
+    //     }
+
+    //     // Element '.upload .upload__gallery-img'
+    //     &-img{
+    //         border-radius: 5px;
+    //     }
+    // }
+}
+
+
+// -------------------------------------------------
+// Size xSmall
+// -------------------------------------------------
+// @media screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
+
+// }
+
+// -------------------------------------------------
+// Size Small
+// -------------------------------------------------
+// @media screen and (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max){
+
+// }
+
+// -------------------------------------------------
+// Size Medium
+// -------------------------------------------------
+// @media screen and (min-width: @breakpoint-md-min) and (max-width: @breakpoint-md-max){
+
+// }
+
+// -------------------------------------------------
+// Size Large
+// -------------------------------------------------
+// @media screen and (min-width: @breakpoint-lg-min) and (max-width: @breakpoint-lg-max){
+
+// }
+
+// -------------------------------------------------
+// Size xLarge
+// -------------------------------------------------
+// @media screen and (min-width: @breakpoint-xlg-min){
+
+// }
