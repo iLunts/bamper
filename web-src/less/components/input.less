@@ -120,18 +120,47 @@ input[type=number]::-webkit-outer-spin-button {
     &&--btn{
         display: flex;
 
-        .input-group__block{
+        // .input-group__block{
+        //     flex-grow: 2;
+        // }
+
+        .input{
+            width: auto;
             flex-grow: 2;
+            margin-bottom: 0;
         }
+        
         .btn-group{
-            // flex-grow: 0;
+            display: flex;
+            flex-grow: 1;
 
             > .btn{
                 box-shadow: none;
-                border-radius: 0 !important;
+                border-radius: 0;
                 border: 2px solid @input-border-color;
                 padding: 0 (@btn-padding-horizontal / 1.4);
                 line-height: @btn-line-height - 1;
+                
+                width: 100%;
+                // border-left-color: transparent;
+                // border-right-color: transparent;
+                border-left-width: 0;
+                border-right-width: 0;
+                
+                &:last-child{
+                    border-right-color: @input-border-color;
+                    border-right-width: 2px;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+                
+
+                &.active{
+                    border-top-color: @btn-active-background;
+                    border-bottom-color: @btn-active-background;
+                    color: @btn-active-background;
+                    background: transparent;
+                }
             }
         }
         

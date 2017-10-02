@@ -208,6 +208,7 @@
 .btn.active,
 .btn:active {
   background-color: #11a0f8;
+  border-color: #11a0f8;
   color: #fff;
 }
 .btn-group {
