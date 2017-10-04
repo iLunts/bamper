@@ -7,7 +7,6 @@
   font-size: 1.5rem;
   color: #a0a0a0;
   border-radius: 100px;
-  margin-right: 20px;
   vertical-align: top;
   transition: all 350ms;
 }
@@ -24,7 +23,6 @@
 .dash-stat .dash-stat__content {
   display: inline-block;
   vertical-align: top;
-  text-align: left;
 }
 .dash-stat .dash-stat__title {
   display: block;

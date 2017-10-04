@@ -110,4 +110,80 @@
             </div>
         </div>
     </div>
+
+    <aside class="offcanvas offcanvas--right offcanvas--filter filter">
+        <p class="offcanvas__title">
+            Фильтр
+        </p>
+        <input class="offcanvas__search" type="search">
+
+        <div class="offcanvas__container">
+            <div class="filter__group">
+                <p class="filter__group-title">
+                    Автомобиль
+                    <a href="" class="filter__group-clean">очистить</a>
+                </p>
+
+                <div class="form-group filter__field">
+                    <div class="form-group has-value">
+                        <label class="label" for="">Марка</label>
+                        <input class="input" type="text" value="Mercedes-Benz">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="form-group has-value">
+                        <label class="label" for="">Модель</label>
+                        <input class="input" type="text" value="A170 (W168)">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="form-group">
+                        <label class="label" for="">Модификация</label>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Объем</label>
+                    <div class="input-group input-group--btn">
+                        <input class="input" type="number">
+                        <div class="btn-group">
+                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel1'">Бензин</a>
+                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel2'">Дизель</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__group">
+                <p class="filter__group-title">
+                    Запчасть
+                </p>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Название</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Артикул</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Оригинальный номер</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+            <div class="filter__group">
+                <p class="filter__group-title">
+                    Цена
+                </p>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Цена</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="form-group filter__field">
+                    <label class="label" for="">Скидка</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+        </div>
+
+    </aside>
 </div>
