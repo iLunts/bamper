@@ -72,7 +72,7 @@
     <aside data-ng-controller="asideCtrl" data-ng-include="'view/ui/aside/index.html'"></aside>
 
     <!-- Main view -->
-    <main class="main" data-ng-view></main>
+    <main class="main" data-ng-class="{'showFilter' : showFilter}" data-ng-view></main>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

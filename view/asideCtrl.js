@@ -9,4 +9,6 @@ app.controller('asideCtrl', function($scope){
     // $scope.changeState = function(state){
     //     state = !state;
     // }
+
+    $scope.showFilter = false;
 });

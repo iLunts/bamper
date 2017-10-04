@@ -12,9 +12,10 @@
     position: fixed;
     top: @top-menu-height;
     bottom: 0;
-    width: 250px;
+    width: @offcanvas-width;
     background-color: #fff;
     box-shadow: -10px 0 40px 0 rgba(0, 0, 0, 0.1);
+    transition: 300ms;
     z-index: 8;
     
     // -----------------------------------------
@@ -23,7 +24,11 @@
 
     // Modificator '.offcanvas.offcanvas--right'
     &&--right{
-        right: 0;
+        right: -100%;
+
+        &.open{
+            right: 0;
+        }
     }
 
     // Modificator '.offcanvas.offcanvas--filter'
