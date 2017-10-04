@@ -2362,7 +2362,7 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   -webkit-appearance: none;
   transition: all 200ms;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .input:focus {
@@ -2393,9 +2393,9 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 17px;
   margin: 0 0 6px 0;
-  font-size: .85rem;
+  font-size: 0.85rem;
   line-height: 1.2rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   color: #78909c;
   overflow: hidden;
@@ -2423,7 +2423,7 @@ input[type=number]::-webkit-outer-spin-button {
   flex-grow: 1;
 }
 
-.input-group.input-group--btn .btn-group>.btn {
+.input-group.input-group--btn .btn-group > .btn {
   box-shadow: none;
   border-radius: 0;
   border: 2px solid #e6ecef;
@@ -2434,14 +2434,14 @@ input[type=number]::-webkit-outer-spin-button {
   border-right-width: 0;
 }
 
-.input-group.input-group--btn .btn-group>.btn:last-child {
+.input-group.input-group--btn .btn-group > .btn:last-child {
   border-right-color: #e6ecef;
   border-right-width: 2px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.input-group.input-group--btn .btn-group>.btn.active {
+.input-group.input-group--btn .btn-group > .btn.active {
   border-top-color: #11a0f8;
   border-bottom-color: #11a0f8;
   color: #11a0f8;
@@ -2462,7 +2462,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   left: auto;
   right: 10px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2480,7 +2480,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   right: auto;
   left: 10px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #c3c3c3;
   margin-top: -6px;
 }
@@ -2491,10 +2491,10 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20px;
   border-radius: 3px;
   color: #3486db;
-  background-color: rgba(52,134,219,0.2);
+  background-color: rgba(52, 134, 219, 0.2);
   text-align: center;
   line-height: 20px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   margin-top: -10px;
 }
 
@@ -2572,7 +2572,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: auto;
   top: -8px;
   left: 8px;
-  font-size: .6rem;
+  font-size: 0.6rem;
   z-index: 2;
   background: #fff;
   padding: 4px 4px 0 4px;
