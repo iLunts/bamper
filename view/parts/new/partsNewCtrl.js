@@ -21,40 +21,6 @@ app.controller('partsNewCtrl', function ($scope) {
         $scope.showDetails = false;
     }
 
-    $scope.apartments = [
-        {
-            url: '/content/img/sale/flat/1.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/2.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/3.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/4.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/5.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/6.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/7.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/8.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/9.jpg'
-        },
-        {
-            url: '/content/img/sale/flat/10.jpg'
-        }
-    ];
-
-
     $scope.params = [{
             name: 'Статус',
             socr: 'Статус',

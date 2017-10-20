@@ -25,8 +25,7 @@
                     <button class="btn" data-ng-click="showFilter = !showFilter" data-ng-class="{'active':showFilter}">
                         <span class="btn__text">Фильтр</span>
                         <i class="btn__icon icon-filter_list"></i>
-                    </button>
-                                        
+                    </button>            
                 </div>
             </div>
         </div>
@@ -67,9 +66,8 @@
                     <p class="m--reset t--sm t--muted">Оригинальный номер: <b>A2128101821 A212 810 18</b></p>
                     <p class="m--reset t--sm t--muted">Артикул: <b>4847381</b></p>
                     <p class="m--reset t--md">описание</p>
-                    <!-- <p class="m--reset t--md">складская информация</p> -->
                 </div>
-                <div class="parts__stat">
+                <!-- <div class="parts__stat">
                     <span class="badge badge--view">
                         <i class="badge__icon icon icon-cursor"></i>
                         12 <small class="badge__subtitle">кликов</small>
@@ -77,6 +75,16 @@
                     <span class="badge badge--view">
                         <i class="badge__icon icon icon-eye"></i>
                         124 <small class="badge__subtitle">показов</small>
+                    </span>
+                </div> -->
+                <div class="parts__stat">
+                    <span class="badge badge--view">
+                        <i class="badge__icon icon icon-cursor"></i>
+                        12
+                    </span>
+                    <span class="badge badge--view">
+                        <i class="badge__icon icon icon-eye"></i>
+                        124
                     </span>
                 </div>
                 <div class="parts__price">
@@ -112,17 +120,17 @@
     </div>
 
     <aside class="offcanvas offcanvas--right offcanvas--filter filter" data-ng-class="{'open' : showFilter}">
-        <p class="offcanvas__title">
+        <!-- <p class="offcanvas__title">
             Фильтр
-        </p>
-        <input class="offcanvas__search" type="search">
+        </p> -->
+        <!-- <input class="offcanvas__search" type="search"> -->
 
         <div class="offcanvas__container">
             <div class="filter__group">
-                <p class="filter__group-title">
+                <!-- <p class="filter__group-title">
                     Автомобиль
                     <a href="" class="filter__group-clean">очистить</a>
-                </p>
+                </p> -->
 
                 <div class="form-group filter__field">
                     <div class="form-group has-value">
@@ -154,9 +162,9 @@
                 </div>
             </div>
             <div class="filter__group">
-                <p class="filter__group-title">
+                <!-- <p class="filter__group-title">
                     Запчасть
-                </p>
+                </p> -->
                 <div class="form-group filter__field">
                     <label class="label" for="">Название</label>
                     <input class="input" type="text">
