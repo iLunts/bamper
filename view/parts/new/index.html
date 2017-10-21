@@ -145,50 +145,97 @@
                     </div>
                 </div>
                 <div class="form-group filter__field">
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
+                            <div class="form-group">
+                                <label class="label" for="">Год</label>
+                                <input class="input" type="number" maxlength="4">
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="form-group">
+                                <label class="label" for="">Выпуска</label>
+                                <input class="input" type="number" maxlength="4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
+                            <div class="checkbox chekcbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="fuel1" name="fuel">
+                                <label for="fuel1" class="checkbox__label">Бензин</label>
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="checkbox checkbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="fuel2" name="fuel">
+                                <label for="fuel2" class="checkbox__label">Дизель</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
+                            <div class="checkbox chekcbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="transmition1" name="transmition">
+                                <label for="transmition1" class="checkbox__label">МКПП</label>
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="checkbox checkbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="transmition2" name="transmition">
+                                <label for="transmition2" class="checkbox__label">АКПП</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group filter__field">
                     <div class="form-group">
-                        <label class="label" for="">Модификация</label>
+                        <label class="label" for="">Название</label>
                         <input class="input" type="text">
                     </div>
                 </div>
                 <div class="form-group filter__field">
-                    <label class="label" for="">Объем</label>
-                    <div class="input-group input-group--btn">
-                        <input class="input" type="number">
-                        <div class="btn-group">
-                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel1'">Бензин</a>
-                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel2'">Дизель</a>
+                    <div class="form-group">
+                        <label class="label" for="">Название запчасти</label>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="form-group">
+                        <label class="label" for="">Артикул</label>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="form-group">
+                        <label class="label" for="">Оригинальный номер</label>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div class="form-group filter__field">
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
+                            <div class="checkbox chekcbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="status1" name="status">
+                                <label for="status1" class="checkbox__label">Активные</label>
+                            </div>
+                        </div>
+                        <div class="col--1-2">
+                            <div class="checkbox checkbox--radio m--b-sm">
+                                <input type="radio" class="checkbox__input" id="status2" name="status">
+                                <label for="status2" class="checkbox__label">Неактивные</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="filter__group">
-                <!-- <p class="filter__group-title">
-                    Запчасть
-                </p> -->
-                <div class="form-group filter__field">
-                    <label class="label" for="">Название</label>
-                    <input class="input" type="text">
-                </div>
-                <div class="form-group filter__field">
-                    <label class="label" for="">Артикул</label>
-                    <input class="input" type="text">
-                </div>
-                <div class="form-group filter__field">
-                    <label class="label" for="">Оригинальный номер</label>
-                    <input class="input" type="text">
-                </div>
-            </div>
-            <div class="filter__group">
-                <p class="filter__group-title">
-                    Цена
-                </p>
-                <div class="form-group filter__field">
-                    <label class="label" for="">Цена</label>
-                    <input class="input" type="text">
-                </div>
-                <div class="form-group filter__field">
-                    <label class="label" for="">Скидка</label>
-                    <input class="input" type="text">
+                <hr>
+                <div class="t--c">
+                    <a href="" class="btn">Очистить</a>
+                    <a href="" class="btn btn--blue">Найти</a>
                 </div>
             </div>
         </div>
