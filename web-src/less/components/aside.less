@@ -183,7 +183,8 @@
 
     // Element '.aside .aside__menu'
     & &__menu{
-        padding: 10px 0;
+        padding: 0 0 80px;
+        height: ~'calc(100% - 100px)';
         
         // Element '.aside .aside__menu-item'
         &-item{
@@ -332,5 +333,20 @@
                 bottom: 0;
             }
         }
+    }
+
+    // Element '.aside .aside__footer'
+    & &__footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid #eee;
+        background: #fff;
+        color: #71848e;
+        text-decoration: none;
+        font-size: .7rem;
+        text-align: center;
     }
 }

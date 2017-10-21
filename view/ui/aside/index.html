@@ -1,12 +1,7 @@
 <div>
-    <nav class="aside">
-        <!--<div class="aside__header">
-            <a href="" class="aside__header-link link link--reset">
-                <i class="icon icon-sort"></i>
-            </a>
-        </div>-->
+    <nav id="js-aside" class="aside">
 
-        <div class="aside__balance">
+        <div id="js-aside-balance" class="aside__balance">
             <div class="aside__balance-content">
                 <p class="aside__balance-tarif">« Освободи гараж »</p>
                 <p class="aside__balance-price">200 руб.</p>
@@ -14,26 +9,11 @@
                     <a href="javascript:void(0)" class="link link--reset">пополнить баланс</a>
                 </p>
             </div>
-            <!-- <a href="" class="aside__balance-payment">
-                <i class="icon icon-add"></i>
-            </a> -->
         </div>
 
-        <!-- <div class="aside__add t--c">
-            <a href="" class="btn btn--blue" data-ng-click="showNew = !showNew">
-                Добавить
-            </a>
-        </div> -->
-
-        <div class="aside__menu">
-            <!-- <div class="aside__menu-item aside__menu-item--parent active">
-                <a href="javascript:void(0);" class="aside__menu-link">
-                    <i class="aside__menu-icon icon-ads-2"></i>
-                    <span class="aside__menu-text">Объявления</span>
-                </a>
-            </div> -->
+        <div id="js-aside-menu" class="aside__menu" ng-scrollbars ng-scrollbars-config="config">
+            
             <div class="aside__menu-item aside__menu-item--submenu" data-ng-class="{'hover' : showParts}">
-                <!-- <a href="" class="aside__menu-link" data-ng-click="showParts = !showParts"> -->
                 <a href="" class="aside__menu-link">
                     <i class="aside__menu-icon icon-hammer-and-wrench"></i>
                     <span class="aside__menu-text">Запчасти</span>
@@ -79,6 +59,14 @@
                     <span class="aside__menu-text">Профиль</span>
                 </a>
             </div>
+        </div>
+        <div id="js-aside-footer" class="aside__footer">
+            <p class="m--b-sm">
+                <a href="/" class="link link--reset">www.bamper.by</a>
+            </p>
+            <p class="m--reset">
+                <a href="mailto:info@bamper.by" class="link link--reset">info@bamper.by</a>
+            </p>
         </div>
     </nav>
 

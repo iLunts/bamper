@@ -52,6 +52,31 @@
     // All elements
     // -----------------------------------------
 
+    // Element '.panel .panel__header'
+    & &__header{
+        position: relative;
+        padding: @panel-padding;
+        background: #fff;
+        border-radius: 4px 4px 0 0;
+        color: #444;
+        font-size: .9rem;
+        font-weight: 100;
+
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: @panel-padding;
+            right: @panel-padding;
+            border-bottom: 1px solid #eee;
+        }
+        
+        + .panel__content{
+            padding-top: @panel-padding;
+            border-radius: 0 0 4px 4px;
+        }
+    }
+
     // Element '.panel .panel__content'
     & &__content{
         padding: @panel-padding;
