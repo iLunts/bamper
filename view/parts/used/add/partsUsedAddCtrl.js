@@ -1,12 +1,12 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/parts/add", {
-            templateUrl: "view/parts/add/index.html",
-            controller: "partsAddCtrl"
+        $routeProvider.when("/parts/used/add", {
+            templateUrl: "view/parts/used/add/index.html",
+            controller: "partsUsedAddCtrl"
         });
     }
 ]);
 
-app.controller('partsAddCtrl', function($scope, FileUploader){
+app.controller('partsUsedAddCtrl', function($scope, FileUploader){
 
     $scope.sale = 0;
     $scope.price = 0;

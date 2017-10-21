@@ -1,1 +1,22 @@
-.offcanvas{position:fixed;top:40px;bottom:0;width:250px;background-color:#fff;box-shadow:-10px 0 40px 0 rgba(0,0,0,0.1);transition:300ms;z-index:8}.offcanvas.offcanvas--right{right:-100%}.offcanvas.offcanvas--right.open{right:0}.offcanvas .offcanvas__container{padding:25px 15px;overflow-x:hidden;overflow-y:auto;height:100%}
+.offcanvas {
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -10px 0 40px 0 rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+  z-index: 8;
+}
+.offcanvas.offcanvas--right {
+  right: -100%;
+}
+.offcanvas.offcanvas--right.open {
+  right: 0;
+}
+.offcanvas .offcanvas__container {
+  padding: 25px 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}

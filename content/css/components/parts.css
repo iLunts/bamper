@@ -1,1 +1,178 @@
-.parts{position:relative}.parts .parts__panel:hover .parts__action{display:block}.parts .parts__panel:hover .parts__date{display:none}.parts .parts__panel:hover .parts__stat .badge{color:#777;border-color:#eee;padding-left:0;transition:width 350ms ease-out,border-color 350ms ease-out}.parts .parts__panel:hover .parts__stat .badge__icon{padding:5px;width:auto;visibility:visible;opacity:1;transition:opacity 350ms ease-out}.parts .parts__activity{position:absolute;top:10px;bottom:10px;left:0;width:3px;border-radius:0 4px 4px 0;background-color:#ddd;z-index:2}.parts .parts__activity.parts__activity--success{background-color:#8bc34a}.parts .parts__activity.parts__activity--error{background-color:#ff6c6c}.parts .parts__check{float:left;width:3%;margin-top:30px;text-align:center}.parts .parts__img{position:relative;float:left;width:80px;margin-right:1%;min-height:50px}.parts .parts__img-img{position:absolute;top:0;bottom:0;left:0;right:0;background-size:cover;background-position:center;background-repeat:no-repeat}.parts .parts__img img{visibility:hidden;opacity:0}.parts .parts__name{padding:10px 0;float:left;width:35%}.parts .parts__name .splite{margin-left:10px;padding-left:10px;border-left:1px dotted #ddd}.parts .parts__name-title{float:left;margin:0;font-weight:500;font-size:.8rem}.parts .parts__name-subtitle{float:left;font-weight:600;font-size:.8rem;margin:5px 0 0 0}.parts .parts__sort{margin-bottom:10px;text-align:center;background:#fff;border-radius:3px;box-shadow:0 3px 10px 0 rgba(0,0,0,0.1)}.parts .parts__sort .link{padding:10px 10px 8px;text-decoration:none;color:#bbb;font-size:.9rem;border-bottom:2px solid transparent}.parts .parts__sort .link.active{border-bottom-color:#3486db;color:#333;font-weight:600}.parts .parts__desc{float:left;width:32%;padding:10px 0}.parts .parts__price{float:left;padding:10px 0;width:14%;text-align:center}.parts .parts__price-text{border-radius:4px;font-size:1.1rem;font-weight:600;margin:5px 0 0 0}.parts .parts__sale{position:absolute;top:5px;right:5px;font-size:1.2rem;color:#FF9800}.parts .parts__date{display:block;margin-top:10px;font-size:.8rem;color:#999;line-height:20px}.parts .parts__action{display:none;margin:10px 0 3px 0;transition:all 250ms}.parts .parts__action .btn{width:18px;height:18px;background:#eee;color:#888;padding:0;line-height:18px;font-size:.6rem}.parts .parts__stat{float:left;padding:10px 0;width:8%}.parts .parts__stat .badge{padding:0 10px 0 24px;font-weight:600;font-size:.7rem;height:26px;line-height:21px;border-color:transparent;color:#ddd}.parts .parts__stat .badge+.badge{margin-top:8px}.parts .parts__stat .badge__icon{visibility:hidden;background:#eee;border-radius:100px;padding:0;width:0;color:#333;font-size:.85rem;opacity:0}
+.parts {
+  position: relative;
+}
+.parts .parts__panel:hover .parts__action {
+  display: block;
+}
+.parts .parts__panel:hover .parts__date {
+  display: none;
+}
+.parts .parts__panel:hover .parts__stat .badge {
+  color: #777;
+  border-color: #eee;
+  padding-left: 0;
+  transition: width 350ms ease-out, border-color 350ms ease-out;
+}
+.parts .parts__panel:hover .parts__stat .badge__icon {
+  padding: 5px;
+  width: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 350ms ease-out;
+}
+.parts .parts__activity {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 4px 4px 0;
+  background-color: #ddd;
+  z-index: 2;
+}
+.parts .parts__activity.parts__activity--success {
+  background-color: #8bc34a;
+}
+.parts .parts__activity.parts__activity--error {
+  background-color: #ff6c6c;
+}
+.parts .parts__check {
+  float: left;
+  width: 3%;
+  margin-top: 30px;
+  text-align: center;
+}
+.parts .parts__img {
+  position: relative;
+  float: left;
+  width: 80px;
+  margin-right: 1%;
+  min-height: 50px;
+}
+.parts .parts__img-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parts .parts__img img {
+  visibility: hidden;
+  opacity: 0;
+}
+.parts .parts__name {
+  padding: 10px 0;
+  float: left;
+  width: 35%;
+}
+.parts .parts__name .splite {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px dotted #ddd;
+}
+.parts .parts__name-title {
+  float: left;
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.parts .parts__name-subtitle {
+  float: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 5px 0 0 0;
+}
+.parts .parts__sort {
+  margin-bottom: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.parts .parts__sort .link {
+  padding: 10px 10px 8px;
+  text-decoration: none;
+  color: #bbb;
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+}
+.parts .parts__sort .link.active {
+  border-bottom-color: #3486db;
+  color: #333;
+  font-weight: 600;
+}
+.parts .parts__desc {
+  float: left;
+  width: 32%;
+  padding: 10px 0;
+}
+.parts .parts__price {
+  float: left;
+  padding: 10px 0;
+  width: 14%;
+  text-align: center;
+}
+.parts .parts__price-text {
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+.parts .parts__sale {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: #FF9800;
+}
+.parts .parts__date {
+  display: block;
+  margin-top: 10px;
+  font-size: .8rem;
+  color: #999;
+  line-height: 20px;
+}
+.parts .parts__action {
+  display: none;
+  margin: 10px 0 3px 0;
+  transition: all 250ms;
+}
+.parts .parts__action .btn {
+  width: 18px;
+  height: 18px;
+  background: #eee;
+  color: #888;
+  padding: 0;
+  line-height: 18px;
+  font-size: 0.6rem;
+}
+.parts .parts__stat {
+  float: left;
+  padding: 10px 0;
+  width: 8%;
+}
+.parts .parts__stat .badge {
+  padding: 0 10px 0 24px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  height: 26px;
+  line-height: 21px;
+  border-color: transparent;
+  color: #ddd;
+}
+.parts .parts__stat .badge + .badge {
+  margin-top: 8px;
+}
+.parts .parts__stat .badge__icon {
+  visibility: hidden;
+  background: #eee;
+  border-radius: 100px;
+  padding: 0;
+  width: 0;
+  color: #333;
+  font-size: 0.85rem;
+  opacity: 0;
+}

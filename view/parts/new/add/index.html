@@ -7,7 +7,7 @@
                 <i class="icon icon-air-filter"></i>
                 </span>
                 <p class="header__title">
-                    Создание нового объявления
+                    Создание новой запчасти
                 </p>
             </div>
         </div>
@@ -26,117 +26,25 @@
                 <div class="add__group panel panel--shadow">
                     <div class="add__header">
                         <p class="add__header-title">
-                            1. Автомобиль
+                            1. Запчасть
                         </p>
                     </div>
 
                     <div class="grid grid--sm">
                         <div class="col--1-2">
-                            <div class="form-group has-value">
-                                <label class="label" for="">Марка</label>
-                                <input class="input" type="text" value="Mercedes-Benz">
+                            <div class="form-group">
+                                <label class="label" for="">Бренд</label>
+                                <input class="input" type="text">
                             </div>
                         </div>
                         <div class="col--1-2">
-                            <div class="form-group has-value">
-                                <label class="label" for="">Модель</label>
-                                <input class="input" type="text" value="A170 (W168)">
+                            <div class="form-group">
+                                <label class="label" for="">Артикул</label>
+                                <input class="input" type="text">
                             </div>
                         </div>
                     </div>
                     
-                    <div class="grid grid--sm">
-                        <div class="col--1-2">
-                            <div class="form-group">
-                                <label class="label" for="">Модификация</label>
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="col--1-2">
-                            <div class="form-group">
-                                <label class="label" for="">Год выпуска</label>
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid--sm">
-                        <div class="col--1-2">
-                            <div class="form-group">
-                                <label class="label" for="">Объем</label>
-                                <div class="input-group input-group--btn">
-                                    <input class="input" type="number">
-                                    <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel1'">Бензин</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel2'">Дизель</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col--1-2">
-                            <div class="form-group">
-                                <label class="label" for="">Коробка</label>
-                                <div class="input-group input-group--btn">
-                                    <input class="input" type="number">
-                                    <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="transmition" uib-btn-radio="'transmition1'">МКПП</a>
-                                        <a href="" class="btn" data-ng-model="transmition" uib-btn-radio="'transmition2'">АКПП</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid grid--sm">
-                        <div class="col--1-1">
-                            <div class="btn-group btn-group--icon">
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">седан</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">хэтчбек</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type3'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">универсал</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type4'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">купе</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type5'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">кабриолет</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type6'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">минивэн</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type7'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">пикап</span>
-                                </a>
-                                <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type8'">
-                                    <i class="btn__icon icon icon-car-type"></i>
-                                    <span class="btn__text">фургон</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col--1-3">
-                <div class="add__group panel panel--shadow">
-                    <div class="add__header">
-                        <p class="add__header-title">
-                            2. Запчасть
-                        </p>
-                    </div>
-
                     <div class="grid grid--sm">
                         <div class="col--1-1">
                             <div class="form-group">
@@ -144,79 +52,35 @@
                                 <input class="input" type="text">
                             </div>
                         </div>
-                        <div class="col--1-2 m--b-sm">
+                    </div>
+                    
+                    <div class="grid grid--sm">
+                        <div class="col--1-2">
                             <div class="form-group">
-                                <label class="label" for="">Артикул</label>
-                                <input class="input m--reset" type="text">
+                                <label class="label" for="">Количество</label>
+                                <input class="input" type="number">
                             </div>
-                            <!-- <small class="t--muted t--sm">можно латинские буквы, цифры и -_ (a-z0-9-_)</small> -->
-                            <p class="t--muted t--sm m--t-mini t--r">цифры и - _ (a-z 0-9)</p>
                         </div>
                         <div class="col--1-2">
                             <div class="form-group">
-                                <label class="label" for="">Оригинальный номер</label>
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="col--1-1 m--b-sm">
-                            <div class="form-group">
-                                <label class="label" for="">Описание</label>
-                                <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="col--1-1">
-                            <div class="form-group">
-                                <label class="label" for="">Складская информация</label>
-                                <textarea class="input input--textarea" name="" id="" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="col--1-1 t--c">
-
-                            <div class='upload upload--empty'>
-
-                                <div class='upload__content'>
-                                    <input class='upload__button' type='file' name='file' accept="image/x-png, image/gif, image/jpeg" />
-
-                                    <img class='svg-upload-file' src='content/img/svg/upload/upload-file.svg' alt=''>
-                                    <img class='svg-uploading' src='content/img/svg/upload/uploading-file.svg' alt=''>
-
-                                    <div class='upload__progress'>
-                                        <div class='upload__progress-line' role='progressbar' style='width: 15%;'></div>
-                                    </div>
-
-                                    <!--Unselect-->
-                                    <p class='upload__status'>Загрузите фотографию запчасти</p>
-                                    <p class='upload__substatus'>Кликните в этой области для выбора фотографии...</p>
-
-                                    <!--Select-->
-                                    <!-- <p class="t--c hidden">
-                                        <button type="button" class="btn btn--success">
-                                            Изменить
-                                        </button>
-                                        <a class="btn" target="blank">
-                                            Просмотреть фото
-                                        </a>
-                                    </p> -->
-                                </div>
+                                <label class="label" for="">Доставка</label>
+                                <input class="input" type="number">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="col--1-3">
                 <div class="add__group panel panel--shadow">
                     <div class="add__header">
                         <p class="add__header-title">
-                            3. Цена
+                            2. Цена
                         </p>
                     </div>
 
                     <div class="grid grid--sm">
-                        <div class="col--1-1">
+                        <div class="col--2-3">
                             <div class="form-group">
                                 <label class="label" for="">Цена</label>
                                 <div class="input-group input-group--btn">
@@ -230,9 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid">
-                        <div class="col--1-1">
+                        <div class="col--1-3">
                             <div class="input-group input-group--right">
                                 <input class="input-group__input input" type="number" data-ng-model="sale">
                                 <span class="input-group__prefix">%</span>
@@ -253,13 +115,16 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="col--1-3">
                 <div class="add__group panel panel--shadow">
                     <div class="add__header">
                         <p class="add__header-title">
-                            4. Контакты
+                            3. Контакты
                         </p>
                     </div>
-
+                
                     <div class="grid grid--sm">
                         <div class="col--1-1">
                             <div class="clearfix">
@@ -278,7 +143,7 @@
                         </div>
                         <div class="col--1-1">
                             <div class="m--t collapse" data-uib-collapse="!isShowContatc">
-                        
+                
                                 <div class="grid">
                                     <div class="col--4-6 push--1-6">
                                         <div>
@@ -318,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="grid t--c">
                     <div class="col--1-1">
                         <div class="checkbox d--ib m--t-md">
@@ -333,7 +198,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
