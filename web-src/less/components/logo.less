@@ -1,10 +1,6 @@
 // out: ../../../content/css/components/logo.css, compress: true
 @import 'variables.less';
-// Name:            logo
-// Description:     Defines styles to create layouts with logo
 //
-//
-// Component:       `.logo__*`
 // ----------------------------------------------------
 // Block '.logo'
 // ----------------------------------------------------
@@ -60,6 +56,34 @@
         font-weight: 400;
         color: #bbb;
         margin-top: 2px;
+    }
+
+}
+
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.logo'
+    // ----------------------------------------------------
+    .logo {
+
+        // Element '.logo .logo__img'
+        & &__img{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            margin-top: 3px;
+        }
+
+        // Element '.logo .logo__desc'
+        & &__desc{
+            margin-top: 0;
+        }
     }
 
 }

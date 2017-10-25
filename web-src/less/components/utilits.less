@@ -316,11 +316,11 @@ blockquote {
     .m {
         margin: @margin-padding 0 !important;
         // Small
-        &--sm {
+        &--sm-xs {
             margin: (@margin-padding / 2) 0 !important;
         }
         // Mini
-        &--mini {
+        &--mini-xs {
             margin: (@margin-padding / 4) 0 !important;
         }
         
@@ -328,19 +328,19 @@ blockquote {
         &--b {
             margin: 0 0 @margin-padding !important;
 
-            &-xlg {
+            &-xlg-xs {
                 margin: 0 0 (@margin-padding * 4) !important;
             }
 
-            &-lg {
+            &-lg-xs {
                 margin: 0 0 (@margin-padding * 2) !important;
             }
 
-            &-sm {
+            &-sm-xs {
                 margin: 0 0 (@margin-padding / 2) !important;
             }
 
-            &-mini {
+            &-mini-xs {
                 margin: 0 0 (@margin-padding / 4) !important;
             }
         }
@@ -348,23 +348,23 @@ blockquote {
         &--t {
             margin: @margin-padding 0 0 !important;
 
-            &-xxxlg {
+            &-xxxlg-xs {
                 margin: (@margin-padding * 12) 0 0 !important;
             }
 
-            &-xxlg {
+            &-xxlg-xs {
                 margin: (@margin-padding * 8) 0 0 !important;
             }
 
-            &-xlg {
+            &-xlg-xs {
                 margin: (@margin-padding * 4) 0 0 !important;
             }
 
-            &-lg {
+            &-lg-xs {
                 margin: (@margin-padding * 2) 0 0 !important;
             }
 
-            &-md {
+            &-md-xs {
                 margin: (@margin-padding * 1.5) 0 0 !important;
             }
 
@@ -372,18 +372,132 @@ blockquote {
                 margin: (@margin-padding / 2) 0 0 !important;
             }
 
-            &-mini {
+            &-mini-xs {
                 margin: (@margin-padding / 4) 0 0 !important;
             }
 
-            &-reset {
+            &-reset-xs {
                 margin-top: 0 !important;
             }
 
             // Reverse
-            &-reverse{
+            &-reverse-xs{
                 margin-top: -@margin-padding !important;
             }
+        }
+    }
+
+    // -------------------------------------------------------
+    // Block '.visible'
+    // -------------------------------------------------------
+    .visible{
+        &--xlg{
+            display: none !important;
+        }
+        &--lg{
+            display: none !important;
+        }
+        &--md{
+            display: none !important;
+        }
+        &--sm{
+            display: none !important;
+        }
+    }
+}
+
+// -------------------------------------------------------
+// Size 'Small'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max) {
+    
+    // -------------------------------------------------------
+    // Block '.visible'
+    // -------------------------------------------------------
+    .visible{
+        &--xlg{
+            display: none !important;
+        }
+        &--lg{
+            display: none !important;
+        }
+        &--md{
+            display: none !important;
+        }
+        &--xs{
+            display: none !important;
+        }
+    }
+}
+
+// -------------------------------------------------------
+// Size 'Medium'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-md-min) and (max-width: @breakpoint-md-max) {
+    
+    // -------------------------------------------------------
+    // Block '.visible'
+    // -------------------------------------------------------
+    .visible{
+        &--xlg{
+            display: none !important;
+        }
+        &--lg{
+            display: none !important;
+        }
+        &--sm{
+            display: none !important;
+        }
+        &--xs{
+            display: none !important;
+        }
+    }
+}
+
+// -------------------------------------------------------
+// Size 'Large'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-lg-min) and (max-width: @breakpoint-lg-max) {
+    
+    // -------------------------------------------------------
+    // Block '.visible'
+    // -------------------------------------------------------
+    .visible{
+        &--xlg{
+            display: none !important;
+        }
+        &--md{
+            display: none !important;
+        }
+        &--sm{
+            display: none !important;
+        }
+        &--xs{
+            display: none !important;
+        }
+    }
+}
+
+// -------------------------------------------------------
+// Size 'xLarge'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xlg-min) {
+    
+    // -------------------------------------------------------
+    // Block '.visible'
+    // -------------------------------------------------------
+    .visible{
+        &--lg{
+            display: none !important;
+        }
+        &--md{
+            display: none !important;
+        }
+        &--sm{
+            display: none !important;
+        }
+        &--xs{
+            display: none !important;
         }
     }
 }
