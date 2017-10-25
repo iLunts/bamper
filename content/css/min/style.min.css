@@ -1019,8 +1019,9 @@ a:hover {
 @media (min-width:320px) and (max-width:767px) {
   .dash-stat .dash-stat__item {
     width: 100%;
-    padding: 0 10px;
+    padding: 15px 10px;
     text-align: left;
+    margin: 0;
   }
 
   .dash-stat .dash-stat__item+.dash-stat__item {
@@ -1029,7 +1030,15 @@ a:hover {
   }
 
   .dash-stat .dash-stat__icon {
+    width: auto;
+    height: auto;
     float: left;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .dash-stat .dash-stat__title {
+    margin: 4px 0;
   }
 }
 .dropdown {
@@ -3675,7 +3684,7 @@ img {
   border-radius: 4px;
 }
 
-.panel + .panel {
+.panel+.panel {
   margin-top: 20px;
 }
 
@@ -3683,7 +3692,7 @@ img {
   padding: 10px;
 }
 
-.panel.panel--sm + .panel--sm {
+.panel.panel--sm+.panel--sm {
   margin-top: 10px;
 }
 
@@ -3692,7 +3701,7 @@ img {
 }
 
 .panel.panel--shadow {
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
 }
 
 .panel .panel__header {
@@ -3714,7 +3723,7 @@ img {
   border-bottom: 1px solid #eee;
 }
 
-.panel .panel__header + .panel__content {
+.panel .panel__header+.panel__content {
   padding-top: 20px;
   border-radius: 0 0 4px 4px;
 }
@@ -3723,6 +3732,12 @@ img {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+  .panel .panel__content {
+    padding: 10px;
+  }
 }
 .panorama .panorama__preview {
   position: relative;

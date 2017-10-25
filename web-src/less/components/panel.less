@@ -1,10 +1,6 @@
 // out: ../../../content/css/components/panel.css, compress: true
 @import 'variables.less';
-// Name:            panel
-// Description:     Defines styles to create layouts with panel
 //
-//
-// Component:       `.panel__*`
 // ----------------------------------------------------
 // Block '.panel'
 // ----------------------------------------------------
@@ -84,4 +80,22 @@
         border-radius: 4px;
     }
 
+}
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.panel'
+    // ----------------------------------------------------
+    .panel {
+        
+        // Element '.panel .panel__content'
+        & &__content{
+            padding: 10px;
+        }
+    }
 }
