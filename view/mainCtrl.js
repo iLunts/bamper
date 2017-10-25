@@ -20,4 +20,6 @@ app.controller('mainCtrl', function($scope){
         scrollInertia: 0,
         asix: 'x'
     }
+
+    $scope.isMenuOpenXs = false;
 });

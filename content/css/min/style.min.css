@@ -344,7 +344,13 @@
 
 @media (min-width:320px) and (max-width:767px) {
   .aside {
-    left: -100%;
+    right: -100%;
+    left: auto;
+    box-shadow: -10px 10px 40px 0 rgba(0,0,0,0.1);
+  }
+
+  .aside.open {
+    right: 0;
   }
 }
 .avatar {
