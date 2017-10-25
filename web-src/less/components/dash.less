@@ -1,10 +1,6 @@
 // out: ../../../content/css/components/dash.css, compress: true
 @import 'variables.less';
-// Name:            dash
-// Description:     Defines styles to create layouts with empty
 //
-//
-// Component:       `.dash__*`
 // ----------------------------------------------------
 // Block '.dash'
 // ----------------------------------------------------
@@ -98,4 +94,34 @@
     // -----------------------------------------
 
 
+}
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.dash-stat'
+    // ----------------------------------------------------
+    .dash-stat {
+
+        // Element '.dash-stat .dash-stat__item'
+        & &__item{
+            width: 100%;
+            padding: 0 10px;
+            text-align: left;
+            
+            + .dash-stat__item{
+                border-left: none;
+                border-top: 1px solid #eee;
+            }
+        }
+
+        // Element '.dash-stat .dash-stat__icon'
+        & &__icon{
+            float: left;
+        }
+    }
 }

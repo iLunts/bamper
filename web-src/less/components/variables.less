@@ -5,10 +5,16 @@
 @font-icon:                        'icomoon';
 
 // Breakpoints
-@breakpoint-small:                 768px;
-@breakpoint-medium:                1024px;
-@breakpoint-large:                 1220px;
-@breakpoint-xlarge:                1600px;
+@breakpoint-xs-min:                320px;
+@breakpoint-xs-max:                (@breakpoint-sm-min - 1);
+@breakpoint-sm-min:                768px;
+@breakpoint-sm-max:                (@breakpoint-md-min - 1);
+@breakpoint-md-min:                1024px;
+@breakpoint-md-max:                (@breakpoint-lg-min - 1);
+@breakpoint-lg-min:                1220px;
+@breakpoint-lg-max:                (@breakpoint-xlg-min - 1);
+@breakpoint-xlg-min:               1600px;
+
 // @breakpoint-mini-max:           (@breakpoint-small - 1);
 // @breakpoint-small-max:          (@breakpoint-medium - 1);
 // @breakpoint-medium-max:         (@breakpoint-large - 1);
