@@ -1,10 +1,6 @@
 // out: ../../../content/css/components/header.css, compress: true
 @import 'variables.less';
-// Name:            header
-// Description:     Defines styles to create layouts with header
 //
-//
-// Component:       `.header__*`
 // ----------------------------------------------------
 // Block '.header'
 // ----------------------------------------------------
@@ -79,6 +75,34 @@
 
         .btn__text{
             line-height: 26px;
+        }
+    }
+
+}
+
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.header'
+    // ----------------------------------------------------
+    .header {
+
+        // Element '.header .header__icon'
+        & &__icon{
+            width: 40px;
+            height: 40px;
+            line-height: 34px;
+            font-size: 1.4rem;
+        }
+
+        // Element '.header .header__title'
+        & &__title{
+            margin: 6px 0 0 6px;
         }
     }
 
