@@ -230,8 +230,11 @@
   font-size: .7rem;
   text-align: center;
 }
+.asideOpen {
+  overflow: hidden;
+}
 .asideOpen .main {
-  filter: blur(5px);
+  opacity: .1;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .aside {
