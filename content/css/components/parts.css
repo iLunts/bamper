@@ -184,4 +184,10 @@
   .parts .parts__scroll {
     white-space: nowrap;
   }
+  .parts .parts__activity {
+    visibility: hidden;
+  }
+  .parts .parts__check {
+    width: 15%;
+  }
 }
