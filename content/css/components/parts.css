@@ -176,3 +176,12 @@
   font-size: 0.85rem;
   opacity: 0;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .parts .parts__sort {
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .parts .parts__scroll {
+    white-space: nowrap;
+  }
+}

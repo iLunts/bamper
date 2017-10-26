@@ -1,1 +1,45 @@
-.logo{position:relative;padding:4px 0}.logo .logo__img{float:left;vertical-align:middle;width:30px;height:30px;border-radius:4px;line-height:30px;text-align:center;font-weight:500;font-size:1.2rem;text-shadow:0 2px 2px #1976d2;background-color:#3486db;color:#fff;margin:1px 8px 0 0}.logo .logo__text{margin:0;font-size:.9rem;font-weight:700;line-height:1;padding-top:3px}.logo .logo__desc{margin:0;font-size:.6rem;font-weight:400;color:#bbb;margin-top:2px}@media (min-width:320px) and (max-width:767px){.logo .logo__img{width:25px;height:25px;line-height:25px;margin-top:3px}.logo .logo__desc{margin-top:0}}
+.logo {
+  position: relative;
+  padding: 4px 0;
+}
+.logo .logo__img {
+  float: left;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 2px #1976d2;
+  background-color: #3486db;
+  color: #fff;
+  margin: 1px 8px 0 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85c3f2+0,2196f3+100 */
+}
+.logo .logo__text {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 3px;
+}
+.logo .logo__desc {
+  margin: 0;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #bbb;
+  margin-top: 2px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo .logo__img {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 3px;
+  }
+  .logo .logo__desc {
+    margin-top: 0;
+  }
+}

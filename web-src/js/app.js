@@ -29,5 +29,8 @@ app.config(["$routeProvider", function($routeProvider) {
     });
 }]);
 
+app.factory('Data', function () {
+    return { isMenuOpenXs: false };
+});
 
 

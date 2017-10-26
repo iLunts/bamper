@@ -32,23 +32,25 @@
     </div>
 
     <div class="parts">
-        <ul class="parts__sort list list--h">
-            <li class="list__item active">
-                <a href="" class="link">дата подачи</a>
-            </li>
-            <li class="list__item">
-                <a href="" class="link">запчасть</a>
-            </li>
-            <li class="list__item">
-                <a href="" class="link active">марка-модель-запчасть-год</a>
-            </li>
-            <li class="list__item">
-                <a href="" class="link">год выпуска</a>
-            </li>
-            <li class="list__item">
-                <a href="" class="link">просмотры</a>
-            </li>
-        </ul>
+        <div class="parts__scroll">
+            <ul class="parts__sort list list--h">
+                <li class="list__item active">
+                    <a href="" class="link">дата подачи</a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="link">запчасть</a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="link active">марка-модель-запчасть-год</a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="link">год выпуска</a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="link">просмотры</a>
+                </li>
+            </ul>
+        </div>
         <div class="parts__panel panel panel--shadow panel--sm panel--nop" data-ng-repeat="item in parts">
             <div class="panel__content clearfix">
                 <div class="parts__activity parts__activity--success"></div>

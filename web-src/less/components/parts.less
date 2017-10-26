@@ -263,3 +263,27 @@
         }
     }
 }
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.parts'
+    // ----------------------------------------------------
+    .parts {
+
+        // Element '.parts .parts__sort'
+        & &__sort{
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+        // Element '.parts .parts__scroll'
+        & &__scroll{
+            white-space: nowrap;
+        }
+    }
+}

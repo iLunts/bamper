@@ -1,4 +1,6 @@
-app.controller('mainCtrl', function($scope){
+app.controller('mainCtrl', function($scope, Data){
+    
+    $scope.Data = Data;
 
     // var aside = angular.element(document.querySelector('#js-aside'));
     // var asideBalance = angular.element(document.querySelector('#js-aside-balance'));
@@ -21,5 +23,4 @@ app.controller('mainCtrl', function($scope){
         asix: 'x'
     }
 
-    $scope.isMenuOpenXs = false;
 });
