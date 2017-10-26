@@ -311,6 +311,10 @@
   overflow: hidden;
 }
 
+.asideOpen .main {
+  opacity: .1;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .aside {
     width: 70%;
@@ -5063,7 +5067,7 @@ blockquote {
     margin: 0 0 5px !important;
   }
 
-  .m--t {
+  .m--t-xs {
     margin: 20px 0 0 !important;
   }
 
