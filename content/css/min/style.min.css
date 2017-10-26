@@ -3071,7 +3071,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .input-group {
   position: relative;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px;
 }
 
 .input-group.input-group--btn {
@@ -3397,6 +3397,10 @@ img {
 @media (min-width: 320px) and (max-width: 767px) {
   .main {
     margin: 0;
+  }
+
+  .main.showFilter {
+    margin-right: 0;
   }
 }
 .metro {
@@ -5370,6 +5374,10 @@ blockquote {
 
   .m--t-reverse-xs {
     margin-top: -20px !important;
+  }
+
+  .m--reset-xs {
+    margin: 0 !important;
   }
 
   .visible--xlg {

@@ -52,7 +52,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .input-group {
   position: relative;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px;
 }
 .input-group.input-group--btn {
   display: flex;

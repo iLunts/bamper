@@ -241,6 +241,9 @@ blockquote {
   .m--t-reverse-xs {
     margin-top: -20px !important;
   }
+  .m--reset-xs {
+    margin: 0 !important;
+  }
   .visible--xlg {
     display: none !important;
   }

@@ -28,4 +28,7 @@ img {
   .main {
     margin: 0;
   }
+  .main.showFilter {
+    margin-right: 0;
+  }
 }
