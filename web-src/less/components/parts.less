@@ -295,6 +295,49 @@
         & &__check{
             width: 15%;
         }
+
+        // Element '.parts .parts__name'
+        & &__name{
+            width: 100%;
+            padding: 5px 15px;
+        }
+
+        // Element '.parts .parts__desc'
+        & &__desc{
+            width: 100%;
+            padding: 5px 15px;
+        }
+
+        // Element '.parts .parts__stat'
+        & &__stat{
+            width: 50%;
+            padding: 5px 15px;
+            
+            // Element '.parts .parts__stat .badge'
+            .badge{
+                color: #777;
+                border-color: #eee;
+                padding-left: 0;
+                transition: width 350ms ease-out, border-color 350ms ease-out;
+
+                & + .badge{
+                    margin-top: 0;
+                }
+
+                &__icon{
+                    padding: 5px;
+                    width: auto;
+                    visibility: visible;
+                    opacity: 1;
+                    transition: opacity 350ms ease-out;
+                }
+            }
+        }
         
+        // Element '.parts .parts__price'
+        & &__price{
+            width: 50%;
+            padding: 5px 15px;
+        }
     }
 }

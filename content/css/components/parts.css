@@ -190,4 +190,36 @@
   .parts .parts__check {
     width: 15%;
   }
+  .parts .parts__name {
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .parts .parts__desc {
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .parts .parts__stat {
+    width: 50%;
+    padding: 5px 15px;
+  }
+  .parts .parts__stat .badge {
+    color: #777;
+    border-color: #eee;
+    padding-left: 0;
+    transition: width 350ms ease-out, border-color 350ms ease-out;
+  }
+  .parts .parts__stat .badge + .badge {
+    margin-top: 0;
+  }
+  .parts .parts__stat .badge__icon {
+    padding: 5px;
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 350ms ease-out;
+  }
+  .parts .parts__price {
+    width: 50%;
+    padding: 5px 15px;
+  }
 }
