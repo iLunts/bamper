@@ -103,6 +103,11 @@
         // Element '.header .header__title'
         & &__title{
             margin: 6px 0 0 6px;
+            width: 80%;
+            width: ~'calc(100% - 60px)';
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         // Element '.header .header__btn'

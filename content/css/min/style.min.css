@@ -36,7 +36,43 @@
   font-weight: 700;
   margin: 0 0 10px 0;
 }
+.add .add__group {
+  background-color: #fff;
+  padding: 20px;
+}
 
+.add .add__group + .add__group {
+  border-top: none;
+}
+
+.add .add__group .grid + .grid {
+  margin-top: 10px;
+}
+
+.add .add__group.isSuccess {
+  background: rgba(139, 195, 74, 0.05);
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .input {
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .add__header-title {
+  color: #8bc34a;
+}
+
+.add .add__group.isSuccess .label {
+  color: #689f38;
+}
+
+.add .add__header-title {
+  color: #03a9f4;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
 .aside {
   position: fixed;
   top: 40px;
@@ -2441,6 +2477,11 @@ fieldset {
 
   .header .header__title {
     margin: 6px 0 0 6px;
+    width: 80%;
+    width: calc(100% - 60px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .header .header__btn {
