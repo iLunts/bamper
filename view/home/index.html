@@ -13,6 +13,18 @@
 
             <div class="grid grid--md">
                 <div class="col--1-1">
+                    <div class="panel-alert panel-alert--red panel-alert--icon panel-alert--icon-warning">
+                        <p class="panel-alert__title">DB query error.</p>
+                        MySQL Query Error: select * from hl_counters where UF_USER_ID = AND UF_DATE >= DATE_FORMAT(CURDATE(), '%Y-%m-%d') - INTERVAL
+                        7 DAY order by UF_DATE asc[[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server
+                        version for the right syntax to use near 'AND UF_DATE >= DATE_FORMAT(CURDATE(), '%Y-%m-%d') - INTERVAL 7 DAY order by UF_D'
+                        at line 3]
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--md">
+                <div class="col--1-1">
                     <div class="panel panel--shadow">
                         <div class="panel__content clearfix">
                             <div class="stat__graph">
