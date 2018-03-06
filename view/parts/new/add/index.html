@@ -87,7 +87,7 @@
                                     <input class="input" type="number">
 
                                     <div class="checkbox">
-                                        <input class="checkbox__input" id="byn" type="radio" name="price">
+                                        <input class="checkbox__input" id="byn" type="radio" name="price" checked>
                                         <label class="checkbox__label" for="byn">BYN</label>
                                     </div>
                                     <div class="checkbox">
@@ -102,20 +102,17 @@
                                         <input class="checkbox__input" id="rub" type="radio" name="price">
                                         <label class="checkbox__label" for="rub">RUB</label>
                                     </div>
-
-                                    <!-- <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency1'">BYN</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency2'">USD</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency3'">EUR</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency4'">RUB</a>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col--xlg-1-3 col--lg-1-3 col--md-1-3 col--sm-1-1 col--xs-1-1">
-                            <div class="input-group input-group--right">
-                                <input class="input-group__input input" type="number" data-ng-model="sale">
-                                <span class="input-group__prefix">%</span>
+                            <div class="form-group has-value">
+                                <label class="label">Скидка</label>
+
+                                <div class="input-group input-group--right">
+                                    <input class="input-group__input input" type="number" data-ng-model="sale">
+                                    <span class="input-group__prefix">%</span>
+                                </div>
                             </div>
                         </div>
                     </div>

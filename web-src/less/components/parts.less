@@ -56,6 +56,10 @@
                 }
             }   
         }
+
+        .panel__content{
+            padding-left: 10px;
+        }
     }
 
     // Element '.parts .parts__activity'
@@ -81,6 +85,7 @@
     & &__check{
         float: left;
         width: 3%;
+        min-width: 30px;
         margin-top: 30px;
         text-align: center;
     }
@@ -91,6 +96,7 @@
         float: left;
         // width: 5%;
         width: 80px;
+        margin-top: 10px;
         margin-right: 1%;
         min-height: 50px;
         
@@ -115,7 +121,7 @@
 
     // Element '.parts .parts__name'
     & &__name{
-        padding: @parts-padding 0;
+        padding: @parts-padding (@parts-padding / 2);
         float: left;
         width: 35%;
         
@@ -128,7 +134,7 @@
         
         // Element '.parts .parts__name-title'
         &-title{
-            float: left;
+            display: block;
             margin: 0;
             font-weight: 500;
             font-size: 0.8rem;
@@ -136,7 +142,7 @@
         
         // Element '.parts .parts__name-subtitle'
         &-subtitle{
-            float: left;
+            display: block;
             font-weight: 600;
             font-size: 0.8rem;
             margin: 5px 0 0 0;
@@ -173,7 +179,19 @@
     & &__desc{
         float: left;
         width: 32%;
-        padding: @parts-padding 0;        
+        padding: @parts-padding (@parts-padding / 2);        
+    
+        &-text{
+            margin: 0;
+            color: #999;
+            font-size: .8rem;
+
+            b{
+                white-space: nowrap;
+                color: #444;
+                font-weight: 700;
+            }
+        }
     }
 
     // Element '.parts .parts__price'
