@@ -4154,7 +4154,7 @@ img {
   position: relative;
   display: block;
   padding: 22px 0;
-  background: url("/content/img/maps-panorama.png");
+  background: url("../../content/img/maps-panorama.png");
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -5293,6 +5293,14 @@ img {
 
 .m--r {
   margin: 0 20px 0 0 !important;
+}
+
+.m--r-lg {
+  margin: 0 40px 0 0 !important;
+}
+
+.m--r-md {
+  margin: 0 30px 0 0 !important;
 }
 
 .m--r-sm {
