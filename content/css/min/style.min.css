@@ -5305,6 +5305,14 @@ img {
   margin: 0 20px 0 0 !important;
 }
 
+.m--r-lg {
+  margin: 0 40px 0 0 !important;
+}
+
+.m--r-md {
+  margin: 0 30px 0 0 !important;
+}
+
 .m--r-sm {
   margin: 0 10px 0 0 !important;
 }
