@@ -99,10 +99,29 @@
     // ------------------------------------------------------
     
     // Modificator '.panel-alert.panel-alert--red'
+    &&--sm{
+        padding: 10px;
+    }
+
+    // Modificator '.panel-alert.panel-alert--red'
     &&--red{
         border-color: @color-red;
         color: @color-red-dark;
         background: lighten(@color-red, 35%);
+    }
+
+    // Modificator '.panel-alert.panel-alert--blue'
+    &&--blue{
+        border-color: @color-blue;
+        color: @color-blue-dark;
+        background: lighten(@color-blue, 35%);
+    }
+
+    // Modificator '.panel-alert.panel-alert--yellow'
+    &&--yellow{
+        border-color: @color-yellow;
+        color: #444;
+        background: lighten(@color-yellow, 35%);
     }
 
     &&--icon{

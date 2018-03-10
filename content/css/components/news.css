@@ -50,3 +50,19 @@
   color: #333;
   font-size: 0.85rem;
 }
+.news-details .news-details__title {
+  margin: 15px 0 35px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.news-details .news-details__img,
+.news-details img {
+  border-radius: 6px;
+}
+.news-details .link,
+.news-details a {
+  color: #3486db;
+  text-decoration: underline;
+  cursor: pointer;
+}

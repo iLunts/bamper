@@ -52,10 +52,23 @@
   line-height: 1.2;
   color: #777;
 }
+.panel-alert.panel-alert--sm {
+  padding: 10px;
+}
 .panel-alert.panel-alert--red {
   border-color: #f44336;
   color: #d32f2f;
   background: #fde1df;
+}
+.panel-alert.panel-alert--blue {
+  border-color: #3486db;
+  color: #1976d2;
+  background: #cce0f6;
+}
+.panel-alert.panel-alert--yellow {
+  border-color: #ffdb4d;
+  color: #444;
+  background: #ffffff;
 }
 .panel-alert.panel-alert--icon {
   padding-left: 80px;
