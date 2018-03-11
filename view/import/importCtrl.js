@@ -8,6 +8,17 @@ app.config(["$routeProvider", function ($routeProvider) {
 
 app.controller('importCtrl', function($scope){
 
-
+    $scope.importArray = [
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+        {image: ''},
+    ];
 
 });
