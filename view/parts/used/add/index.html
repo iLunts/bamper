@@ -46,13 +46,13 @@
                     </div>
                     
                     <div class="grid grid--sm">
-                        <div class="col--1-2">
+                        <div class="col--2-3">
                             <div class="form-group">
                                 <label class="label" for="">Модификация</label>
                                 <input class="input" type="text">
                             </div>
                         </div>
-                        <div class="col--1-2">
+                        <div class="col--1-3">
                             <div class="form-group">
                                 <label class="label" for="">Год выпуска</label>
                                 <input class="input" type="text">
@@ -65,9 +65,14 @@
                                 <label class="label" for="">Объем</label>
                                 <div class="input-group input-group--btn m--reset-xs">
                                     <input class="input" type="number">
-                                    <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel1'">Бензин</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'fuel2'">Дизель</a>
+
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="gasoline" type="radio" name="fuel">
+                                        <label class="checkbox__label" for="gasoline">Бензин</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="diesel" type="radio" name="fuel" checked>
+                                        <label class="checkbox__label" for="diesel">Дизель</label>
                                     </div>
                                 </div>
                             </div>
@@ -77,9 +82,14 @@
                                 <label class="label" for="">Коробка</label>
                                 <div class="input-group input-group--btn">
                                     <input class="input" type="number">
-                                    <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="transmition" uib-btn-radio="'transmition1'">МКПП</a>
-                                        <a href="" class="btn" data-ng-model="transmition" uib-btn-radio="'transmition2'">АКПП</a>
+
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="transmition1" type="radio" name="transmition" checked>
+                                        <label class="checkbox__label" for="transmition1">МКПП</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="transmition2" type="radio" name="transmition">
+                                        <label class="checkbox__label" for="transmition2">АКПП</label>
                                     </div>
                                 </div>
                             </div>
@@ -216,24 +226,36 @@
                     </div>
 
                     <div class="grid grid--sm">
-                        <div class="col--1-1">
+                        <div class="col--2-3">
                             <div class="form-group">
                                 <label class="label" for="">Цена</label>
                                 <div class="input-group input-group--btn">
                                     <input class="input" type="number">
-                                    <div class="btn-group">
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency1'">BYN</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency2'">USD</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency3'">EUR</a>
-                                        <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'currency4'">RUB</a>
+                                    
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="byn" type="radio" name="price">
+                                        <label class="checkbox__label" for="byn">BYN</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="usd" type="radio" name="price">
+                                        <label class="checkbox__label" for="usd">USD</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="eur" type="radio" name="price">
+                                        <label class="checkbox__label" for="eur">EUR</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="rub" type="radio" name="price">
+                                        <label class="checkbox__label" for="rub">RUB</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid">
-                        <div class="col--1-1">
-                            <div class="input-group input-group--right">
+                    <!-- </div>
+                    <div class="grid"> -->
+                        <div class="col--1-3">
+                            <div class="form-group input-group input-group--right has-value">
+                                <label class="label">Скидка</label>
                                 <input class="input-group__input input" type="number" data-ng-model="sale">
                                 <span class="input-group__prefix">%</span>
                             </div>

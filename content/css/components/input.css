@@ -153,6 +153,38 @@ input[type=number]::-webkit-outer-spin-button {
   left: auto;
   right: 5px;
 }
+.input-group .checkbox + .checkbox {
+  margin-top: 0;
+}
+.input-group .checkbox:last-child .checkbox__label {
+  border-right: 2px solid #e6ecef;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.input-group .checkbox .checkbox__input[type='radio']:checked + .checkbox__label,
+.input-group .checkbox .checkbox__input:checked + .checkbox__label {
+  color: #03a9f4;
+  border-top-color: #03a9f4;
+  border-bottom-color: #03a9f4;
+}
+.input-group .checkbox .checkbox__input[type='radio']:checked + .checkbox__label:before,
+.input-group .checkbox .checkbox__input:checked + .checkbox__label:before,
+.input-group .checkbox .checkbox__input[type='radio']:checked + .checkbox__label:after,
+.input-group .checkbox .checkbox__input:checked + .checkbox__label:after {
+  content: none;
+}
+.input-group .checkbox .checkbox__label {
+  padding: 6px;
+  border-top: 2px solid #e6ecef;
+  border-bottom: 2px solid #e6ecef;
+  font-weight: 400;
+  color: #90a4ae;
+  line-height: 17px;
+}
+.input-group .checkbox .checkbox__label:before,
+.input-group .checkbox .checkbox__label:after {
+  content: none;
+}
 .input-grid .input-grid__item.input-grid__item--divider .input-group:before {
   content: '';
   position: absolute;

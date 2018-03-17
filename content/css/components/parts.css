@@ -20,6 +20,9 @@
   opacity: 1;
   transition: opacity 350ms ease-out;
 }
+.parts .parts__panel .panel__content {
+  padding-left: 10px;
+}
 .parts .parts__activity {
   position: absolute;
   top: 10px;
@@ -39,6 +42,7 @@
 .parts .parts__check {
   float: left;
   width: 3%;
+  min-width: 30px;
   margin-top: 30px;
   text-align: center;
 }
@@ -46,6 +50,7 @@
   position: relative;
   float: left;
   width: 80px;
+  margin-top: 10px;
   margin-right: 1%;
   min-height: 50px;
 }
@@ -64,7 +69,7 @@
   opacity: 0;
 }
 .parts .parts__name {
-  padding: 10px 0;
+  padding: 10px 5px;
   float: left;
   width: 35%;
 }
@@ -74,13 +79,13 @@
   border-left: 1px dotted #ddd;
 }
 .parts .parts__name-title {
-  float: left;
+  display: block;
   margin: 0;
   font-weight: 500;
   font-size: 0.8rem;
 }
 .parts .parts__name-subtitle {
-  float: left;
+  display: block;
   font-weight: 600;
   font-size: 0.8rem;
   margin: 5px 0 0 0;
@@ -107,7 +112,17 @@
 .parts .parts__desc {
   float: left;
   width: 32%;
-  padding: 10px 0;
+  padding: 10px 5px;
+}
+.parts .parts__desc-text {
+  margin: 0;
+  color: #999;
+  font-size: .8rem;
+}
+.parts .parts__desc-text b {
+  white-space: nowrap;
+  color: #444;
+  font-weight: 700;
 }
 .parts .parts__price {
   float: left;

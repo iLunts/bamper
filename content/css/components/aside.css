@@ -3,7 +3,7 @@
   top: 40px;
   left: 0;
   bottom: 0;
-  width: 180px;
+  width: 230px;
   padding: 0;
   background: #fff;
   border-top: 1px solid #ddd;
@@ -39,7 +39,7 @@
 }
 .open .aside.aside--submenu {
   box-shadow: 10px 0px 40px 0 rgba(0, 0, 0, 0.3);
-  left: 180px;
+  left: 230px;
 }
 .aside.aside--submenu .aside__menu-item {
   padding-left: 25px;
@@ -165,13 +165,10 @@
   border-color: rgba(3, 169, 244, 0.5);
   color: #647a88;
 }
-.aside .aside__menu-link.aside__menu-link--sublink {
-  padding-left: 40px;
-}
-.aside .aside__menu-link.aside__menu-link--sublink:hover .aside__menu-count {
+.aside .aside__menu-link:hover .aside__menu-count {
   display: none;
 }
-.aside .aside__menu-link.aside__menu-link--sublink:hover .aside__menu-add {
+.aside .aside__menu-link:hover .aside__menu-add {
   visibility: visible;
   opacity: 1;
 }

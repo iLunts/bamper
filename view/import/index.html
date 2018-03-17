@@ -1,0 +1,151 @@
+
+<div class="container parts add">
+    <div class="grid import">
+        <div class="col--xlg-1-1 col--lg-1-1 col--md-1-1 col--sm-1-1 col--xs-1-1">
+            <div class="header m--v">
+                <span class="header__icon">
+                    <i class="icon icon-dashboard"></i>
+                </span>
+                <p class="header__title">
+                    Импорт на сайт
+                </p>
+            </div>
+
+            <div class="add__group panel panel--shadow">
+                <div class="grid grid--md">
+                    <div class="col--1-2">
+                        <div class="add__header">
+                            <p class="add__header-title">
+                                1. Выберите категорию
+                            </p>
+                        </div>
+                        <div class="btn-group btn-group--icon">
+                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
+                                <i class="btn__icon icon icon-car-type"></i>
+                                <span class="btn__text">Запчасти новые</span>
+                            </a>
+                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
+                                <i class="btn__icon icon icon-car-type"></i>
+                                <span class="btn__text">Запчасти Б/У</span>
+                            </a>
+                            <a href="" class="btn btn--lg" data-ng-model="carType" uib-btn-radio="'type3'">
+                                <i class="btn__icon icon icon-wheel"></i>
+                                <span class="btn__text">Шины</span>
+                            </a>
+                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type4'">
+                                <i class="btn__icon icon icon-car-type"></i>
+                                <span class="btn__text">Аккумуляторы</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col--1-2">
+                        <div class="add__header">
+                            <p class="add__header-title">
+                                2. Загрузите файл
+                            </p>
+                        </div>
+
+                        <div class='upload upload--empty upload--h'>
+                        
+                            <div class='upload__content'>
+                                <input class='upload__button' type='file' name='file' accept="image/x-png, image/gif, image/jpeg" />
+                        
+                                <div class="flex flex--middle flex--center">
+                                    <div class="m--r-md">
+                                        <img class='svg-upload-file' src='content/img/svg/upload/upload-file.svg' alt=''>
+                                        <img class='svg-uploading' src='content/img/svg/upload/uploading-file.svg' alt=''>
+                                    </div>
+                                    <div>
+                                        <!--Unselect-->
+                                        <p class='upload__status'>Загрузите файл со списком запчастей *.xls или *.csv</p>
+                                        <p class='upload__substatus'>Кликните в этой области для выбора файла...</p>
+                        
+                                        <!--Select-->
+                                        <!-- <p class="t--c hidden">
+                                            <button type="button" class="btn btn--success">
+                                                Изменить
+                                            </button>
+                                            <a class="btn" target="blank">
+                                                Просмотреть фото
+                                            </a>
+                                        </p> -->
+                                    </div>
+                                </div>
+                        
+                                <div class='upload__progress m--t'>
+                                    <div class='upload__progress-line' role='progressbar' style='width: 15%;'></div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">    
+                <div class="col--1-1">
+
+                    <div class="m--t-md">
+                        <div class="checkbox m--b-sm">
+                            <input class="checkbox__input" id="item-all" type="checkbox">
+                            <label class="checkbox__label t--bold" for="item-all">Выбрать всё</label>
+                        </div>
+                    </div>
+                    
+                    <div class="parts__panel panel panel--shadow panel--sm panel--nop" data-ng-repeat="item in importArray">
+                        <div class="panel__content clearfix">
+                            <div class="parts__activity parts__activity--success"></div>
+                            <div class="parts__check">
+                                <div class="checkbox checkbox--empty checkbox--sm">
+                                    <input class="checkbox__input" type="checkbox" id="0" name="0">
+                                    <label for="0" class="checkbox__label"></label>
+                                </div>
+                            </div>
+                            <div class="parts__name">
+                                <p class="parts__name-title">
+                                    <span>Mercedes-Benz</span>
+                                    <span class="splite">A170 (W168)</span>
+                                    <span class="splite">2003 г.</span>
+                                </p>
+                                <p class="parts__name-subtitle">
+                                    Механизм стеклоочистителя (трапеция дворников)
+                                </p>
+                            </div>
+                            <div class="parts__desc">
+                                <p class="m--reset t--sm t--muted">Оригинальный номер:
+                                    <b class="t--black">A2128101821 A212 810 18</b>
+                                </p>
+                                <p class="m--reset t--sm t--muted">Артикул:
+                                    <b class="t--black">4847381</b>
+                                </p>
+                                <p class="m--reset t--md">описание</p>
+                            </div>
+                            <div class="parts__price">
+                                <p class="parts__price-text">
+                                    123
+                                    <small class="t--sm">руб.</small>
+                                </p>
+                    
+                                <div class="parts__action">
+                                    <a href="" class="btn">
+                                        <i class="icon icon-garbage"></i>
+                                    </a>
+                                </div>
+                    
+                                <div class="parts__date">
+                                    <span class="text">Скидка: <b>20</b> руб.</span>
+                                </div>
+                            </div>
+
+                            <div class="parts__sale">
+                                <i class="icon icon-sale"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
