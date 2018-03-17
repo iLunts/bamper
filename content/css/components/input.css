@@ -60,6 +60,7 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group.input-group--btn .input {
   flex-grow: 2;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .input-group.input-group--btn .btn-group {
   display: flex;
@@ -88,9 +89,23 @@ input[type=number]::-webkit-outer-spin-button {
   color: #11a0f8;
   background: transparent;
 }
+.input-group.input-group--btn .checkbox {
+  width: 100%;
+  flex-shrink: 1;
+}
 .input-group.input-group--btn .input {
   border-right-width: 0;
   border-radius: 4px 0 0 4px;
+}
+.input-group.input-group--btn .input ~ .checkbox {
+  width: auto;
+  flex-shrink: none;
+}
+.input-group.input-group--btn .input-group__select {
+  display: flex;
+}
+.input-group.input-group--btn .input-group__select + .input-group__select {
+  margin-left: 20px;
 }
 .input-group.input-group--right .input-group__input {
   padding-right: 35px;
@@ -153,8 +168,19 @@ input[type=number]::-webkit-outer-spin-button {
   left: auto;
   right: 5px;
 }
+.input-group .input + .checkbox .checkbox__label,
+.input-group .input + .input-group__select .checkbox__label {
+  border-left: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
 .input-group .checkbox + .checkbox {
   margin-top: 0;
+}
+.input-group .checkbox:first-child .checkbox__label {
+  border-left: 2px solid #e6ecef;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .input-group .checkbox:last-child .checkbox__label {
   border-right: 2px solid #e6ecef;
@@ -180,6 +206,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 400;
   color: #90a4ae;
   line-height: 17px;
+  text-align: center;
 }
 .input-group .checkbox .checkbox__label:before,
 .input-group .checkbox .checkbox__label:after {

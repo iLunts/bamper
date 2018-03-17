@@ -60,37 +60,43 @@
                         </div>
                     </div>
                     <div class="grid grid--sm">
-                        <div class="col--xlg-1-2 col--lg-1-2 col--md-1-2 col--sm-1-1 col--xs-1-1">
+                        <div class="col--xlg-2-3 col--lg-2-3 col--md-2-3 col--sm-1-1 col--xs-1-1">
                             <div class="form-group">
                                 <label class="label" for="">Объем</label>
                                 <div class="input-group input-group--btn m--reset-xs">
                                     <input class="input" type="number">
 
-                                    <div class="checkbox">
-                                        <input class="checkbox__input" id="gasoline" type="radio" name="fuel">
-                                        <label class="checkbox__label" for="gasoline">Бензин</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="checkbox__input" id="diesel" type="radio" name="fuel" checked>
-                                        <label class="checkbox__label" for="diesel">Дизель</label>
+                                    <div class="input-group__select">
+                                        <div class="checkbox">
+                                            <input class="checkbox__input" id="gasoline" type="radio" name="fuel">
+                                            <label class="checkbox__label" for="gasoline">Бензин</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input class="checkbox__input" id="diesel" type="radio" name="fuel" checked>
+                                            <label class="checkbox__label" for="diesel">Дизель</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col--xlg-1-2 col--lg-1-2 col--md-1-2 col--sm-1-1 col--xs-1-1">
-                            <div class="form-group">
-                                <label class="label" for="">Коробка</label>
-                                <div class="input-group input-group--btn">
-                                    <input class="input" type="number">
-
-                                    <div class="checkbox">
-                                        <input class="checkbox__input" id="transmition1" type="radio" name="transmition" checked>
-                                        <label class="checkbox__label" for="transmition1">МКПП</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="checkbox__input" id="transmition2" type="radio" name="transmition">
-                                        <label class="checkbox__label" for="transmition2">АКПП</label>
-                                    </div>
+                        <div class="col--1-3">
+                            <div class="form-group has-value">
+                                <label class="label" for="">Двигатель</label>
+                                <input class="input" type="text" value="CDI">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid--sm">
+                        <div class="col--xlg-3-5 col--lg-3-5 col--md-3-5 col--sm-1-1 col--xs-1-1 push--xlg-1-5 push--lg-1-5 push--md-1-1">
+                            <label class="label" for="">Коробка</label>
+                            <div class="input-group input-group--btn col--1-1">
+                                <div class="checkbox">
+                                    <input class="checkbox__input" id="transmition1" type="radio" name="transmition" checked>
+                                    <label class="checkbox__label" for="transmition1">МКПП</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox__input" id="transmition2" type="radio" name="transmition">
+                                    <label class="checkbox__label" for="transmition2">АКПП</label>
                                 </div>
                             </div>
                         </div>
@@ -233,20 +239,28 @@
                                     <input class="input" type="number">
                                     
                                     <div class="checkbox">
-                                        <input class="checkbox__input" id="byn" type="radio" name="price">
-                                        <label class="checkbox__label" for="byn">BYN</label>
+                                        <input class="checkbox__input" id="byn" type="radio" name="price" checked>
+                                        <label class="checkbox__label checkbox__label--flag" for="byn">
+                                            <img class="checkbox__icon" src="content/img/svg/flag/by.svg" alt="Валюта Республики Беларусь">
+                                        </label>
                                     </div>
                                     <div class="checkbox">
                                         <input class="checkbox__input" id="usd" type="radio" name="price">
-                                        <label class="checkbox__label" for="usd">USD</label>
+                                        <label class="checkbox__label checkbox__label--flag" for="usd">
+                                            <img class="checkbox__icon" src="content/img/svg/flag/ru.svg" alt="Валюта Республики Беларусь">
+                                        </label>
                                     </div>
                                     <div class="checkbox">
                                         <input class="checkbox__input" id="eur" type="radio" name="price">
-                                        <label class="checkbox__label" for="eur">EUR</label>
+                                        <label class="checkbox__label checkbox__label--flag" for="eur">
+                                            <img class="checkbox__icon" src="content/img/svg/flag/us.svg" alt="Валюта Республики Беларусь">
+                                        </label>
                                     </div>
                                     <div class="checkbox">
                                         <input class="checkbox__input" id="rub" type="radio" name="price">
-                                        <label class="checkbox__label" for="rub">RUB</label>
+                                        <label class="checkbox__label checkbox__label--flag" for="rub">
+                                            <img class="checkbox__icon" src="content/img/svg/flag/eu.svg" alt="Валюта Республики Беларусь">
+                                        </label>
                                     </div>
                                 </div>
                             </div>

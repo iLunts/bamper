@@ -71,3 +71,7 @@
   background-color: #fff;
   border-radius: 3px;
 }
+.checkbox .checkbox__label.checkbox__label--flag .checkbox__icon {
+  height: 17px;
+  width: 40px;
+}
