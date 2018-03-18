@@ -16,3 +16,6 @@
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
 }
+.block.block--88vh {
+  height: 88vh;
+}

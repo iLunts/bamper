@@ -154,6 +154,7 @@
 }
 .btn.btn--link {
   background: transparent;
+  box-shadow: none;
 }
 .btn.btn--link.active,
 .btn.btn--link:active,
