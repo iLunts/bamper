@@ -187,6 +187,25 @@
         padding: 0 0 80px;
         height: ~'calc(100% - 100px)';
         
+        // Element '.aside .aside__menu-group'
+        &-group{
+            position: relative;
+
+            & + .aside__menu-group{
+                margin-top: 15px;
+                padding-top: 15px;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 20%;
+                    right: 20%;
+                    border-top: 1px dashed #eee;
+                }
+            }
+        }
+
         // Element '.aside .aside__menu-item'
         &-item{
             position: relative;

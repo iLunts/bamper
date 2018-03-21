@@ -9,7 +9,7 @@
   vertical-align: baseline;
   display: table;
 }
-.table .th {
+.table th .table .th {
   display: table-cell;
   padding: 10px 8px 8px;
   text-align: left;
@@ -22,9 +22,10 @@
   text-overflow: ellipsis;
   border-bottom: 2px solid #e0e7ef;
 }
-.table .th.active {
+.table th .table .th.active {
   border-bottom: 2px solid #8893a0;
 }
+.table td,
 .table .td {
   display: table-cell;
   padding: 10px 8px;
@@ -35,20 +36,28 @@
   color: #636363;
   vertical-align: middle;
 }
+.table tr,
 .table .tr {
   position: relative;
   display: table-row;
   width: 100%;
   vertical-align: middle;
   background: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   z-index: 1;
 }
+.table tr--thead,
 .table .tr--thead {
   background: #e0e7ef;
   box-shadow: none;
 }
+.table tr + tr td,
+.table .tr + tr td {
+  border-top: 1px solid #ddd;
+}
+.table .tbody tr + tr,
+.table .tbody .tr + tr,
+.table .tbody tr + .tr,
 .table .tbody .tr + .tr {
   margin-top: 4px;
 }

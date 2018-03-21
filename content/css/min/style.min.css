@@ -176,6 +176,24 @@
   height: calc(100% - 100px);
 }
 
+.aside .aside__menu-group {
+  position: relative;
+}
+
+.aside .aside__menu-group + .aside__menu-group {
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.aside .aside__menu-group + .aside__menu-group:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  border-top: 1px dashed #eee;
+}
+
 .aside .aside__menu-item {
   position: relative;
   color: #71848e;
@@ -3394,6 +3412,39 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 15px;
 }
 
+.list.list--of-from .list__item {
+  display: block;
+  overflow: hidden;
+}
+
+.list.list--of-from .list__item + .list__item {
+  margin-top: 15px;
+}
+
+.list.list--of-from .list__item:before {
+  content: '..................................................................................................................................................................................................................';
+  position: absolute;
+  bottom: 0;
+  letter-spacing: 4px;
+  font-size: .7rem;
+  color: #ddd;
+}
+
+.list.list--of-from .list__item-of {
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px 3px 0;
+  background: #fff;
+}
+
+.list.list--of-from .list__item-from {
+  position: relative;
+  float: right;
+  padding: 3px 10px 3px 0;
+  background: #fff;
+  font-weight: 600;
+}
+
 .list.list--direction .list__item:nth-child(n+7) .content {
   margin: 0;
   padding: 0 15px;
@@ -4230,6 +4281,12 @@ img {
   padding: 10px;
 }
 
+.panel-alert.panel-alert--green {
+  border-color: #4CAF50;
+  color: #0a5f0d;
+  background: #c7e7c8;
+}
+
 .panel-alert.panel-alert--red {
   border-color: #f44336;
   color: #d32f2f;
@@ -4252,7 +4309,7 @@ img {
   padding-left: 80px;
 }
 
-.panel-alert.panel-alert--icon.panel-alert--icon-warning:before {
+.panel-alert.panel-alert--icon:before {
   content: '';
   position: absolute;
   left: 20px;
@@ -4261,7 +4318,14 @@ img {
   height: 40px;
   background-size: 40px;
   margin-top: -20px;
+}
+
+.panel-alert.panel-alert--icon-warning:before {
   background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA3LjQ5NCw0MjYuMDY2TDI4Mi44NjQsNTMuNTM3Yy01LjY3Ny05LjQxNS0xNS44Ny0xNS4xNzItMjYuODY1LTE1LjE3MmMtMTAuOTk1LDAtMjEuMTg4LDUuNzU2LTI2Ljg2NSwxNS4xNzIgICAgTDQuNTA2LDQyNi4wNjZjLTUuODQyLDkuNjg5LTYuMDE1LDIxLjc3NC0wLjQ1MSwzMS42MjVjNS41NjQsOS44NTIsMTYuMDAxLDE1Ljk0NCwyNy4zMTUsMTUuOTQ0aDQ0OS4yNTkgICAgYzExLjMxNCwwLDIxLjc1MS02LjA5MywyNy4zMTUtMTUuOTQ0QzUxMy41MDgsNDQ3LjgzOSw1MTMuMzM2LDQzNS43NTUsNTA3LjQ5NCw0MjYuMDY2eiBNMjU2LjE2NywxNjcuMjI3ICAgIGMxMi45MDEsMCwyMy44MTcsNy4yNzgsMjMuODE3LDIwLjE3OGMwLDM5LjM2My00LjYzMSw5NS45MjktNC42MzEsMTM1LjI5MmMwLDEwLjI1NS0xMS4yNDcsMTQuNTU0LTE5LjE4NiwxNC41NTQgICAgYy0xMC41ODQsMC0xOS41MTYtNC4zLTE5LjUxNi0xNC41NTRjMC0zOS4zNjMtNC42My05NS45MjktNC42My0xMzUuMjkyQzIzMi4wMjEsMTc0LjUwNSwyNDIuNjA1LDE2Ny4yMjcsMjU2LjE2NywxNjcuMjI3eiAgICAgTTI1Ni40OTgsNDExLjAxOGMtMTQuNTU0LDAtMjUuNDcxLTExLjkwOC0yNS40NzEtMjUuNDdjMC0xMy44OTMsMTAuOTE2LTI1LjQ3LDI1LjQ3MS0yNS40N2MxMy41NjIsMCwyNS4xNCwxMS41NzcsMjUuMTQsMjUuNDcgICAgQzI4MS42MzgsMzk5LjExLDI3MC4wNiw0MTEuMDE4LDI1Ni40OTgsNDExLjAxOHoiIGZpbGw9IiNEODAwMjciLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K");
+}
+
+.panel-alert.panel-alert--icon-success:before {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCA1MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5zdWNjZXNzPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0ic3VjY2VzcyI+ICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgZmlsbD0iIzRDQUY1MCIgZmlsbC1ydWxlPSJub256ZXJvIiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiPjwvY2lyY2xlPiAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU2hhcGUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHBvaW50cz0iMzggMTUgMjIgMzMgMTIgMjUiPjwvcG9seWxpbmU+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=");
 }
 
 .panel-alert .panel-alert__title {
@@ -4366,9 +4430,17 @@ img {
   position: relative;
   float: left;
   width: 80px;
-  margin-top: 10px;
-  margin-right: 1%;
+  height: 80px;
+  margin: 5px 1% 5px 0;
   min-height: 50px;
+}
+
+.parts .parts__img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .parts .parts__img-img {
@@ -4986,7 +5058,7 @@ img {
   display: table;
 }
 
-.table .th {
+.table th .table .th {
   display: table-cell;
   padding: 10px 8px 8px;
   text-align: left;
@@ -5000,10 +5072,11 @@ img {
   border-bottom: 2px solid #e0e7ef;
 }
 
-.table .th.active {
+.table th .table .th.active {
   border-bottom: 2px solid #8893a0;
 }
 
+.table td,
 .table .td {
   display: table-cell;
   padding: 10px 8px;
@@ -5015,22 +5088,31 @@ img {
   vertical-align: middle;
 }
 
+.table tr,
 .table .tr {
   position: relative;
   display: table-row;
   width: 100%;
   vertical-align: middle;
   background: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   z-index: 1;
 }
 
+.table tr--thead,
 .table .tr--thead {
   background: #e0e7ef;
   box-shadow: none;
 }
 
+.table tr + tr td,
+.table .tr + tr td {
+  border-top: 1px solid #ddd;
+}
+
+.table .tbody tr + tr,
+.table .tbody .tr + tr,
+.table .tbody tr + .tr,
 .table .tbody .tr + .tr {
   margin-top: 4px;
 }
