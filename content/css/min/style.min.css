@@ -3142,7 +3142,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: #78909c;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: capitalize;
 }
 
 .input-group {
@@ -3582,6 +3581,34 @@ img {
   .main.showFilter {
     margin-right: 0;
   }
+}
+.metro {
+  position: relative;
+}
+
+.metro .metro__badge {
+  display: inline-block;
+  vertical-align: middle;
+  background: #ddd;
+  border-radius: 60px;
+}
+
+.metro .metro__badge.metro__badge--sm {
+  width: 10px;
+  height: 10px;
+}
+
+.metro .metro__badge.metro__badge--red {
+  background: #f44336;
+}
+
+.metro .metro__badge.metro__badge--blue {
+  background: #3486db;
+}
+
+.metro .metro__title {
+  color: #999;
+  margin-left: 6px;
 }
 .metro {
   position: relative;
@@ -5115,6 +5142,30 @@ img {
 .table .tbody tr + .tr,
 .table .tbody .tr + .tr {
   margin-top: 4px;
+}
+.tarif {
+  position: relative;
+}
+
+.tarif .tarif__item + .tarif__item {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
+}
+
+.tarif .tarif__item .checkbox__label {
+  padding-left: 30px;
+}
+
+.tarif .tarif__item .checkbox__label-title {
+  display: block;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #333;
+}
+
+.tarif .tarif__item .checkbox__label-desc {
+  display: block;
 }
 .t--muted {
   color: #999 !important;

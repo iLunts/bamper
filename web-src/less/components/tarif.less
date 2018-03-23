@@ -1,0 +1,56 @@
+// out: ../../../content/css/components/tarif.css, compress: true
+@import 'variables.less';
+// Name:            tarif
+// Description:     Defines styles to create layouts with tarif
+//
+//
+// Component:       `.tarif__*`
+// ----------------------------------------------------
+// Block '.tarif'
+// ----------------------------------------------------
+.tarif {
+    position: relative;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.tarif .tarif__'
+    & &__item{
+
+        & + .tarif__item{
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #eee;
+        }
+
+        .checkbox__label{
+            padding-left: 30px;
+
+            &-title{
+                display: block;
+                font-size: 1rem;
+                line-height: 1rem;
+                color: #333;
+            }
+
+            &-desc{
+                display: block;
+            }
+        }
+    }
+
+
+    // Element '.tarif .tarif__'
+    // Element '.tarif .tarif__'
+    // Element '.tarif .tarif__'
+    // Element '.tarif .tarif__'
+    // Element '.tarif .tarif__'
+    // Element '.tarif .tarif__'
+
+}

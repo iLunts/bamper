@@ -48,7 +48,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: #78909c;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: capitalize;
 }
 .input-group {
   position: relative;
