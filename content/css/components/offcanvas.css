@@ -15,8 +15,33 @@
   right: 0;
 }
 .offcanvas .offcanvas__container {
-  padding: 25px 15px;
+  padding: 65px 15px 25px 15px;
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
+}
+.offcanvas .offcanvas__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+.offcanvas .offcanvas__close .text {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.offcanvas .offcanvas__close .icon {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 22px;
+  color: #444;
+  background: #eee;
+  outline: none;
+  line-height: 28px;
 }

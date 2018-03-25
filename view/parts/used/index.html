@@ -18,6 +18,10 @@
                         <i class="btn__icon icon-filter_list"></i>
                         <span class="btn__text hidden--xs">Добавить Б/У запчасть</span>
                     </a>
+                    <button class="btn">
+                        <span class="btn__text hidden--xs">Все запчасти выбрать</span>
+                        <!-- <i class="btn__icon icon-filter_list"></i> -->
+                    </button>
                 </div>
             </div>
             <div class="col--xlg-1-3 col--lg-1-3 col--md-1-3 col--sm-1-2 col--xs-1-5">
@@ -50,6 +54,10 @@
                     <a href="" class="link">просмотры</a>
                 </li>
             </ul>
+        </div>
+        <div class="checkbox d--ib m--b-sm">
+            <input class="checkbox__input" type="checkbox" id="selectAll">
+            <label class="checkbox__label" for="selectAll">Выбрать все</label>
         </div>
         <div class="parts__panel panel panel--shadow panel--sm panel--nop" data-ng-repeat="item in parts">
             <div class="panel__content clearfix">
@@ -151,27 +159,22 @@
     </div>
 
     <aside class="offcanvas offcanvas--right offcanvas--filter filter" data-ng-class="{'open' : showFilter}">
-        <!-- <p class="offcanvas__title">
-            Фильтр
-        </p> -->
-        <!-- <input class="offcanvas__search" type="search"> -->
+        <button class="offcanvas__close" data-ng-click="showFilter = !showFilter">
+            <span class="text">Закрыть</span>
+            <i class="icon icon-close"></i>
+        </button>
 
         <div class="offcanvas__container">
             <div class="filter__group">
-                <!-- <p class="filter__group-title">
-                    Автомобиль
-                    <a href="" class="filter__group-clean">очистить</a>
-                </p> -->
-
                 <div class="form-group filter__field">
                     <div class="form-group has-value">
-                        <label class="label" for="">Марка</label>
+                        <label class="label">Марка</label>
                         <input class="input" type="text" value="Mercedes-Benz">
                     </div>
                 </div>
                 <div class="form-group filter__field">
                     <div class="form-group has-value">
-                        <label class="label" for="">Модель</label>
+                        <label class="label">Модель</label>
                         <input class="input" type="text" value="A170 (W168)">
                     </div>
                 </div>
