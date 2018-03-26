@@ -1,0 +1,76 @@
+
+<div class="container--fluid">
+    <div class="grid add">
+        <div class="col--xlg-1-1 col--lg-1-1 col--md--1-1 col--sm-1-1 col--xs-1-1">
+            <div class="header m--v">
+                <span class="header__icon">
+                    <i class="icon icon-settings"></i>
+                </span>
+                <p class="header__title">
+                    Настройки
+                </p>
+            </div>
+
+            <div class="grid">
+                <div class="col--xlg-5-10 col--lg-5-10 col--md-1-2 col--sm-1-1 col--xs-1-1 push--xlg-1-10 push--lg-1-10">
+                    <div class="panel panel--shadow">
+                        <div class="panel__header flex flex--middle flex--space-between">
+                            <div>
+                                <p class="t--bold m--reset">Настройка "Марок"</p>
+                                <small class="t--muted t--sm">Получать заявки для выбранных марок</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Быстрый поиск</label>
+                                <input class="input m--reset" type="search" ng-model="search">
+                            </div>
+                        </div>
+                        <div class="panel__content">
+                            <div class="checkbox" data-ng-repeat="item in brands | filter:search">
+                                <input class="checkbox__input" type="checkbox" id="{{item.id}}">
+                                <label for="{{item.id}}" class="checkbox__label">{{item.brand}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col--xlg-3-10 col--lg-3-10 col--md-1-2 col--sm-1-1 col--xs-1-1 push--xlg-1-10 push--lg-1-10">
+                    <div class="panel panel--shadow">
+                        <div class="panel__header flex flex--middle flex--space-between">
+                            <div>
+                                <p class="t--bold m--reset">Получать заявки на Email</p>
+                                <small class="t--muted t--sm">Тогда вы сможете получать заявки на email</small>
+                            </div>
+                        </div>
+                        <div class="panel__content">
+                            <div class="checkbox d--ib">
+                                <input class="checkbox__input" type="checkbox" id="emailSend">
+                                <label for="emailSend" class="checkbox__label">Включить рассылку заявок?</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel--shadow m--t">
+                        <div class="panel__header flex flex--middle flex--space-between">
+                            <div>
+                                <p class="t--bold m--reset">Отображение в списке "Продавцы"</p>
+                                <small class="t--muted t--sm">Тогда вы будете отображаться в списке продавцов</small>
+                            </div>
+                        </div>
+                        <div class="panel__content">
+                            <div class="checkbox d--ib">
+                                <input class="checkbox__input" type="checkbox" id="showSellers">
+                                <label for="showSellers" class="checkbox__label">Отображать в списке "продавцы" ?</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col--1-1">
+                    <p class="t--c m--v-lg">
+                        <a href="" class="btn btn--md btn--white col--xs-1-1 m--t-xs">Отменить</a>
+                        <a href="" class="btn btn--md btn--blue col--xs-1-1">Сохранить</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

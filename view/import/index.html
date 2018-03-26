@@ -1,7 +1,7 @@
 
 <div class="container parts add">
     <div class="grid import">
-        <div class="col--xlg-1-1 col--lg-1-1 col--md-1-1 col--sm-1-1 col--xs-1-1">
+        <div class="col--xlg-3-5 col--lg-3-5 col--md-3-5 col--sm-1-1 col--xs-1-1 push--xlg-1-5 push--lg-1-5 push--md-1-5">
             <div class="header m--v">
                 <span class="header__icon">
                     <i class="icon icon-dashboard"></i>
@@ -12,78 +12,129 @@
             </div>
 
             <div class="add__group panel panel--shadow">
-                <div class="grid grid--md">
-                    <div class="col--1-2">
-                        <div class="add__header">
-                            <p class="add__header-title">
-                                1. Выберите категорию
-                            </p>
-                        </div>
-                        <div class="btn-group btn-group--icon">
-                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
-                                <i class="btn__icon icon icon-car-type"></i>
-                                <span class="btn__text">Запчасти новые</span>
-                            </a>
-                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
-                                <i class="btn__icon icon icon-car-type"></i>
-                                <span class="btn__text">Запчасти Б/У</span>
-                            </a>
-                            <a href="" class="btn btn--lg" data-ng-model="carType" uib-btn-radio="'type3'">
-                                <i class="btn__icon icon icon-wheel"></i>
-                                <span class="btn__text">Шины</span>
-                            </a>
-                            <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type4'">
-                                <i class="btn__icon icon icon-car-type"></i>
-                                <span class="btn__text">Аккумуляторы</span>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col--1-2">
-                        <div class="add__header">
-                            <p class="add__header-title">
-                                2. Загрузите файл
-                            </p>
-                        </div>
-
-                        <div class='upload upload--empty upload--h'>
-                        
-                            <div class='upload__content'>
-                                <input class='upload__button' type='file' name='file' accept="image/x-png, image/gif, image/jpeg" />
-                        
-                                <div class="flex flex--middle flex--center">
-                                    <div class="m--r-md">
-                                        <img class='svg-upload-file' src='content/img/svg/upload/upload-file.svg' alt=''>
-                                        <img class='svg-uploading' src='content/img/svg/upload/uploading-file.svg' alt=''>
-                                    </div>
-                                    <div>
-                                        <!--Unselect-->
-                                        <p class='upload__status'>Загрузите файл со списком запчастей *.xls или *.csv</p>
-                                        <p class='upload__substatus'>Кликните в этой области для выбора файла...</p>
-                        
-                                        <!--Select-->
-                                        <!-- <p class="t--c hidden">
-                                            <button type="button" class="btn btn--success">
-                                                Изменить
-                                            </button>
-                                            <a class="btn" target="blank">
-                                                Просмотреть фото
-                                            </a>
-                                        </p> -->
-                                    </div>
-                                </div>
-                        
-                                <div class='upload__progress m--t'>
-                                    <div class='upload__progress-line' role='progressbar' style='width: 15%;'></div>
-                                </div>
-                        
+                <div class="add__header">
+                    <p class="add__header-title">
+                        1. Выберите категорию
+                    </p>
+                </div>
+                <div class="btn-group btn-group--icon">
+                    <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type1'">
+                        <i class="btn__icon icon icon-car-type"></i>
+                        <span class="btn__text">Запчасти новые</span>
+                    </a>
+                    <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type2'">
+                        <i class="btn__icon icon icon-car-type"></i>
+                        <span class="btn__text">Запчасти Б/У</span>
+                    </a>
+                    <a href="" class="btn btn--lg" data-ng-model="carType" uib-btn-radio="'type3'">
+                        <i class="btn__icon icon icon-wheel"></i>
+                        <span class="btn__text">Шины</span>
+                    </a>
+                    <a href="" class="btn" data-ng-model="carType" uib-btn-radio="'type4'">
+                        <i class="btn__icon icon icon-car-type"></i>
+                        <span class="btn__text">Аккумуляторы</span>
+                    </a>
+                </div>
+            </div>
+            <div class="add__group panel panel--shadow">
+                <div class="add__header">
+                    <p class="add__header-title">
+                        2. Загрузите файл
+                    </p>
+                </div>
+                <div class='upload upload--empty upload--h'>
+                
+                    <div class='upload__content'>
+                        <input class='upload__button' type='file' name='file' accept="image/x-png, image/gif, image/jpeg" />
+                
+                        <div class="flex flex--middle flex--center">
+                            <div class="m--r-md">
+                                <img class='svg-upload-file' src='content/img/svg/upload/upload-file.svg' alt=''>
+                                <img class='svg-uploading' src='content/img/svg/upload/uploading-file.svg' alt=''>
+                            </div>
+                            <div>
+                                <!--Unselect-->
+                                <p class='upload__status'>Загрузите файл со списком запчастей *.xls или *.csv</p>
+                                <p class='upload__substatus'>Кликните в этой области для выбора файла...</p>
+                
+                                <!--Select-->
+                                <!-- <p class="t--c hidden">
+                                    <button type="button" class="btn btn--success">
+                                        Изменить
+                                    </button>
+                                    <a class="btn" target="blank">
+                                        Просмотреть фото
+                                    </a>
+                                </p> -->
                             </div>
                         </div>
+                
+                        <div class='upload__progress m--t'>
+                            <div class='upload__progress-line' role='progressbar' style='width: 15%;'></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="t--c m--t">
+                    <button class="btn btn--blue btn--md" disabled>Загрузить</button>
+                </p>
+            </div>
+            
+            <div class="m--v-lg panel-alert panel-alert--sm panel-alert--green panel-alert--icon panel-alert--icon-success">
+                <p class="panel-alert__text">
+                    Файл успешно загружен в БД, обработано <b>2,326</b> строк.
+                </p>
+            </div>
+
+            <div class="add__group panel panel--shadow">
+                <div class="add__header">
+                    <p class="add__header-title t--c m--b">
+                        3. Статистика по импорту
+                    </p>
+                </div>
+
+                <div class="grid">
+                    <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1 push--xlg-1-5 push--lg-1-5">
+                        
+                        <ul class="list list--of-from">
+                            <li class="list__item">
+                                <span class="list__item-of">Всего строк:</span>
+                                <span class="list__item-from">42</span>
+                            </li>
+                            <li class="list__item">
+                                <span class="list__item-of">Добавлено объявлений:</span>
+                                <span class="list__item-from">4</span>
+                            </li>
+                            <li class="list__item">
+                                <span class="list__item-of">Обновлено объявлений:</span>
+                                <span class="list__item-from">12</span>
+                            </li>
+                            <li class="list__item t--red">
+                                <span class="list__item-of">Удалено объявлений:</span>
+                                <span class="list__item-from">12</span>
+                            </li>
+                            <li class="list__item">
+                                <span class="list__item-of">Пустых строк:</span>
+                                <span class="list__item-from">0</span>
+                            </li>
+                            <li class="list__item t--md t--muted">
+                                <span class="list__item-of">Время обработки:</span>
+                                <span class="list__item-from">0.044 мс.</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="col--1-1">
+                        <p class="m--t-lg t--c">
+                            <a class="btn btn--red" href="">Скачать файл с ошибками</a>
+                            <a class="btn btn--blue" href="">Смотреть мои объявления</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid">    
+            <!-- <div class="grid">    
                 <div class="col--1-1">
 
                     <div class="m--t-md">
@@ -145,7 +196,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
