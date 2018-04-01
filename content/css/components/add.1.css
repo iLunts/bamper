@@ -27,8 +27,7 @@
   padding: 6px 12px;
   font-size: .8rem;
   font-weight: 600;
-  background: rgba(53, 133, 220, 0.1);
-  color: #3486db;
+  background: #eee;
 }
 .add .add__header-title {
   color: #03a9f4;
