@@ -1,0 +1,54 @@
+// out: ../../../content/css/components/tab.css, compress: true
+@import 'variables.less';
+// Name:            add
+// ----------------------------------------------------
+// Block '.tab'
+// ----------------------------------------------------
+.tab {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Modificator '.tab.tab--h'
+    &&--h{
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+        padding: 0 15px;
+
+        .tab__item{
+            position: relative;
+            bottom: -2px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .tab__link{
+            border-bottom: 3px solid transparent;
+            margin-top: -1px;
+            color: #444;
+            font-size: .9rem;
+            font-weight: 600;
+            transition: all .3s;
+
+            &:hover{
+                border-bottom-color: lighten(@color-blue, 30%);
+            }
+
+            &.active{
+                color: @color-blue;
+                border-bottom-color: @color-blue;
+            }
+        }
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    & &__link{
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+}

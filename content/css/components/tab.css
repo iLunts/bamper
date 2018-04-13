@@ -1,0 +1,30 @@
+.tab.tab--h {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.tab.tab--h .tab__item {
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  vertical-align: top;
+}
+.tab.tab--h .tab__link {
+  border-bottom: 3px solid transparent;
+  margin-top: -1px;
+  color: #444;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+.tab.tab--h .tab__link:hover {
+  border-bottom-color: #b6d3f2;
+}
+.tab.tab--h .tab__link.active {
+  color: #3486db;
+  border-bottom-color: #3486db;
+}
+.tab .tab__link {
+  display: inline-block;
+  padding: 10px 20px;
+}
