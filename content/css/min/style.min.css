@@ -5533,6 +5533,14 @@ img {
   vertical-align: -22%;
 }
 
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .d--ib {
   display: inline-block !important;
 }
