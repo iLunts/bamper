@@ -11,33 +11,36 @@
     // -----------------------------------------
 
     // Modificator '.tab.tab--h'
-    &&--h{
-        border-bottom: 1px solid #eee;
-        margin-bottom: 10px;
-        padding: 0 15px;
 
-        .tab__item{
-            position: relative;
-            bottom: -2px;
-            display: inline-block;
-            vertical-align: top;
-        }
+    & &__menu{
+        &.tab__menu--h{
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding: 0 15px;
 
-        .tab__link{
-            border-bottom: 3px solid transparent;
-            margin-top: -1px;
-            color: #444;
-            font-size: .9rem;
-            font-weight: 600;
-            transition: all .3s;
-
-            &:hover{
-                border-bottom-color: lighten(@color-blue, 30%);
+            .tab__item{
+                position: relative;
+                bottom: -2px;
+                display: inline-block;
+                vertical-align: top;
             }
-
-            &.active{
-                color: @color-blue;
-                border-bottom-color: @color-blue;
+        
+            .tab__link{
+                border-bottom: 3px solid transparent;
+                margin-top: -1px;
+                color: #444;
+                font-size: .9rem;
+                font-weight: 600;
+                transition: all .3s;
+        
+                &:hover{
+                    border-bottom-color: lighten(@color-blue, 30%);
+                }
+        
+                &.active{
+                    color: @color-blue;
+                    border-bottom-color: @color-blue;
+                }
             }
         }
     }
@@ -46,9 +49,25 @@
     // All elements
     // -----------------------------------------
 
+    // Element '.tab .tab__link'
     & &__link{
         display: inline-block;
         padding: 10px 20px;
+    }
+    
+    // Element '.tab .tab__content'
+    // & &__content{
+        
+    // }
+        
+    // Element '.tab .tab__pane'
+    & &__pane{
+        display: none;
+        
+        // State '.tab .tab__pane.active'
+        &.active{
+            display: block;
+        }
     }
 
 }
