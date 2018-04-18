@@ -25,25 +25,44 @@
                     </div>
                 </div>
 
-                <div class="visible">
-                    <div class="add__date">
-                        24 апреля
-                    </div>
-                    <ul class="list list--of-from m--b">
-                        <li class="list__item" ng-repeat="item in statisticArray">
-                            <div class="list__item-of">
-                                <p class="t--sm t--muted m--reset">{{item.modal}}</p>
-                                <p class="t--md t--bold m--reset">{{item.part}}</p>
-                            </div>
-                            <div class="list__item-from t--c">
-                                <p class="t--md t--bold m--reset">{{item.count}}</p>
-                                <p class="t--sm t--muted t--light m--reset">показа</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="add__date">
+                            24 апреля
+                        </div>
+                        <ul class="list list--of-from m--b">
+                            <li class="list__item" ng-repeat="item in statisticArray">
+                                <div class="list__item-of">
+                                    <p class="t--sm t--muted m--reset">{{item.modal}}</p>
+                                    <p class="t--md t--bold m--reset">{{item.part}}</p>
+                                </div>
+                                <div class="list__item-from t--c">
+                                    <p class="t--md t--bold m--reset">{{item.count}}</p>
+                                    <p class="t--sm t--muted t--light m--reset">показа</p>
+                                </div>
+                            </li>
+                        </ul>
 
+                        <div class="add__date">
+                            22 апреля
+                        </div>
+                        <ul class="list list--of-from m--b">
+                            <li class="list__item" ng-repeat="item in statisticArray">
+                                <div class="list__item-of">
+                                    <p class="t--sm t--muted m--reset">{{item.modal}}</p>
+                                    <p class="t--md t--bold m--reset">{{item.part}}</p>
+                                </div>
+                                <div class="list__item-from t--c">
+                                    <p class="t--md t--bold m--reset">{{item.count}}</p>
+                                    <p class="t--sm t--muted t--light m--reset">показа</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
                     <div class="add__date">
-                        22 апреля
+                        24 марта
                     </div>
                     <ul class="list list--of-from m--b">
                         <li class="list__item" ng-repeat="item in statisticArray">
@@ -58,7 +77,6 @@
                         </li>
                     </ul>
                 </div>
-                
                 
             </div>
         </div>
