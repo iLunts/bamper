@@ -23,6 +23,13 @@
                 bottom: -2px;
                 display: inline-block;
                 vertical-align: top;
+
+                &.active{
+                    .tab__link{
+                        color: @color-blue;
+                        border-bottom-color: @color-blue;
+                    }
+                }
             }
         
             .tab__link{
@@ -35,11 +42,6 @@
         
                 &:hover{
                     border-bottom-color: lighten(@color-blue, 30%);
-                }
-        
-                &.active{
-                    color: @color-blue;
-                    border-bottom-color: @color-blue;
                 }
             }
         }

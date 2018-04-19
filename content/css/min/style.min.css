@@ -5168,6 +5168,11 @@ img {
   vertical-align: top;
 }
 
+.tab .tab__menu.tab__menu--h .tab__item.active .tab__link {
+  color: #3486db;
+  border-bottom-color: #3486db;
+}
+
 .tab .tab__menu.tab__menu--h .tab__link {
   border-bottom: 3px solid transparent;
   margin-top: -1px;
@@ -5179,11 +5184,6 @@ img {
 
 .tab .tab__menu.tab__menu--h .tab__link:hover {
   border-bottom-color: #b6d3f2;
-}
-
-.tab .tab__menu.tab__menu--h .tab__link.active {
-  color: #3486db;
-  border-bottom-color: #3486db;
 }
 
 .tab .tab__link {
