@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../../fonts/icomoon.eot?vmfuff');
-  src: url('../../fonts/icomoon.eot?vmfuff#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?vmfuff') format('truetype'), url('../../fonts/icomoon.woff?vmfuff') format('woff'), url('../../fonts/icomoon.svg?vmfuff#icomoon') format('svg');
+  src: url('../../fonts/icomoon.eot?68ji79');
+  src: url('../../fonts/icomoon.eot?68ji79#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?68ji79') format('truetype'), url('../../fonts/icomoon.woff?68ji79') format('woff'), url('../../fonts/icomoon.svg?68ji79#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,10 +19,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-skype:before {
+  content: "\e928";
+}
+.icon-www:before {
+  content: "\e929";
+}
 .icon-gas-station:before {
   content: "\e927";
 }
-.icon-car-type:before {
+.icon-cat-type:before {
   content: "\e926";
 }
 .icon-sale:before {
@@ -234,4 +240,10 @@
 }
 .icon-remove:before {
   content: "\e15b";
+}
+.icon-search:before {
+  content: "\e8b6";
+}
+.icon-sort:before {
+  content: "\e164";
 }
