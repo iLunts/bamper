@@ -3,7 +3,10 @@
 
 <!-- Scripts -->
 <? use Bitrix\Main\Page\Asset; ?>
-<? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/jquery/dist/jquery.js') ?>
+<?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/jquery/dist/jquery.js') ?>
+<? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/bootstrap/bootstrap.min.js') ?>
+<?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/bootstrap/util.js') ?>
+<?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/bootstrap/tab.js') ?>
 <?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/angular/angular.min.js') ?>
 <?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/angular-route/angular-route.min.js') ?>
 <?// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/angular-bootstrap/ui-bootstrap.min.js') ?>
