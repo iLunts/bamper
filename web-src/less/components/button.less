@@ -76,6 +76,10 @@
         padding: 0 @btn-sm-padding-horizontal;
         line-height: @btn-sm-line-height;
         font-size: @btn-sm-font-size;
+
+        &.btn--circle{
+            padding: 0;
+        }
     }
 
     // Modificator '.btn.btn--md'
@@ -98,8 +102,22 @@
     &&--radius {
         border-radius: 100px;
     }
+
+    // Modificator '.btn.btn--circle'
+    &&--circle {
+        border-radius: 100%;
+        padding: 0;
+        width: 26px;
+        
+        .btn__icon{
+            line-height: 22px;
+            font-size: 1rem;
+        }
+    }
+
     // Modificator '.btn.btn--success'
-    &&--success {
+    &&--success,
+    &&--green {
         background-color: @btn-success-background;
         color: @btn-success-color ;
 
