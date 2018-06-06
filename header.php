@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><? $APPLICATION->ShowTitle() ?></title>
 
-    <? Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/content/css/min/style.min.css") ?>
+    <? Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/content/css/min/style.min.css?rev=20180418") ?>
+
+    <? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/bower_components/jquery/dist/jquery.js') ?>
 
     <?$APPLICATION->ShowHead();?>
 
