@@ -4,13 +4,43 @@
 .gallery.gallery--parts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .gallery.gallery--parts .gallery__item {
+  position: relative;
   width: 25%;
   margin: 0 5px 15px;
 }
-.gallery.gallery--parts .gallery__item-img {
+.gallery.gallery--parts .gallery__item.gallery__item--active .gallery__item-img {
+  position: relative;
+}
+.gallery.gallery--parts .gallery__item.gallery__item--active .gallery__item-img:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgba(1, 169, 244, 0.8);
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.gallery.gallery--parts .gallery__item.gallery__item--active .gallery__item-img:after {
+  content: '\e81B';
+  font-family: 'fontello';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  margin-top: -25px;
+  margin-left: -25px;
+  font-size: 2rem;
+  line-height: 50px;
+  text-align: center;
+}
+.gallery.gallery--parts .gallery__item-img .img {
   border-radius: 6px;
   border: 3px solid #fff;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
@@ -18,4 +48,14 @@
 .gallery.gallery--parts .gallery__item-action {
   margin-top: 5px;
   text-align: center;
+}
+.gallery.gallery--parts .gallery__item-btn {
+  padding: 0 4px;
+}
+.gallery.gallery--parts .gallery__item-btn + .gallery__item-btn {
+  margin-left: 4px;
+}
+.gallery.gallery--parts .gallery__item-btn .btn__icon {
+  font-size: 1rem;
+  vertical-align: middle;
 }

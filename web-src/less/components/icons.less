@@ -1,333 +1,157 @@
 // out: ../../../content/css/components/icons.css, compress: true
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../../fonts/icomoon.eot?apl3u1');
-  src:  url('../../fonts/icomoon.eot?apl3u1#iefix') format('embedded-opentype'),
-    url('../../fonts/icomoon.ttf?apl3u1') format('truetype'),
-    url('../../fonts/icomoon.woff?apl3u1') format('woff'),
-    url('../../fonts/icomoon.svg?apl3u1#icomoon') format('svg');
+  font-family: 'fontello';
+  src: url('../../font/fontello.eot?94764582');
+  src: url('../../font/fontello.eot?94764582#iefix') format('embedded-opentype'),
+       url('../../font/fontello.woff2?94764582') format('woff2'),
+       url('../../font/fontello.woff?94764582') format('woff'),
+       url('../../font/fontello.ttf?94764582') format('truetype'),
+       url('../../font/fontello.svg?94764582#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?94764582#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-cabrio-car:before {
-  content: "\e92a";
-}
-.icon-car-black-side-view-pointing-left:before {
-  content: "\e92b";
-}
-.icon-car-city-model:before {
-  content: "\e92c";
-}
-.icon-car-muscle-design:before {
-  content: "\e92d";
-}
-.icon-car-of-hatchback-model:before {
-  content: "\e92e";
-}
-.icon-car-suv:before {
-  content: "\e92f";
-}
-.icon-car:before {
-  content: "\e930";
-}
-.icon-coupe-car:before {
-  content: "\e931";
-}
-.icon-jeep-cabrio:before {
-  content: "\e932";
-}
-.icon-jeep:before {
-  content: "\e933";
-}
-.icon-microbus:before {
-  content: "\e934";
-}
-.icon-mini-van:before {
-  content: "\e935";
-}
-.icon-minivan-car:before {
-  content: "\e936";
-}
-.icon-old-pickup:before {
-  content: "\e937";
-}
-.icon-pick-up:before {
-  content: "\e938";
-}
-.icon-sedan-car-model:before {
-  content: "\e939";
-}
-.icon-sportive-car:before {
-  content: "\e93a";
-}
-.icon-supercar:before {
-  content: "\e93b";
-}
-.icon-van-black-transport-side-view-pointing-to-left:before {
-  content: "\e93c";
-}
-.icon-spark:before {
-  content: "\e93d";
-}
-.icon-brake-disc:before {
-  content: "\e93e";
-}
-.icon-piston2:before {
-  content: "\e93f";
-}
-.icon-mechanic:before {
-  content: "\e940";
-}
-.icon-battery:before {
-  content: "\e941";
-}
-.icon-wheel2:before {
-  content: "\e942";
-}
-.icon-accumulator:before {
-  content: "\e943";
-}
-.icon-skype:before {
-  content: "\e928";
-}
-.icon-www:before {
-  content: "\e929";
-}
-.icon-gas-station:before {
-  content: "\e927";
-}
-.icon-cat-type:before {
-  content: "\e926";
-}
-.icon-sale:before {
-  content: "\e925";
-}
-.icon-clicker:before {
-  content: "\e923";
-}
-.icon-cursor:before {
-  content: "\e924";
-}
-.icon-gallery:before {
-  content: "\e91d";
-}
-.icon-edit:before {
-  content: "\e91e";
-}
-.icon-eye:before {
-  content: "\e91f";
-}
-.icon-garbage:before {
-  content: "\e920";
-}
-.icon-picture:before {
-  content: "\e921";
-}
-.icon-picture-sq:before {
-  content: "\e922";
-}
-.icon-dashboard:before {
-  content: "\e91c";
-}
-.icon-wallet:before {
-  content: "\e91b";
-}
-.icon-settings:before {
-  content: "\e918";
-}
-.icon-air-filter:before {
-  content: "\e917";
-}
-.icon-ads .path1:before {
-  content: "\e900";
-  color: rgb(0, 0, 0);
-}
-.icon-ads .path2:before {
-  content: "\e901";
-  margin-left: -1em;
-  color: rgb(51, 51, 51);
-}
-.icon-ads .path3:before {
-  content: "\e902";
-  margin-left: -1em;
-  color: rgb(51, 51, 51);
-}
-.icon-ads .path4:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: rgb(51, 51, 51);
-}
-.icon-ads .path5:before {
-  content: "\e904";
-  margin-left: -1em;
-  color: rgb(51, 51, 51);
-}
-.icon-browser:before {
-  content: "\e905";
-}
-.icon-car-painting:before {
-  content: "\e906";
-}
-.icon-damage:before {
-  content: "\e907";
-}
-.icon-evacuator:before {
-  content: "\e908";
-}
-.icon-exhaust-pipe:before {
-  content: "\e909";
-}
-.icon-hammer-and-wrench:before {
-  content: "\e90a";
-}
-.icon-jerrycan:before {
-  content: "\e90b";
-}
-.icon-oil:before {
-  content: "\e90c";
-}
-.icon-pie-chart:before {
-  content: "\e90d";
-}
-.icon-piston:before {
-  content: "\e90e";
-}
-.icon-request:before {
-  content: "\e90f";
-}
-.icon-timing-belt:before {
-  content: "\e910";
-}
-.icon-wheel:before {
-  content: "\e911";
-}
-.icon-hours:before {
-  content: "\e912";
-}
-.icon-ads-2:before {
-  content: "\e913";
-}
-.icon-balancing:before {
-  content: "\e914";
-}
-.icon-brake-disk:before {
-  content: "\e916";
-}
-.icon-my_location:before {
-  content: "\e55c";
-}
-.icon-mail_outline:before {
-  content: "\e0e1";
-}
-.icon-send:before {
-  content: "\e163";
-}
-.icon-schedule:before {
-  content: "\e8b5";
-}
-.icon-account_balance_wallet:before {
-  content: "\e850";
-}
-.icon-add:before {
-  content: "\e145";
-}
-.icon-arrow_back:before {
-  content: "\e5c4";
-}
-.icon-arrow_downward:before {
-  content: "\e5db";
-}
-.icon-arrow_drop_down:before {
-  content: "\e5c5";
-}
-.icon-arrow_drop_up:before {
-  content: "\e5c7";
-}
-.icon-arrow_forward:before {
-  content: "\e5c8";
-}
-.icon-arrow_upward:before {
-  content: "\e5d8";
-}
-.icon-attach_money:before {
-  content: "\e227";
-}
-.icon-phone:before {
-  content: "\e0cd";
-}
-.icon-check:before {
-  content: "\e5ca";
-}
-.icon-close:before {
-  content: "\e5cd";
-}
-.icon-compare_arrows:before {
-  content: "\e915";
-}
-.icon-delete:before {
-  content: "\e872";
-}
-.icon-do_not_disturb_alt:before {
-  content: "\e611";
-}
-.icon-remove_circle:before {
-  content: "\e15c";
-}
-.icon-filter_list:before {
-  content: "\e152";
-}
-.icon-keyboard_arrow_down:before {
-  content: "\e313";
-}
-.icon-keyboard_arrow_left:before {
-  content: "\e314";
-}
-.icon-keyboard_arrow_right:before {
-  content: "\e315";
-}
-.icon-keyboard_arrow_up:before {
-  content: "\e316";
-}
-.icon-line_style:before {
-  content: "\e919";
-}
-.icon-line_weight:before {
-  content: "\e91a";
-}
-.icon-shopping_cart:before {
-  content: "\e8cc";
-}
-.icon-person_outline:before {
-  content: "\e7ff";
-}
-.icon-person:before {
-  content: "\e7fd";
-}
-.icon-person_add:before {
-  content: "\e7fe";
-}
-.icon-remove:before {
-  content: "\e15b";
-}
-.icon-search:before {
-  content: "\e8b6";
-}
-.icon-sort:before {
-  content: "\e164";
-}
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-account_balance_wallet:before { content: '\e800'; } /* '' */
+.icon-accumulator:before { content: '\e801'; } /* '' */
+.icon-add:before { content: '\e802'; } /* '' */
+.icon-ads-2:before { content: '\e803'; } /* '' */
+.icon-ads:before { content: '\e804'; } /* '' */
+.icon-air-filter:before { content: '\e805'; } /* '' */
+.icon-arrow_back:before { content: '\e806'; } /* '' */
+.icon-arrow_downward:before { content: '\e807'; } /* '' */
+.icon-arrow_drop_down:before { content: '\e808'; } /* '' */
+.icon-arrow_drop_up:before { content: '\e809'; } /* '' */
+.icon-arrow_forward:before { content: '\e80a'; } /* '' */
+.icon-arrow_upward:before { content: '\e80b'; } /* '' */
+.icon-attach_money:before { content: '\e80c'; } /* '' */
+.icon-balancing:before { content: '\e80d'; } /* '' */
+.icon-battery:before { content: '\e80e'; } /* '' */
+.icon-brake-disc:before { content: '\e80f'; } /* '' */
+.icon-brake-disk:before { content: '\e810'; } /* '' */
+.icon-browser:before { content: '\e811'; } /* '' */
+.icon-cabrio-car:before { content: '\e812'; } /* '' */
+.icon-car-black-side-view-pointing-left:before { content: '\e813'; } /* '' */
+.icon-car-city-model:before { content: '\e814'; } /* '' */
+.icon-car-muscle-design:before { content: '\e815'; } /* '' */
+.icon-car-of-hatchback-model:before { content: '\e816'; } /* '' */
+.icon-car-painting:before { content: '\e817'; } /* '' */
+.icon-car-suv:before { content: '\e818'; } /* '' */
+.icon-car:before { content: '\e819'; } /* '' */
+.icon-cat-type:before { content: '\e81a'; } /* '' */
+.icon-check:before { content: '\e81b'; } /* '' */
+.icon-clicker:before { content: '\e81c'; } /* '' */
+.icon-close:before { content: '\e81d'; } /* '' */
+.icon-compare_arrows:before { content: '\e81e'; } /* '' */
+.icon-coupe-car:before { content: '\e81f'; } /* '' */
+.icon-cursor:before { content: '\e820'; } /* '' */
+.icon-damage:before { content: '\e821'; } /* '' */
+.icon-dashboard:before { content: '\e822'; } /* '' */
+.icon-delete:before { content: '\e823'; } /* '' */
+.icon-do_not_disturb_alt:before { content: '\e824'; } /* '' */
+.icon-edit:before { content: '\e825'; } /* '' */
+.icon-evacuator:before { content: '\e826'; } /* '' */
+.icon-exhaust-pipe:before { content: '\e827'; } /* '' */
+.icon-eye:before { content: '\e828'; } /* '' */
+.icon-filter_list:before { content: '\e829'; } /* '' */
+.icon-gallery:before { content: '\e82a'; } /* '' */
+.icon-garbage:before { content: '\e82b'; } /* '' */
+.icon-gas-station:before { content: '\e82c'; } /* '' */
+.icon-hammer-and-wrench:before { content: '\e82d'; } /* '' */
+.icon-hours:before { content: '\e82e'; } /* '' */
+.icon-info_outline:before { content: '\e82f'; } /* '' */
+.icon-jeep-cabrio:before { content: '\e830'; } /* '' */
+.icon-jeep:before { content: '\e831'; } /* '' */
+.icon-jerrycan:before { content: '\e832'; } /* '' */
+.icon-keyboard_arrow_down:before { content: '\e833'; } /* '' */
+.icon-keyboard_arrow_right:before { content: '\e834'; } /* '' */
+.icon-keyboard_arrow_left:before { content: '\e835'; } /* '' */
+.icon-line_style:before { content: '\e836'; } /* '' */
+.icon-keyboard_arrow_up:before { content: '\e837'; } /* '' */
+.icon-line_weight:before { content: '\e838'; } /* '' */
+.icon-link:before { content: '\e839'; } /* '' */
+.icon-mail_outline:before { content: '\e83a'; } /* '' */
+.icon-mechanic:before { content: '\e83b'; } /* '' */
+.icon-microbus:before { content: '\e83c'; } /* '' */
+.icon-mini-van:before { content: '\e83d'; } /* '' */
+.icon-minivan-car:before { content: '\e83e'; } /* '' */
+.icon-my_location:before { content: '\e83f'; } /* '' */
+.icon-oil:before { content: '\e840'; } /* '' */
+.icon-old-pickup:before { content: '\e841'; } /* '' */
+.icon-person_add:before { content: '\e842'; } /* '' */
+.icon-person_outline:before { content: '\e843'; } /* '' */
+.icon-person:before { content: '\e844'; } /* '' */
+.icon-phone:before { content: '\e845'; } /* '' */
+.icon-pick-up:before { content: '\e846'; } /* '' */
+.icon-picture-sq:before { content: '\e847'; } /* '' */
+.icon-picture:before { content: '\e848'; } /* '' */
+.icon-pie-chart:before { content: '\e849'; } /* '' */
+.icon-piston:before { content: '\e84a'; } /* '' */
+.icon-piston2:before { content: '\e84b'; } /* '' */
+.icon-remove_circle:before { content: '\e84c'; } /* '' */
+.icon-remove:before { content: '\e84d'; } /* '' */
+.icon-request:before { content: '\e84e'; } /* '' */
+.icon-rotate_left:before { content: '\e84f'; } /* '' */
+.icon-rotate_right:before { content: '\e850'; } /* '' */
+.icon-sale:before { content: '\e851'; } /* '' */
+.icon-schedule:before { content: '\e852'; } /* '' */
+.icon-search:before { content: '\e853'; } /* '' */
+.icon-sedan-car-model:before { content: '\e854'; } /* '' */
+.icon-send:before { content: '\e855'; } /* '' */
+.icon-settings:before { content: '\e856'; } /* '' */
+.icon-shopping_cart:before { content: '\e857'; } /* '' */
+.icon-skype:before { content: '\e858'; } /* '' */
+.icon-sort:before { content: '\e859'; } /* '' */
+.icon-spark:before { content: '\e85a'; } /* '' */
+.icon-sportive-car:before { content: '\e85b'; } /* '' */
+.icon-supercar:before { content: '\e85c'; } /* '' */
+.icon-timing-belt:before { content: '\e85d'; } /* '' */
+.icon-van-black-transport-side-view-pointing-to-left:before { content: '\e85e'; } /* '' */
+.icon-wallet:before { content: '\e85f'; } /* '' */
+.icon-wheel:before { content: '\e860'; } /* '' */
+.icon-wheel2:before { content: '\e861'; } /* '' */
+.icon-www:before { content: '\e862'; } /* '' */

@@ -77,8 +77,8 @@
   text-shadow: 0 1px 0 #fff;
 }
 .aside .aside__balance-content:before {
-  content: '\e91b';
-  font-family: 'icomoon';
+  content: '\E85F';
+  font-family: 'fontello';
   position: absolute;
   color: #cde3fa;
   font-size: 7rem;

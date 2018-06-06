@@ -25,10 +25,10 @@
 }
 .avatar.avatar--empty {
   background: #f2f2f2;
-  font-family: 'icomoon';
+  font-family: 'fontello';
   font-size: 1.5rem;
 }
 .avatar.avatar--empty:after {
-  content: "\e7ff";
+  content: "\E843";
   color: #cdced0;
 }

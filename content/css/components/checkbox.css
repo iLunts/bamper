@@ -20,10 +20,10 @@
   -moz-appearance: none;
 }
 .checkbox .checkbox__input:checked + .checkbox__label:before {
-  content: "\e5ca";
+  content: "\e81B";
   border: 2px solid #3486db;
   background: #3486db;
-  font-family: 'icomoon';
+  font-family: 'fontello';
   color: #fff;
   font-size: 14px;
   line-height: 16px;
