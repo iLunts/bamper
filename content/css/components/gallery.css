@@ -59,3 +59,32 @@
   font-size: 1rem;
   vertical-align: middle;
 }
+@media (min-width: 1220px) and (max-width: 1599px) {
+  .gallery.gallery--parts .gallery__item {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1219px) {
+  .gallery.gallery--parts {
+    flex-wrap: wrap;
+  }
+  .gallery.gallery--parts .gallery__item {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery.gallery--parts {
+    flex-wrap: wrap;
+  }
+  .gallery.gallery--parts .gallery__item {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery.gallery--parts {
+    flex-wrap: wrap;
+  }
+  .gallery.gallery--parts .gallery__item {
+    width: 100%;
+  }
+}
