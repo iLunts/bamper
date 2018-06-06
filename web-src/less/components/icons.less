@@ -1,12 +1,14 @@
 // out: ../../../content/css/components/icons.css, compress: true
+@font-path: "../../font";
+
 @font-face {
   font-family: 'fontello';
-  src: url('../../../font/fontello.eot?94764582');
-  src: url('../../../font/fontello.eot?94764582#iefix') format('embedded-opentype'),
-       url('../../../font/fontello.woff2?94764582') format('woff2'),
-       url('../../../font/fontello.woff?94764582') format('woff'),
-       url('../../../font/fontello.ttf?94764582') format('truetype'),
-       url('../../../font/fontello.svg?94764582#fontello') format('svg');
+  src: url(~'@{font-path}/fontello.eot?94764582');
+  src: url(~'@{font-path}/font/fontello.eot?94764582#iefix') format('embedded-opentype'),
+       url(~'@{font-path}/font/fontello.woff2?94764582') format('woff2'),
+       url(~'@{font-path}/font/fontello.woff?94764582') format('woff'),
+       url(~'@{font-path}/font/fontello.ttf?94764582') format('truetype'),
+       url(~'@{font-path}/font/fontello.svg?94764582#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
