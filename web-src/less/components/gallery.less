@@ -260,7 +260,14 @@
         &&--parts{
 
             .gallery__item{
-                width: 50%;
+                width: 25%;
+                min-height: 100px;
+
+                &.gallery__item--active{
+                    &:after{
+                        font-size: .7rem;
+                    }
+                }
             }
         }
     }

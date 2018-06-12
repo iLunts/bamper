@@ -109,7 +109,11 @@
 }
 @media (min-width: 1220px) and (max-width: 1599px) {
   .gallery.gallery--parts .gallery__item {
-    width: 50%;
+    width: 25%;
+    min-height: 100px;
+  }
+  .gallery.gallery--parts .gallery__item.gallery__item--active:after {
+    font-size: .7rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1219px) {
