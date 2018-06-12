@@ -12,67 +12,76 @@
     &&--parts{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .gallery__item{
             position: relative;
-            width: 25%;
+            width: 24%;
             border: 2px solid #e6ecef;
-            padding: 10px;
+            padding: 0;
             border-radius: 4px;
-            min-height: 140px;
-            margin: 0 12px 10px;
+            // min-height: 140px;
+            margin: 0 0 10px;
 
             display: flex;
             align-items: center;
             cursor: pointer;
 
-            &:after{
-                content: 'Сделать титульной';
-                position: absolute;
-                bottom: 5px;
-                left: 0;
-                right: 0;
-                width: 100%;
-                background: rgba(0, 0, 0, .6);
-                height: 25px;
-                line-height: 25px;
-                color: #fff;
-                font-size: .7rem;
-                text-align: center;
-            }
-
-            &.gallery__item--active{
-            
+            &:hover{
                 &:after{
-                    content: 'Титульная';
+                    content: 'Сделать титульной';
                     position: absolute;
-                    bottom: 5px;
+                    top: 5px;
                     left: 0;
                     right: 0;
                     width: 100%;
-                    background: rgba(1, 169, 244, .8);
+                    background: rgba(0, 0, 0, .6);
                     height: 25px;
                     line-height: 25px;
                     color: #fff;
-                    font-size: 1rem;
+                    font-size: .7rem;
                     text-align: center;
                 }
             }
 
+
+            &.gallery__item--active{
+
+                &:hover{
+
+                    &:after{
+                        content: 'Титульная';
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                        background: rgba(1, 169, 244, .8);
+                        height: 25px;
+                        line-height: 25px;
+                        color: #fff;
+                        font-size: .7rem;
+                        text-align: center;
+                    }
+                }
+            
+            }
+
             &-delete{
                 position: absolute;
-                top: -10px;
-                right: -10px;
-                width: 30px;
-                height: 30px;
+                bottom: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
                 padding: 0;
-                border: 2px solid @color-red;
+                // border: 2px solid @color-red;
                 text-align: center;
-                border-radius: 100px;
-                color: @color-red;
-                font-size: 1.4rem;
+                // border-radius: 100px;
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+                background: @color-red;
                 outline: none;
                 box-shadow: none;
                 cursor: pointer;
@@ -86,7 +95,7 @@
                     &:before{
                         position: relative;
                         left: -1px;
-                        top: -1px;
+                        top: 1px;
                         margin: 0;
                     }
                 }
@@ -94,16 +103,16 @@
 
             &-rotate{
                 position: absolute;
-                top: 0;
+                bottom: 0;
                 left: 0;
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
                 padding: 0;
                 background: #e6ecef;
                 border: none;
                 color: #808080;
                 text-align: center;
-                font-size: 1.4rem;
+                font-size: 1rem;
                 outline: none;
                 box-shadow: none;
                 cursor: pointer;
@@ -117,123 +126,18 @@
                     &:before{
                         position: relative;
                         left: -1px;
-                        top: -1px;
+                        top: 1px;
                         margin: 0;
                     }
                 }
             }
         
             &-img{
-                margin-right: 20px;
                 max-height: 120px;
-                // transition: all .3s;
-                // vertical-align: middle;
-                // cursor: pointer;
-
-                // &:hover{
-                //     opacity: .7;
-                // }
             }
         }
     }
 
-    // &&--parts{
-    //     display: flex;
-    //     align-items: center;
-    //     flex-wrap: wrap;
-
-    //     .gallery__item{
-    //         position: relative;
-    //         display: flex;
-    //         align-items: center;
-    //         margin-bottom: 15px;
-
-    //         &.gallery__item--active{
-    //             .gallery__item-img{
-    //                 position: relative;
-
-    //                 &:before{
-    //                     content: '';
-    //                     position: absolute;
-    //                     left: 50%;
-    //                     top: 50%;
-    //                     width: 50px;
-    //                     height: 50px;
-    //                     border-radius: 100px;
-    //                     background: rgba(1, 169, 244, .8);
-    //                     margin-top: -25px;
-    //                     margin-left: -25px;
-    //                 }
-    //                 &:after{
-    //                     content: '\e81B';
-    //                     font-family: @font-icon;
-    //                     position: absolute;
-    //                     left: 50%;
-    //                     top: 50%;
-    //                     width: 50px;
-    //                     height: 50px;
-    //                     color: #fff;
-    //                     margin-top: -25px;
-    //                     margin-left: -25px;
-    //                     font-size: 2rem;
-    //                     line-height: 50px;
-    //                     text-align: center;
-    //                 }
-    //             }
-    //         }
-
-    //         &-title{
-    //             margin: 0 0 2px 0;
-    //             font-size: .9rem;
-    //             font-weight: 600;
-    //             color: #444;
-
-    //             white-space: nowrap;
-    //             overflow: hidden;
-    //             text-overflow: ellipsis;
-    //         }
-
-    //         &-subtitle{
-    //             margin: 0 0 12px 0;
-    //             font-size: .7rem;
-    //             font-weight: 400;
-    //             color: #999;
-    //         }
-
-    //         &-content{
-
-    //         }
-        
-    //         &-img{
-    //             width: 25%;
-    //             margin-right: 20px;
-    //             max-height: 120px;
-
-    //             .img{
-    //                 border-radius: 6px;
-    //                 border: 3px solid #fff;
-    //                 box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-    //             }
-    //         }
-
-    //         &-action{
-                
-    //         }
-
-    //         &-btn{
-    //             padding: 0 4px;
-
-    //             & + .gallery__item-btn{
-    //                 margin-left: 4px;
-    //             }
-
-    //             .btn__icon{
-    //                 font-size: 1rem;
-    //                 vertical-align: middle;
-    //             }
-    //         }
-    //     }
-    // }
 
     // -----------------------------------------
     // All modificators
@@ -259,16 +163,7 @@
 
         &&--parts{
 
-            .gallery__item{
-                width: 25%;
-                min-height: 100px;
 
-                &.gallery__item--active{
-                    &:after{
-                        font-size: .7rem;
-                    }
-                }
-            }
         }
     }
 }
@@ -284,7 +179,7 @@
             flex-wrap: wrap;        
 
             .gallery__item{
-                width: 100%;
+                width: 33%;
             }
         }
     }
@@ -301,7 +196,7 @@
             flex-wrap: wrap;        
 
             .gallery__item{
-                width: 100%;
+                width: 33%;
             }
         }
     }
@@ -318,7 +213,7 @@
             flex-wrap: wrap;            
 
             .gallery__item{
-                width: 100%;
+                width: 50%;
             }
         }
     }
