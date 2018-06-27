@@ -44,7 +44,53 @@
   font-weight: 700;
   margin: 0 0 10px 0;
 }
+.add .add__group {
+  background-color: #fff;
+  padding: 20px;
+}
 
+.add .add__group + .add__group {
+  border-top: none;
+}
+
+.add .add__group .grid + .grid {
+  margin-top: 10px;
+}
+
+.add .add__group.isSuccess {
+  background: rgba(139, 195, 74, 0.05);
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .input {
+  border-color: #8bc34a;
+}
+
+.add .add__group.isSuccess .add__header-title {
+  color: #8bc34a;
+}
+
+.add .add__group.isSuccess .label {
+  color: #689f38;
+}
+
+.add .add__date {
+  margin: 0 -10px 10px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: .8rem;
+  font-weight: 600;
+  background: rgba(53, 133, 220, 0.1);
+  color: #3486db;
+}
+
+.add .add__header-title {
+  color: #03a9f4;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
 .aside {
   position: fixed;
   top: 40px;
@@ -1488,7 +1534,7 @@ fieldset {
 
 .gallery.gallery--parts .gallery__item {
   position: relative;
-  width: 33%;
+  width: 24%;
   border: 2px solid #e6ecef;
   padding: 0;
   border-radius: 4px;
@@ -4101,6 +4147,56 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 0;
   }
 }
+.logo {
+  position: relative;
+  padding: 4px 0;
+}
+
+.logo .logo__img {
+  float: left;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 2px #1976d2;
+  background-color: #3486db;
+  color: #fff;
+  margin: 1px 8px 0 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85c3f2+0,2196f3+100 */
+}
+
+.logo .logo__text {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 3px;
+}
+
+.logo .logo__desc {
+  margin: 0;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo .logo__img {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 3px;
+  }
+
+  .logo .logo__desc {
+    margin-top: 0;
+  }
+}
 html {
   font-family: 'Open Sans', sans-serif;
   color: #323846;
@@ -4847,6 +4943,42 @@ img {
 
 .overlay.overlay--black {
   background-color: rgba(0, 0, 0, 0.4);
+}
+.paginator {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.paginator .paginator__item {
+  display: inline-block;
+  min-width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.paginator .paginator__item.active {
+  color: #fff;
+  background-color: #3486db;
+}
+
+.paginator .paginator__item.paginator__item--next {
+  padding: 0 10px;
+}
+
+.paginator .paginator__item + .paginator__item {
+  margin-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
 }
 .panel {
   position: relative;

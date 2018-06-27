@@ -1,0 +1,55 @@
+// out: ../../../content/css/components/paginator.css, compress: true
+@import 'variables.less';
+//
+// ----------------------------------------------------
+// Block '.paginator'
+// ----------------------------------------------------
+.paginator {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+
+    // Element '.paginator .paginator__item'
+    & &__item{
+        display: inline-block;
+        min-width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 3px;
+        background: #fff;
+        cursor: pointer;
+        font-size: .9rem;
+        font-weight: 600;
+        color: #333;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+        &.active{
+            color: #fff;
+            background-color: @color-blue;
+        }
+
+        &.paginator__item--next{
+            padding: 0 10px;
+        }
+
+        & + .paginator__item{
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+// -------------------------------------------------------
+// Size 'xSmall'
+// -------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+    // ----------------------------------------------------
+    // Block '.paginator'
+    // ----------------------------------------------------
+    .paginator {
+
+    }
+
+}
