@@ -4,19 +4,19 @@
 .gallery.gallery--parts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .gallery.gallery--parts .gallery__item {
   position: relative;
-  width: 24%;
+  width: 22%;
   border: 2px solid #e6ecef;
   padding: 0;
   border-radius: 4px;
-  margin: 0 0 10px;
+  margin: 0 1.5% 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 0;
 }
 .gallery.gallery--parts .gallery__item:hover:after {
   content: 'Сделать титульной';
@@ -110,7 +110,7 @@
     flex-wrap: wrap;
   }
   .gallery.gallery--parts .gallery__item {
-    width: 33%;
+    width: 31%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -118,7 +118,7 @@
     flex-wrap: wrap;
   }
   .gallery.gallery--parts .gallery__item {
-    width: 33%;
+    width: 31%;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -126,6 +126,6 @@
     flex-wrap: wrap;
   }
   .gallery.gallery--parts .gallery__item {
-    width: 50%;
+    width: 48%;
   }
 }

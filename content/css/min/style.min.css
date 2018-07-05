@@ -44,53 +44,7 @@
   font-weight: 700;
   margin: 0 0 10px 0;
 }
-.add .add__group {
-  background-color: #fff;
-  padding: 20px;
-}
 
-.add .add__group + .add__group {
-  border-top: none;
-}
-
-.add .add__group .grid + .grid {
-  margin-top: 10px;
-}
-
-.add .add__group.isSuccess {
-  background: rgba(139, 195, 74, 0.05);
-  border-color: #8bc34a;
-}
-
-.add .add__group.isSuccess .input {
-  border-color: #8bc34a;
-}
-
-.add .add__group.isSuccess .add__header-title {
-  color: #8bc34a;
-}
-
-.add .add__group.isSuccess .label {
-  color: #689f38;
-}
-
-.add .add__date {
-  margin: 0 -10px 10px;
-  border-radius: 4px;
-  padding: 6px 12px;
-  font-size: .8rem;
-  font-weight: 600;
-  background: rgba(53, 133, 220, 0.1);
-  color: #3486db;
-}
-
-.add .add__header-title {
-  color: #03a9f4;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
 .aside {
   position: fixed;
   top: 40px;
@@ -1528,20 +1482,20 @@ fieldset {
 .gallery.gallery--parts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .gallery.gallery--parts .gallery__item {
   position: relative;
-  width: 24%;
+  width: 22%;
   border: 2px solid #e6ecef;
   padding: 0;
   border-radius: 4px;
-  margin: 0 0 10px;
+  margin: 0 1.5% 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 0;
 }
 
 .gallery.gallery--parts .gallery__item:hover:after {
@@ -1646,7 +1600,7 @@ fieldset {
   }
 
   .gallery.gallery--parts .gallery__item {
-    width: 33%;
+    width: 31%;
   }
 }
 
@@ -1656,7 +1610,7 @@ fieldset {
   }
 
   .gallery.gallery--parts .gallery__item {
-    width: 33%;
+    width: 31%;
   }
 }
 
@@ -1666,7 +1620,7 @@ fieldset {
   }
 
   .gallery.gallery--parts .gallery__item {
-    width: 50%;
+    width: 48%;
   }
 }
 .container {
@@ -3004,8 +2958,8 @@ fieldset {
 }
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?22416012");
-  src: url("../font/fontello.eot?22416012#iefix") format('embedded-opentype'), url("../font/fontello.woff2?22416012") format('woff2'), url("../font/fontello.woff?22416012") format('woff'), url("../font/fontello.ttf?22416012") format('truetype'), url("../font/fontello.svg?22416012#fontello") format('svg');
+  src: url("../../font/fontello.eot?22416012");
+  src: url("../../font/fontello.eot?22416012#iefix") format('embedded-opentype'), url("../../font/fontello.woff2?22416012") format('woff2'), url("../../font/fontello.woff?22416012") format('woff'), url("../../font/fontello.ttf?22416012") format('truetype'), url("../../font/fontello.svg?22416012#fontello") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -3018,7 +2972,7 @@ fieldset {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?22416012#fontello') format('svg');
+    src: url('../../font/fontello.svg?22416012#fontello') format('svg');
   }
 }
 */
