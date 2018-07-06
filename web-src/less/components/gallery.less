@@ -32,7 +32,7 @@
 
             &:hover{
                 &:after{
-                    content: 'Сделать титульной';
+                    content: 'На главную';
                     position: absolute;
                     top: 5px;
                     left: 0;
@@ -53,7 +53,7 @@
                 &:hover{
 
                     &:after{
-                        content: 'Титульная';
+                        content: 'Главная';
                         position: absolute;
                         top: 5px;
                         left: 0;
@@ -68,6 +68,16 @@
                     }
                 }
             
+            }
+
+            &-btn{
+                background: transparent;
+                outline: none;
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+                cursor: pointer;
             }
 
             &-delete{
@@ -136,6 +146,7 @@
         
             &-img{
                 max-height: 120px;
+                cursor: pointer;
             }
         }
     }

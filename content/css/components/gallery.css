@@ -19,7 +19,7 @@
   font-size: 0;
 }
 .gallery.gallery--parts .gallery__item:hover:after {
-  content: 'Сделать титульной';
+  content: 'На главную';
   position: absolute;
   top: 5px;
   left: 0;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 .gallery.gallery--parts .gallery__item.gallery__item--active:hover:after {
-  content: 'Титульная';
+  content: 'Главная';
   position: absolute;
   top: 5px;
   left: 0;
@@ -45,6 +45,15 @@
   color: #fff;
   font-size: .7rem;
   text-align: center;
+}
+.gallery.gallery--parts .gallery__item-btn {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 .gallery.gallery--parts .gallery__item-delete {
   position: absolute;
@@ -104,6 +113,7 @@
 }
 .gallery.gallery--parts .gallery__item-img {
   max-height: 120px;
+  cursor: pointer;
 }
 @media (min-width: 1024px) and (max-width: 1219px) {
   .gallery.gallery--parts {
